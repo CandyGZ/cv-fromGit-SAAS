@@ -6,13 +6,13 @@
 
 ## Lenguajes de Programación
 
-- **JavaScript**: 61.78%
-- **Python**: 24.93%
+- **JavaScript**: 61.77%
+- **Python**: 24.92%
 - **CSS**: 4.55%
-- **TypeScript**: 2.82%
+- **TypeScript**: 2.81%
 - **Java**: 2.15%
+- **HTML**: 0.68%
 - **Blade**: 0.67%
-- **HTML**: 0.66%
 - **TSQL**: 0.62%
 - **C**: 0.59%
 - **PHP**: 0.39%
@@ -27,8 +27,8 @@ Angular, Composer, Django, Docker, Docker Compose, Express.js, FastAPI, Flask, G
 
 Sin descripción
 
-**Lenguajes**: Python  
-**Tecnologías**: Python, pip  
+**Lenguajes**: Python, HTML  
+**Tecnologías**: pip, Python  
 **Última actualización**: 2025-11-19  
 
 ---
@@ -38,7 +38,7 @@ Sin descripción
 Sin descripción
 
 **Lenguajes**: TypeScript, HTML, JavaScript  
-**Tecnologías**: TypeScript, Node.js, npm  
+**Tecnologías**: npm, Node.js, TypeScript  
 **Última actualización**: 2025-11-19  
 
 ---
@@ -65,7 +65,7 @@ Sin descripción
 Sin descripción
 
 **Lenguajes**: TypeScript, PLpgSQL, JavaScript, CSS  
-**Tecnologías**: Node.js, Next.js, TypeScript, npm, React  
+**Tecnologías**: npm, React, TypeScript, Node.js, Next.js  
 **Última actualización**: 2025-11-19  
 
 ---
@@ -75,7 +75,7 @@ Sin descripción
 Sin descripción
 
 **Lenguajes**: TypeScript, CSS, JavaScript  
-**Tecnologías**: Node.js, Next.js, TypeScript, npm, React  
+**Tecnologías**: npm, React, TypeScript, Node.js, Next.js  
 **Última actualización**: 2025-11-19  
 
 ---
@@ -102,7 +102,7 @@ Sin descripción
 Sin descripción
 
 **Lenguajes**: Python  
-**Tecnologías**: Python, pip  
+**Tecnologías**: pip, Python  
 **Última actualización**: 2025-11-17  
 
 ---
@@ -112,10 +112,10 @@ Sin descripción
 Sin descripción
 
 **Lenguajes**: TypeScript, Solidity, CSS, Shell, JavaScript  
-**Tecnologías**: TypeScript, Node.js, npm  
+**Tecnologías**: npm, Node.js, TypeScript  
 **Última actualización**: 2025-11-16  
 
 ---
 
 
-*CV generado automáticamente desde GitHub - 2025-11-19 18:06:14*
+*CV generado automáticamente desde GitHub - 2025-11-19 18:12:00*

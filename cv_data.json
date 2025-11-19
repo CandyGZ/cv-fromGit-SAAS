@@ -17,16 +17,17 @@
       "description": "Sin descripción",
       "url": "https://github.com/CandyGZ/CV-from-git",
       "created_at": "2025-11-19T16:28:28+00:00",
-      "updated_at": "2025-11-19T18:02:53+00:00",
+      "updated_at": "2025-11-19T18:08:45+00:00",
       "languages": {
-        "Python": 20648
+        "Python": 20703,
+        "HTML": 13960
       },
       "technologies": [
-        "Python",
-        "pip"
+        "pip",
+        "Python"
       ],
       "stars": 0,
-      "commits": 4,
+      "commits": 6,
       "topics": []
     },
     {
@@ -41,9 +42,9 @@
         "JavaScript": 142
       },
       "technologies": [
-        "TypeScript",
+        "npm",
         "Node.js",
-        "npm"
+        "TypeScript"
       ],
       "stars": 0,
       "commits": 19,
@@ -91,11 +92,11 @@
         "CSS": 1545
       },
       "technologies": [
-        "Node.js",
-        "Next.js",
-        "TypeScript",
         "npm",
-        "React"
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Next.js"
       ],
       "stars": 0,
       "commits": 13,
@@ -113,11 +114,11 @@
         "JavaScript": 200
       },
       "technologies": [
-        "Node.js",
-        "Next.js",
-        "TypeScript",
         "npm",
-        "React"
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Next.js"
       ],
       "stars": 0,
       "commits": 29,
@@ -162,8 +163,8 @@
         "Python": 202710
       },
       "technologies": [
-        "Python",
-        "pip"
+        "pip",
+        "Python"
       ],
       "stars": 0,
       "commits": 3,
@@ -183,9 +184,9 @@
         "JavaScript": 496
       },
       "technologies": [
-        "TypeScript",
+        "npm",
         "Node.js",
-        "npm"
+        "TypeScript"
       ],
       "stars": 0,
       "commits": 36,
@@ -204,11 +205,11 @@
         "Procfile": 209
       },
       "technologies": [
-        "Node.js",
-        "Next.js",
-        "TypeScript",
         "npm",
-        "React"
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Next.js"
       ],
       "stars": 0,
       "commits": 3,
@@ -239,10 +240,10 @@
         "PHP": 250264
       },
       "technologies": [
-        "PHP",
-        "Node.js",
+        "npm",
         "Composer",
-        "npm"
+        "Node.js",
+        "PHP"
       ],
       "stars": 0,
       "commits": 7,
@@ -262,9 +263,9 @@
         "Batchfile": 5453
       },
       "technologies": [
-        "Python",
+        "pip",
         "Django",
-        "pip"
+        "Python"
       ],
       "stars": 0,
       "commits": 6,
@@ -285,9 +286,9 @@
         "Shell": 1333
       },
       "technologies": [
-        "Node.js",
+        "npm",
         "React",
-        "npm"
+        "Node.js"
       ],
       "stars": 0,
       "commits": 313,
@@ -307,10 +308,10 @@
         "CSS": 5279
       },
       "technologies": [
+        "npm",
         "TypeScript",
-        "Express.js",
         "Node.js",
-        "npm"
+        "Express.js"
       ],
       "stars": 0,
       "commits": 4,
@@ -326,10 +327,10 @@
         "Python": 91051
       },
       "technologies": [
-        "Pandas",
         "NumPy",
-        "Python",
-        "pip"
+        "pip",
+        "Pandas",
+        "Python"
       ],
       "stars": 0,
       "commits": 10,
@@ -368,10 +369,10 @@
       },
       "technologies": [
         "Docker",
-        "pip",
         "Docker Compose",
-        "Django",
-        "Python"
+        "Python",
+        "pip",
+        "Django"
       ],
       "stars": 0,
       "commits": 3,
@@ -388,8 +389,8 @@
       },
       "technologies": [
         "FastAPI",
-        "Python",
-        "pip"
+        "pip",
+        "Python"
       ],
       "stars": 0,
       "commits": 7,
@@ -408,8 +409,8 @@
         "HTML": 21191
       },
       "technologies": [
-        "Python",
-        "pip"
+        "pip",
+        "Python"
       ],
       "stars": 0,
       "commits": 4,
@@ -428,9 +429,9 @@
         "HTML": 38497
       },
       "technologies": [
-        "Python",
+        "pip",
         "Django",
-        "pip"
+        "Python"
       ],
       "stars": 0,
       "commits": 4,
@@ -447,8 +448,8 @@
       },
       "technologies": [
         "Flask",
-        "Python",
-        "pip"
+        "pip",
+        "Python"
       ],
       "stars": 0,
       "commits": 11,
@@ -595,8 +596,8 @@
         "CSS": 366
       },
       "technologies": [
-        "Node.js",
-        "npm"
+        "npm",
+        "Node.js"
       ],
       "stars": 0,
       "commits": 10,
@@ -637,9 +638,9 @@
         "PHP": 2124
       },
       "technologies": [
-        "Python",
+        "pip",
         "Django",
-        "pip"
+        "Python"
       ],
       "stars": 0,
       "commits": 8,
@@ -745,9 +746,9 @@
         "JavaScript": 1780
       },
       "technologies": [
-        "Python",
+        "pip",
         "Django",
-        "pip"
+        "Python"
       ],
       "stars": 0,
       "commits": 2,
@@ -771,8 +772,8 @@
         "Batchfile": 1389
       },
       "technologies": [
-        "Python",
-        "pip"
+        "pip",
+        "Python"
       ],
       "stars": 1,
       "commits": 1,
@@ -805,9 +806,9 @@
         "Shell": 53
       },
       "technologies": [
-        "Node.js",
+        "npm",
         "React",
-        "npm"
+        "Node.js"
       ],
       "stars": 1,
       "commits": 1,
@@ -937,8 +938,8 @@
         "JavaScript": 25434
       },
       "technologies": [
-        "Node.js",
-        "npm"
+        "npm",
+        "Node.js"
       ],
       "stars": 0,
       "commits": 1,
@@ -957,8 +958,8 @@
         "Python": 264
       },
       "technologies": [
-        "Node.js",
-        "npm"
+        "npm",
+        "Node.js"
       ],
       "stars": 0,
       "commits": 4,
@@ -974,8 +975,8 @@
         "JavaScript": 15895
       },
       "technologies": [
-        "Node.js",
-        "npm"
+        "npm",
+        "Node.js"
       ],
       "stars": 0,
       "commits": 1,
@@ -1510,9 +1511,9 @@
         "Shell": 201
       },
       "technologies": [
-        "Node.js",
+        "npm",
         "React",
-        "npm"
+        "Node.js"
       ],
       "stars": 0,
       "commits": 145,
@@ -1531,10 +1532,10 @@
         "JavaScript": 2325
       },
       "technologies": [
+        "npm",
         "Angular",
         "Node.js",
-        "TypeScript",
-        "npm"
+        "TypeScript"
       ],
       "stars": 0,
       "commits": 1,
@@ -1573,13 +1574,13 @@
     }
   ],
   "languages": {
-    "JavaScript": 61.78,
-    "Python": 24.93,
+    "JavaScript": 61.77,
+    "Python": 24.92,
     "CSS": 4.55,
-    "TypeScript": 2.82,
+    "TypeScript": 2.81,
     "Java": 2.15,
+    "HTML": 0.68,
     "Blade": 0.67,
-    "HTML": 0.66,
     "TSQL": 0.62,
     "C": 0.59,
     "PHP": 0.39,
@@ -1621,5 +1622,5 @@
     "npm",
     "pip"
   ],
-  "generated_at": "2025-11-19T18:06:14.435483"
+  "generated_at": "2025-11-19T18:12:00.620903"
 }
