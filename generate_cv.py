@@ -72,7 +72,7 @@ class GitHubCVGenerator:
 
         return str(date_obj)  # Fallback
 
-    def _enhance_description_with_ai(self, repo_name, original_description, languages, technologies):
+    def _enhance_description_with_ai(self, repo_name, original_description, languages, technologies, readme_content=None):
         """
         Mejora la descripción de un repositorio usando OpenAI
 
@@ -81,6 +81,7 @@ class GitHubCVGenerator:
             original_description: Descripción original del repositorio
             languages: Lista de lenguajes de programación usados
             technologies: Lista de tecnologías detectadas
+            readme_content: Contenido del README (opcional)
 
         Returns:
             Descripción mejorada o la original si falla
@@ -89,37 +90,44 @@ class GitHubCVGenerator:
             return original_description
 
         try:
+            # Construir información adicional del README si existe
+            readme_info = ""
+            if readme_content:
+                readme_info = f"\n- README (extracto): {readme_content}"
+
             # Si no hay descripción original, generar una desde cero
             if not original_description or original_description == "Sin descripción":
-                prompt = f"""Eres un experto redactor de CVs técnicos. Genera una descripción profesional y concisa (máximo 2 frases) para un proyecto llamado "{repo_name}".
+                prompt = f"""Eres un experto redactor de CVs técnicos. Genera una descripción profesional y completa para un proyecto llamado "{repo_name}".
 
 Información del proyecto:
 - Lenguajes: {', '.join(languages) if languages else 'No especificado'}
-- Tecnologías: {', '.join(technologies) if technologies else 'No especificado'}
+- Tecnologías: {', '.join(technologies) if technologies else 'No especificado'}{readme_info}
 
 La descripción debe:
-1. Ser técnica pero accesible
+1. Ser técnica pero accesible (2-3 frases)
 2. Destacar el propósito y valor del proyecto
-3. Mencionar las tecnologías clave si son relevantes
-4. Estar en español
-5. No incluir palabras como "Este proyecto" o "Este repositorio"
+3. Mencionar las tecnologías clave y características principales
+4. Incluir detalles técnicos relevantes del README si están disponibles
+5. Estar en español
+6. No incluir palabras como "Este proyecto" o "Este repositorio"
 
 Responde SOLO con la descripción, sin explicaciones adicionales."""
             else:
                 # Mejorar la descripción existente
-                prompt = f"""Eres un experto redactor de CVs técnicos. Mejora la siguiente descripción de proyecto para un CV profesional.
+                prompt = f"""Eres un experto redactor de CVs técnicos. Genera una descripción profesional y completa para un proyecto de CV.
 
 Proyecto: {repo_name}
 Descripción original: {original_description}
 Lenguajes: {', '.join(languages) if languages else 'No especificado'}
-Tecnologías: {', '.join(technologies) if technologies else 'No especificado'}
+Tecnologías: {', '.join(technologies) if technologies else 'No especificado'}{readme_info}
 
-Mejora la descripción para que:
-1. Sea más profesional y atractiva (máximo 2-3 frases)
-2. Destaque el valor y propósito del proyecto
-3. Mencione tecnologías clave si son relevantes
-4. Esté en español
-5. Sea concisa y directa
+Genera una descripción que:
+1. Sea profesional y atractiva (2-3 frases)
+2. Destaque el valor, propósito y características técnicas del proyecto
+3. Mencione tecnologías clave y funcionalidades principales
+4. Aproveche la información del README para dar detalles técnicos relevantes
+5. Esté en español
+6. Sea completa pero concisa
 
 Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
 
@@ -138,7 +146,8 @@ Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
             # Remover comillas si las tiene
             enhanced_description = enhanced_description.strip('"').strip("'")
 
-            print(f"  ✨ Descripción mejorada con IA para: {repo_name}")
+            readme_indicator = " (con README)" if readme_content else ""
+            print(f"  ✨ Descripción mejorada con IA para: {repo_name}{readme_indicator}")
             return enhanced_description
 
         except Exception as e:
@@ -152,6 +161,38 @@ Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
             if not repo.fork:
                 repos.append(repo)
         return repos
+
+    def _get_readme_content(self, repo):
+        """
+        Obtiene el contenido del README de un repositorio
+
+        Args:
+            repo: Objeto Repository de PyGithub
+
+        Returns:
+            str: Contenido del README (primeras 1500 caracteres) o None si no existe
+        """
+        try:
+            # Intentar leer README en diferentes formatos
+            readme_files = ['README.md', 'readme.md', 'README.MD', 'README', 'Readme.md']
+
+            for readme_name in readme_files:
+                try:
+                    readme = repo.get_contents(readme_name)
+                    content = readme.decoded_content.decode('utf-8')
+
+                    # Limitar a los primeros 1500 caracteres para no usar muchos tokens
+                    # Esto es suficiente para capturar la descripción principal
+                    if len(content) > 1500:
+                        content = content[:1500] + "..."
+
+                    return content
+                except:
+                    continue
+
+            return None
+        except Exception as e:
+            return None
 
     def analyze_repository(self, repo):
         """
@@ -175,12 +216,16 @@ Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
         # Obtener descripción original
         original_description = repo.description or 'Sin descripción'
 
+        # Obtener contenido del README
+        readme_content = self._get_readme_content(repo)
+
         # Mejorar descripción con IA si está habilitado
         enhanced_description = self._enhance_description_with_ai(
             repo_name=repo.name,
             original_description=original_description,
             languages=list(languages.keys()),
-            technologies=technologies
+            technologies=technologies,
+            readme_content=readme_content
         )
 
         return {

@@ -102,11 +102,13 @@ El generador puede usar OpenAI para mejorar automáticamente las descripciones d
    ```
 
 **¿Qué hace la IA?**
-- ✨ Mejora descripciones existentes haciéndolas más profesionales
+- ✨ **Lee automáticamente los READMEs** de tus repositorios para obtener contexto detallado
+- ✨ Mejora descripciones existentes haciéndolas más profesionales y completas
 - ✨ Genera descripciones automáticas para repos sin descripción
-- ✨ Destaca el valor y propósito técnico de cada proyecto
-- ✨ Mantiene las descripciones concisas (2-3 frases máximo)
-- ✨ Usa GPT-3.5-turbo para mantener costos bajos (~$0.002 por repositorio)
+- ✨ Destaca el valor, propósito técnico y características principales de cada proyecto
+- ✨ Incluye detalles técnicos relevantes extraídos del README
+- ✨ Mantiene las descripciones completas pero concisas (2-3 frases)
+- ✨ Usa GPT-3.5-turbo para mantener costos bajos (~$0.002-0.003 por repositorio)
 
 **Sin OpenAI**: El generador funciona perfectamente sin la API key, usando las descripciones originales de GitHub.
 
