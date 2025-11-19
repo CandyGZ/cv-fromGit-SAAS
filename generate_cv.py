@@ -12,17 +12,40 @@ from collections import Counter
 from github import Github
 import json
 
+# Importar OpenAI de forma opcional
+try:
+    from openai import OpenAI
+    OPENAI_AVAILABLE = True
+except ImportError:
+    OPENAI_AVAILABLE = False
+
 class GitHubCVGenerator:
-    def __init__(self, github_token, username=None):
+    def __init__(self, github_token, username=None, openai_api_key=None):
         """
         Inicializa el generador de CV
 
         Args:
             github_token: Token de acceso personal de GitHub
             username: Usuario de GitHub (opcional, usa el usuario autenticado si no se proporciona)
+            openai_api_key: API key de OpenAI (opcional, para descripciones mejoradas con IA)
         """
         self.github = Github(github_token)
         self.user = self.github.get_user(username) if username else self.github.get_user()
+
+        # Configurar OpenAI si está disponible y se proporciona API key
+        self.openai_client = None
+        self.use_ai = False
+        if OPENAI_AVAILABLE and openai_api_key:
+            try:
+                self.openai_client = OpenAI(api_key=openai_api_key)
+                self.use_ai = True
+                print("✓ OpenAI habilitado - Se mejorarán las descripciones con IA")
+            except Exception as e:
+                print(f"⚠ OpenAI no disponible: {e}")
+        elif not OPENAI_AVAILABLE and openai_api_key:
+            print("⚠ OpenAI no instalado. Instala con: pip install openai")
+        else:
+            print("ℹ Modo sin IA - Usando descripciones originales de GitHub")
 
     @staticmethod
     def _format_date(date_obj, format_str='%Y-%m-%d'):
@@ -48,6 +71,79 @@ class GitHubCVGenerator:
             return date_obj.strftime(format_str)
 
         return str(date_obj)  # Fallback
+
+    def _enhance_description_with_ai(self, repo_name, original_description, languages, technologies):
+        """
+        Mejora la descripción de un repositorio usando OpenAI
+
+        Args:
+            repo_name: Nombre del repositorio
+            original_description: Descripción original del repositorio
+            languages: Lista de lenguajes de programación usados
+            technologies: Lista de tecnologías detectadas
+
+        Returns:
+            Descripción mejorada o la original si falla
+        """
+        if not self.use_ai or not self.openai_client:
+            return original_description
+
+        try:
+            # Si no hay descripción original, generar una desde cero
+            if not original_description or original_description == "Sin descripción":
+                prompt = f"""Eres un experto redactor de CVs técnicos. Genera una descripción profesional y concisa (máximo 2 frases) para un proyecto llamado "{repo_name}".
+
+Información del proyecto:
+- Lenguajes: {', '.join(languages) if languages else 'No especificado'}
+- Tecnologías: {', '.join(technologies) if technologies else 'No especificado'}
+
+La descripción debe:
+1. Ser técnica pero accesible
+2. Destacar el propósito y valor del proyecto
+3. Mencionar las tecnologías clave si son relevantes
+4. Estar en español
+5. No incluir palabras como "Este proyecto" o "Este repositorio"
+
+Responde SOLO con la descripción, sin explicaciones adicionales."""
+            else:
+                # Mejorar la descripción existente
+                prompt = f"""Eres un experto redactor de CVs técnicos. Mejora la siguiente descripción de proyecto para un CV profesional.
+
+Proyecto: {repo_name}
+Descripción original: {original_description}
+Lenguajes: {', '.join(languages) if languages else 'No especificado'}
+Tecnologías: {', '.join(technologies) if technologies else 'No especificado'}
+
+Mejora la descripción para que:
+1. Sea más profesional y atractiva (máximo 2-3 frases)
+2. Destaque el valor y propósito del proyecto
+3. Mencione tecnologías clave si son relevantes
+4. Esté en español
+5. Sea concisa y directa
+
+Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
+
+            response = self.openai_client.chat.completions.create(
+                model="gpt-3.5-turbo",  # Usar gpt-3.5-turbo para mantener costos bajos
+                messages=[
+                    {"role": "system", "content": "Eres un experto redactor de CVs técnicos. Tus descripciones son concisas, profesionales y destacan el valor de cada proyecto."},
+                    {"role": "user", "content": prompt}
+                ],
+                max_tokens=150,
+                temperature=0.7
+            )
+
+            enhanced_description = response.choices[0].message.content.strip()
+
+            # Remover comillas si las tiene
+            enhanced_description = enhanced_description.strip('"').strip("'")
+
+            print(f"  ✨ Descripción mejorada con IA para: {repo_name}")
+            return enhanced_description
+
+        except Exception as e:
+            print(f"  ⚠ Error al mejorar descripción con IA para {repo_name}: {e}")
+            return original_description
 
     def get_repositories(self):
         """Obtiene todos los repositorios públicos del usuario (sin forks)"""
@@ -76,9 +172,20 @@ class GitHubCVGenerator:
         except:
             commits_count = 0
 
+        # Obtener descripción original
+        original_description = repo.description or 'Sin descripción'
+
+        # Mejorar descripción con IA si está habilitado
+        enhanced_description = self._enhance_description_with_ai(
+            repo_name=repo.name,
+            original_description=original_description,
+            languages=list(languages.keys()),
+            technologies=technologies
+        )
+
         return {
             'name': repo.name,
-            'description': repo.description or 'Sin descripción',
+            'description': enhanced_description,
             'url': repo.html_url,
             'created_at': repo.created_at,
             'updated_at': repo.updated_at,
@@ -618,9 +725,12 @@ def main():
     # Usuario opcional (si no se proporciona, usa el usuario autenticado)
     username = os.environ.get('GITHUB_USERNAME')
 
+    # API key de OpenAI (opcional)
+    openai_api_key = os.environ.get('OPENAI_API_KEY')
+
     try:
         # Generar CV
-        generator = GitHubCVGenerator(github_token, username)
+        generator = GitHubCVGenerator(github_token, username, openai_api_key)
         cv_data = generator.generate_cv_data()
 
         # Generar CV en Markdown y HTML primero (usa datetime objects)

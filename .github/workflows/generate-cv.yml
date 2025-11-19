@@ -1,19 +1,9 @@
 name: Generate CV from GitHub
 
 on:
-  # Ejecución diaria a las 00:00 UTC
-  schedule:
-    - cron: '0 0 * * *'
-
-  # Permite ejecución manual desde la interfaz de GitHub
+  # Solo permite ejecución manual desde la interfaz de GitHub
+  # (Schedule y push deshabilitados para evitar consumo de tokens de OpenAI)
   workflow_dispatch:
-
-  # Ejecutar cuando se hace push a main o a la rama de desarrollo
-  push:
-    branches:
-      - main
-      - master
-      - 'claude/**'
 
 jobs:
   generate-cv:
@@ -39,6 +29,7 @@ jobs:
       - name: Generate CV
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python generate_cv.py
 

@@ -8,9 +8,10 @@ Genera automáticamente un CV profesional basado en tus repositorios de GitHub. 
 - 🚫 **Excluye forks** automáticamente
 - 💻 **Detección de lenguajes** y porcentajes de uso
 - 🔧 **Detección inteligente de tecnologías** (frameworks, herramientas, etc.)
+- 🤖 **Descripciones mejoradas con IA** (opcional, usando OpenAI GPT-3.5-turbo)
 - 📝 Generación de CV en **Markdown** y **HTML**
 - 🎨 **Diseño profesional** y responsive para el CV en HTML
-- ⏰ **Ejecución automática diaria** mediante GitHub Actions
+- ⚙️ **Ejecución manual** mediante GitHub Actions (evita consumo innecesario de tokens)
 - 🔄 **Actualización automática** con commits automáticos
 
 ## 🎯 Tecnologías Detectadas
@@ -73,24 +74,67 @@ python generate_cv.py
 
 **Nota**: Para obtener un token de GitHub:
 1. Ve a Settings → Developer settings → Personal access tokens → Tokens (classic)
-2. Genera un nuevo token con el scope `public_repo`
+2. Genera un nuevo token con los scopes: `repo`, `read:user`, `user:email`
 3. Copia el token (no podrás verlo de nuevo)
 
-## 📅 Ejecución Automática
+### 🤖 Descripciones Mejoradas con IA (Opcional)
 
-El workflow de GitHub Actions está configurado para:
+El generador puede usar OpenAI para mejorar automáticamente las descripciones de tus proyectos, haciéndolas más profesionales y atractivas para tu CV.
 
-- ✅ Ejecutarse **diariamente a las 00:00 UTC**
-- ✅ Ejecutarse **manualmente** cuando lo desees
-- ✅ Ejecutarse al hacer **push a main/master**
+**Configuración de OpenAI:**
 
-Puedes modificar la frecuencia editando el archivo `.github/workflows/generate-cv.yml`:
+1. **Obtén una API Key de OpenAI**:
+   - Ve a https://platform.openai.com/api-keys
+   - Crea una nueva API key
+   - Copia la key (empieza con `sk-...`)
+
+2. **Configura el secret en GitHub**:
+   - Ve a tu repositorio → Settings → Secrets and variables → Actions
+   - Click "New repository secret"
+   - Name: `OPENAI_API_KEY`
+   - Secret: Pega tu API key de OpenAI
+   - Click "Add secret"
+
+3. **Uso local** (opcional):
+   ```bash
+   export OPENAI_API_KEY="sk-tu_api_key_aqui"
+   python generate_cv.py
+   ```
+
+**¿Qué hace la IA?**
+- ✨ Mejora descripciones existentes haciéndolas más profesionales
+- ✨ Genera descripciones automáticas para repos sin descripción
+- ✨ Destaca el valor y propósito técnico de cada proyecto
+- ✨ Mantiene las descripciones concisas (2-3 frases máximo)
+- ✨ Usa GPT-3.5-turbo para mantener costos bajos (~$0.002 por repositorio)
+
+**Sin OpenAI**: El generador funciona perfectamente sin la API key, usando las descripciones originales de GitHub.
+
+## 📅 Ejecución Manual
+
+El workflow de GitHub Actions está configurado para **ejecución manual únicamente** para evitar consumo innecesario de tokens de OpenAI.
+
+**Cómo ejecutar:**
+1. Ve a la pestaña **Actions** en tu repositorio
+2. Selecciona **"Generate CV from GitHub"** en el menú izquierdo
+3. Haz clic en **"Run workflow"** (botón a la derecha)
+4. Selecciona la rama y haz clic en **"Run workflow"**
+
+**Si deseas ejecución automática** (sin IA o si no te importa el costo), edita `.github/workflows/generate-cv.yml`:
 
 ```yaml
-schedule:
-  - cron: '0 0 * * *'  # Diario a las 00:00 UTC
-  # - cron: '0 0 * * 1'  # Semanal (cada lunes)
-  # - cron: '0 0 1 * *'  # Mensual (día 1 de cada mes)
+on:
+  # Ejecución diaria a las 00:00 UTC
+  schedule:
+    - cron: '0 0 * * *'
+
+  # Ejecución manual
+  workflow_dispatch:
+
+  # Al hacer push
+  push:
+    branches:
+      - main
 ```
 
 ## 📄 Archivos Generados
