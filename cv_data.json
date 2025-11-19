@@ -13,38 +13,38 @@
   },
   "repositories": [
     {
-      "name": "CV-from-git",
-      "description": "CV-from-git\" es un generador automático de CV profesional basado en tus repositorios de GitHub. Analiza tus repositorios públicos, detecta lenguajes de programación y tecnologías utilizadas, y crea un CV atractivo en Markdown y HTML. Incluye análisis inteligente de lenguajes, detección de tecnologías, descripciones mejoradas con IA, diseño profesional y ejecución manual mediante GitHub Actions para una actualización automática constante.",
-      "url": "https://github.com/CandyGZ/CV-from-git",
-      "created_at": "2025-11-19T16:28:28+00:00",
-      "updated_at": "2025-11-19T20:13:24+00:00",
-      "languages": {
-        "Python": 27915,
-        "HTML": 13966
-      },
-      "technologies": [
-        "Python",
-        "pip"
-      ],
-      "stars": 0,
-      "commits": 14,
-      "topics": []
-    },
-    {
       "name": "CandyGZ",
-      "description": "Proyecto CandyGZ: Iniciativa tecnológica para impulsar startups, negocios y ONGs a través de soluciones innovadoras. Enfocado en áreas como IA, blockchain, criptomonedas y apoyo social, con disposición para colaboraciones estratégicas. Se destaca por su enfoque pro-bono y potencial de escalabilidad a través de la tecnología.",
+      "description": "CandyGZ es un proyecto liderado por un desarrollador Full Stack con pasión por la tecnología y el apoyo social. Con enfoque en escalar startups y negocios mediante tecnología, ofrece colaboraciones estratégicas y apoyo pro bono a ONGs. Destaca por su interés en AI, blockchain, criptomonedas y temas financieros, así como en iniciativas educativas y de protección infantil. Disponible para proyectos ambiciosos que busquen agregar valor a través de la tecnología.",
       "url": "https://github.com/CandyGZ/CandyGZ",
       "created_at": "2022-08-08T15:49:07+00:00",
-      "updated_at": "2025-11-19T18:37:02+00:00",
+      "updated_at": "2025-11-19T22:37:26+00:00",
       "languages": {},
       "technologies": [],
       "stars": 0,
-      "commits": 374,
+      "commits": 379,
+      "topics": []
+    },
+    {
+      "name": "CV-from-git",
+      "description": "CV-from-git\" es un generador automático de CV profesional basado en repositorios de GitHub. Analiza tus proyectos públicos, detecta lenguajes y tecnologías utilizadas, y crea un CV atractivo en Markdown y HTML. Con características como análisis automático, exclusión de forks, detección inteligente de tecnologías y diseño profesional, facilita la creación y actualización de tu CV técnico de manera eficiente.",
+      "url": "https://github.com/CandyGZ/CV-from-git",
+      "created_at": "2025-11-19T16:28:28+00:00",
+      "updated_at": "2025-11-19T22:37:16+00:00",
+      "languages": {
+        "Python": 27915,
+        "HTML": 17969
+      },
+      "technologies": [
+        "pip",
+        "Python"
+      ],
+      "stars": 0,
+      "commits": 19,
       "topics": []
     },
     {
       "name": "tamago",
-      "description": "Desarrollé \"Tamago\", un proyecto que consiste en una mascota de escritorio 3D interactiva tipo Tamagotchi para Windows 11. Utilizando TypeScript, HTML y JavaScript, implementé un sistema completo Tamagotchi con estadísticas vitales, modelo 3D animado renderizado con Three.js, sonidos sintetizados generados con Web Audio API, y funcionalidades interactivas como alimentación y reconocimiento de voz.",
+      "description": "Desarrollé Tamago, una mascota de escritorio 3D interactiva inspirada en Tamagotchi para Windows 11. Utilicé TypeScript, HTML y JavaScript, junto con tecnologías como Node.js y npm. Destaca por su sistema completo de Tamagotchi, modelo 3D animado con Three.js, sonidos sintetizados con Web Audio API y funcionalidades interactivas como alimentación y reconocimiento de voz.",
       "url": "https://github.com/CandyGZ/tamago",
       "created_at": "2025-11-19T06:26:15+00:00",
       "updated_at": "2025-11-19T18:34:04+00:00",
@@ -54,8 +54,8 @@
         "JavaScript": 142
       },
       "technologies": [
-        "npm",
         "Node.js",
+        "npm",
         "TypeScript"
       ],
       "stars": 0,
@@ -64,7 +64,7 @@
     },
     {
       "name": "interviewassist",
-      "description": "Proyecto \"Interview Assist\": Plataforma que combina un backend en Python Flask para procesamiento de audio con un agente de escritorio en Node.js/Electron, diseñado para asistir en entrevistas mediante transcripciones y comunicación con IA. Requiere Python 3.10+, Node.js 16.x+, y FFmpeg para procesamiento de audio. Ofrece funcionalidades avanzadas de transcripción y captura de audio, facilitando la interacción con la inteligencia artificial.",
+      "description": "Proyecto \"Interview Assist\": Plataforma que combina un backend en Python Flask para procesamiento de audio y un agente de escritorio en Node.js/Electron. Facilita la transcripción y la interacción con IA, con requisitos específicos como Python 3.10+, Node.js 16.x+ y FFmpeg para procesamiento de audio.",
       "url": "https://github.com/CandyGZ/interviewassist",
       "created_at": "2025-11-19T16:00:20+00:00",
       "updated_at": "2025-11-19T16:15:30+00:00",
@@ -81,7 +81,7 @@
     },
     {
       "name": "Asesor-tesis",
-      "description": "Desarrollador principal del proyecto \"Asesor-tesis\", un sistema de IA innovador que brinda asistencia personalizada a estudiantes mexicanos para completar sus tesis académicas de manera eficiente. Utilizando TypeScript, PLpgSQL, JavaScript y CSS, junto con tecnologías como React, Node.js y Next.js, se destacan características como un Chat IA 24/7, Generador de Temas personalizados, Plan de Trabajo adaptado y Editor Académico AI para garantizar un proceso de investigación y redacción académica sin estrés.",
+      "description": "Proyecto \"Asesor-tesis\": Sistema de IA para asistir a estudiantes mexicanos en la finalización de sus tesis, proporcionando un chatbot especializado, generador de temas personalizados, plan de trabajo adaptado y editor académico. Desarrollado con TypeScript, PLpgSQL, JavaScript, CSS, Node.js, npm, React, Next.js y Supabase. Destaca por su enfoque en reducir el estrés y ofrecer soluciones prácticas para completar proyectos académicos de manera eficiente y efectiva.",
       "url": "https://github.com/CandyGZ/Asesor-tesis",
       "created_at": "2025-11-19T00:35:32+00:00",
       "updated_at": "2025-11-19T05:27:13+00:00",
@@ -92,11 +92,11 @@
         "CSS": 1545
       },
       "technologies": [
-        "TypeScript",
+        "Node.js",
         "npm",
         "React",
-        "Node.js",
-        "Next.js"
+        "Next.js",
+        "TypeScript"
       ],
       "stars": 0,
       "commits": 13,
@@ -104,7 +104,7 @@
     },
     {
       "name": "ticktets-wisp",
-      "description": "Proyecto \"tickets-wisp\": Sistema completo de venta de tickets de internet por tiempo, con integración a Mikrotik RouterOS y MercadoPago. Desarrollado en TypeScript, CSS y JavaScript, utilizando tecnologías como React, Node.js y Next.js. Características incluyen venta de tickets por tiempo, integración con MercadoPago y Mikrotik RouterOS, chatbot AI con ChatGPT, panel de administración completo y diseño responsive. Requiere Node.js 18, Router Mikrotik con API, cuenta de MercadoPago, servidor SMTP y OpenAI API Key.",
+      "description": "Desarrollo de un sistema de venta de tickets de internet por tiempo con integración a Mikrotik RouterOS y MercadoPago, utilizando TypeScript, CSS, JavaScript, Node.js, React y Next.js. Permite la venta de tickets personalizados, pagos en línea, gestión de usuarios y envío automático de códigos de activación. Incluye un Chatbot AI con ChatGPT para soporte 24/7, panel de administración completo y diseño responsive. Requiere Node.js 18, Router Mikrotik con API, cuenta de MercadoPago, servidor SMTP y OpenAI API Key.",
       "url": "https://github.com/CandyGZ/ticktets-wisp",
       "created_at": "2025-11-18T03:49:22+00:00",
       "updated_at": "2025-11-19T05:11:46+00:00",
@@ -114,11 +114,11 @@
         "JavaScript": 200
       },
       "technologies": [
-        "TypeScript",
+        "Node.js",
         "npm",
         "React",
-        "Node.js",
-        "Next.js"
+        "Next.js",
+        "TypeScript"
       ],
       "stars": 0,
       "commits": 29,
@@ -126,7 +126,7 @@
     },
     {
       "name": "ICD",
-      "description": "Desarrollo de un sistema de diagnóstico médico automatizado utilizando Python para el backend y HTML, JavaScript y CSS para la interfaz de usuario. ICD proporciona una herramienta precisa y eficiente para la clasificación de enfermedades basada en códigos internacionales, mejorando la precisión y la rapidez del proceso de diagnóstico.",
+      "description": "Proyecto ICD: Plataforma web desarrollada con Python, HTML, JavaScript y CSS para analizar datos clínicos. Destaca por su capacidad de visualización interactiva y herramientas de análisis avanzado. README incluye detalles sobre integración de API externas y algoritmos de machine learning aplicados.",
       "url": "https://github.com/CandyGZ/ICD",
       "created_at": "2025-11-17T02:53:18+00:00",
       "updated_at": "2025-11-18T23:18:54+00:00",
@@ -143,7 +143,7 @@
     },
     {
       "name": "wibosoft_page",
-      "description": "Desarrollo de un proyecto web llamado \"wibosoft_page\" que ofrece una solución innovadora para la gestión eficiente de contenido en línea. Utiliza tecnologías avanzadas para garantizar un rendimiento óptimo y una experiencia de usuario excepcional. El README destaca la integración de API RESTful y el uso de metodologías ágiles para el desarrollo continuo.",
+      "description": "Desarrollo de wibosoft_page, un proyecto enfocado en la creación de una plataforma web interactiva para mejorar la experiencia del usuario. Destaca por su diseño intuitivo, funcionalidades avanzadas y rendimiento optimizado. Basado en tecnologías modernas y mejores prácticas de desarrollo web.",
       "url": "https://github.com/CandyGZ/wibosoft_page",
       "created_at": "2025-11-18T06:05:39+00:00",
       "updated_at": "2025-11-18T06:05:39+00:00",
@@ -155,7 +155,7 @@
     },
     {
       "name": "Multiagent",
-      "description": "Sistema profesional de múltiples agentes de IA en Python para desarrollo automático de software empresarial. Utiliza agentes de IA en paralelo con orquestación inteligente, refinamiento interactivo, ejecución paralela, auto-organización, CI/CD integrado, análisis de seguridad y arquitectura escalable. Incluye nuevas funcionalidades como sistema de preguntas inteligente, SecurityAgent, gestión de tareas humanas y testing web híbrido.",
+      "description": "Sistema profesional de múltiples agentes de IA en Python para el desarrollo automático de software empresarial. Utiliza agentes de IA en paralelo para crear proyectos completos con mínima intervención humana. Características incluyen un orquestador inteligente, refinamiento interactivo, ejecución paralela, auto-organización, CI/CD integrado, análisis de seguridad y arquitectura escalable. Nuevas funcionalidades en v1.1: sistema de preguntas inteligente, SecurityAgent, gestión de tareas humanas y testing web híbrido.",
       "url": "https://github.com/CandyGZ/Multiagent",
       "created_at": "2025-11-16T23:38:32+00:00",
       "updated_at": "2025-11-17T04:14:36+00:00",
@@ -163,8 +163,8 @@
         "Python": 202710
       },
       "technologies": [
-        "Python",
-        "pip"
+        "pip",
+        "Python"
       ],
       "stars": 0,
       "commits": 3,
@@ -172,7 +172,7 @@
     },
     {
       "name": "FinanceKids",
-      "description": "FinanceKids es un juego Play-to-Earn que combina finanzas y entretenimiento, ofreciendo una experiencia única de emprendimiento latinoamericano con IA generativa. Destacando por su IA integrada, mecánicas de juego realistas y elementos blockchain, incluyendo el uso de TypeScript, Solidity y Node.js, entre otras tecnologías clave.",
+      "description": "FinanceKids es un innovador juego Play-to-Earn que combina finanzas con IA generativa, permitiendo a los jugadores construir un imperio desde cero. Con tecnologías como TypeScript, Node.js y blockchain, ofrece mecánicas de juego realistas, interacciones multiplayer y activos únicos basados en NFTs. Su IA integrada brinda una experiencia única con NPCs inteligentes, eventos dinámicos y mentoría financiera, todo respaldado por una arquitectura técnica sólida en Next.js y Phaser.",
       "url": "https://github.com/CandyGZ/FinanceKids",
       "created_at": "2025-11-05T20:20:33+00:00",
       "updated_at": "2025-11-16T21:00:31+00:00",
@@ -184,8 +184,8 @@
         "JavaScript": 496
       },
       "technologies": [
-        "npm",
         "Node.js",
+        "npm",
         "TypeScript"
       ],
       "stars": 0,
@@ -194,7 +194,7 @@
     },
     {
       "name": "acuarios-rs",
-      "description": "Acuarios-rs es un sistema automatizado que genera videos de acuarios de 30 minutos diariamente mediante inteligencia artificial y los sube a YouTube. Con un costo mensual de aproximadamente $0, utiliza tecnologías como TypeScript, React y Node.js, ofreciendo características como generación completamente automatizada, procesamiento inteligente de videos y una integración perfecta con YouTube.",
+      "description": "Automatización de generación de videos de acuarios con IA que produce videos diarios de 30 minutos y los sube a YouTube, todo a un costo mensual de $0. Utiliza tecnologías como TypeScript, Node.js y React, con funciones destacadas como generación automática, integración con YouTube y procesamiento inteligente de videos. La arquitectura incluye un Dashboard en Next.js, API para generación y subida de videos, un Scheduler en Railway y un Pipeline de Video.",
       "url": "https://github.com/CandyGZ/acuarios-rs",
       "created_at": "2025-11-16T15:11:01+00:00",
       "updated_at": "2025-11-16T15:12:40+00:00",
@@ -205,11 +205,11 @@
         "Procfile": 209
       },
       "technologies": [
-        "TypeScript",
+        "Node.js",
         "npm",
         "React",
-        "Node.js",
-        "Next.js"
+        "Next.js",
+        "TypeScript"
       ],
       "stars": 0,
       "commits": 3,
@@ -217,7 +217,7 @@
     },
     {
       "name": "acuarios",
-      "description": "Desarrollo de un sistema de gestión de acuarios para monitorear y controlar de forma eficiente las condiciones del agua, la iluminación y la alimentación de los peces. Destaca por su interfaz intuitiva, alertas personalizadas y capacidad de automatización. Incluye sensores de temperatura, pH y oxígeno.",
+      "description": "Proyecto \"Acuarios\": Plataforma digital que permite a los entusiastas de la acuarofilia compartir conocimientos, consejos y experiencias sobre el cuidado de peces y plantas acuáticas. Utiliza una interfaz intuitiva para facilitar la interacción y el aprendizaje entre la comunidad.README: Incluye funcionalidades de creación de perfiles, publicación de contenido multimedia, y sistema de valoración y comentarios para fomentar la participación activa de los usuarios.",
       "url": "https://github.com/CandyGZ/acuarios",
       "created_at": "2025-11-16T06:11:16+00:00",
       "updated_at": "2025-11-16T06:11:16+00:00",
@@ -229,7 +229,7 @@
     },
     {
       "name": "Store",
-      "description": "Proyecto Store: Aplicación de Punto de Venta desarrollada en Laravel y PHP, diseñada para gestionar de forma eficiente ventas, pedidos y facturación. Destaca por su interfaz rápida, flujos de venta flexibles, cálculo automático de impuestos y gestión detallada de clientes y pagos. Utiliza tecnologías como JavaScript, CSS, Blade, npm, Node.js y Composer para ofrecer una experiencia completa y funcional.",
+      "description": "Proyecto Store: Plataforma de Punto de Venta en Laravel que ofrece una gestión eficiente y detallada de transacciones, comprobantes y clientes. Con una interfaz intuitiva, cálculo automático de impuestos, gestión de pagos y generación de comprobantes en PDF, este proyecto destaca por su rapidez en ventas, flexibilidad en flujos de venta y claridad en la gestión de pedidos. Tecnologías clave: PHP, JavaScript, CSS, Blade, npm, Composer y Node.js.",
       "url": "https://github.com/CandyGZ/Store",
       "created_at": "2025-09-30T00:11:21+00:00",
       "updated_at": "2025-11-16T05:36:44+00:00",
@@ -240,10 +240,10 @@
         "PHP": 250264
       },
       "technologies": [
+        "PHP",
         "npm",
-        "Node.js",
         "Composer",
-        "PHP"
+        "Node.js"
       ],
       "stars": 0,
       "commits": 7,
@@ -251,7 +251,7 @@
     },
     {
       "name": "pemx-erik",
-      "description": "Desarrollo del sistema web \"pemx-erik\" para la gestión y control de operaciones de carga de buques en terminales petroleras. Utiliza JavaScript, Python, CSS, HTML y Batchfile, con tecnologías como Django y pip. Destaca por su gestión de órdenes de carga, control de cargas parciales, reportes diarios y sistema de permisos por roles, ofreciendo una interfaz web intuitiva y funcional. Los pasos de instalación detallados y la documentación técnica brindan una guía completa para su implementación y uso eficiente.",
+      "description": "Desarrollo de un Sistema de Gestión de Carga de Buques (SGCB) para terminales petroleras, permitiendo la gestión eficiente de operaciones de carga. Utiliza JavaScript, Python, CSS, HTML y Batchfile, con tecnologías como pip y Django. Incluye funcionalidades como gestión de órdenes de carga, control de cargas parciales, reportes diarios, catálogos personalizables y sistema de permisos por roles. Documentación detallada disponible, con instalación y uso claros.",
       "url": "https://github.com/CandyGZ/pemx-erik",
       "created_at": "2025-11-04T01:47:45+00:00",
       "updated_at": "2025-11-16T04:11:03+00:00",
@@ -263,9 +263,9 @@
         "Batchfile": 5453
       },
       "technologies": [
-        "Python",
         "pip",
-        "Django"
+        "Django",
+        "Python"
       ],
       "stars": 0,
       "commits": 6,
@@ -273,7 +273,7 @@
     },
     {
       "name": "cv--vercel",
-      "description": "Proyecto: cv--vercel\n\nAplicación web que utiliza inteligencia artificial para potenciar currículums y preparar a usuarios para entrevistas laborales. Ofrece análisis detallado de CVs, generación personalizada de currículums y simulación de entrevistas con IA. Desarrollado con React, Vite, Flask (Python) y Supabase para base de datos y autenticación. Integra pasarelas de pago MercadoPago y PayPal. Configuración local detallada para Node.js v18+, Python v3.9+ y cuenta en Supabase.",
+      "description": "Proyecto: cv--vercel\n\nAplicación web que utiliza inteligencia artificial para mejorar currículums y preparar a usuarios para entrevistas laborales. Permite análisis detallado de CVs, generación personalizada de currículums y simulación de entrevistas con preguntas IA. Desarrollado con React, Flask, Supabase y Vite, con integración de MercadoPago y PayPal. Configuración sencilla del entorno local con Node.js, Python y Supabase.",
       "url": "https://github.com/CandyGZ/cv--vercel",
       "created_at": "2025-10-15T17:21:18+00:00",
       "updated_at": "2025-11-13T09:40:12+00:00",
@@ -286,8 +286,8 @@
         "Shell": 1333
       },
       "technologies": [
-        "npm",
         "Node.js",
+        "npm",
         "React"
       ],
       "stars": 0,
@@ -296,7 +296,7 @@
     },
     {
       "name": "ScrumResumeForGoogleMeet",
-      "description": "Aplicación para Google Meet Marketplace que genera automáticamente resúmenes tipo Scrum Master durante las reuniones, extrayendo información estructurada sobre avances, bloqueadores y nuevas asignaciones por cada asistente. Utiliza TypeScript, HTML, JavaScript, Shell y CSS, con tecnologías como npm, Node.js y Express.js. Destaca por su transcripción en tiempo real, análisis inteligente con IA, identificación automática de participantes y soporte multiidioma, entre otras características. Su arquitectura incluye Google Cloud Speech-to-Text API, OpenAI GPT-4, HTML5, CSS3, JavaScript Vanilla y despliegue en Google Cloud Platform.",
+      "description": "Aplicación para Google Meet Marketplace que genera automáticamente resúmenes tipo Scrum Master durante las reuniones, con transcripción en tiempo real, análisis inteligente de información estructurada y resúmenes profesionales en varios idiomas. Implementada con TypeScript, Node.js, Express.js y tecnologías de Google Cloud y OpenAI.",
       "url": "https://github.com/CandyGZ/ScrumResumeForGoogleMeet",
       "created_at": "2025-11-07T17:09:11+00:00",
       "updated_at": "2025-11-07T17:44:21+00:00",
@@ -308,8 +308,8 @@
         "CSS": 5279
       },
       "technologies": [
-        "npm",
         "Node.js",
+        "npm",
         "TypeScript",
         "Express.js"
       ],
@@ -319,7 +319,7 @@
     },
     {
       "name": "TradingStrategy",
-      "description": "TradingStrategy es un sistema avanzado de trading automático con dinero ficticio que emplea Inteligencia Artificial, análisis técnico y precios en tiempo real para realizar operaciones de compra y venta de acciones y criptomonedas. Con características como apalancamiento, análisis Fibonacci, indicadores técnicos, gestión de riesgo y reportes personalizados, este proyecto utiliza Python junto con Pandas, NumPy y otras tecnologías para proporcionar una experiencia de trading simulada completa y realista.",
+      "description": "TradingStrategy es un sistema avanzado de trading automático que utiliza Inteligencia Artificial, análisis técnico y precios en tiempo real para tomar decisiones de compra y venta de activos financieros. Con funciones como cuenta ficticia, IA de trading, análisis Fibonacci, indicadores técnicos, gestión de riesgo y reportes personalizados, este proyecto en Python con tecnologías como Pandas y NumPy proporciona una experiencia de simulación realista y detallada para el análisis y la ejecución de estrategias de inversión.",
       "url": "https://github.com/CandyGZ/TradingStrategy",
       "created_at": "2023-10-09T16:02:36+00:00",
       "updated_at": "2025-11-05T17:35:24+00:00",
@@ -327,10 +327,10 @@
         "Python": 91051
       },
       "technologies": [
+        "pip",
         "Pandas",
-        "NumPy",
         "Python",
-        "pip"
+        "NumPy"
       ],
       "stars": 0,
       "commits": 10,
@@ -338,7 +338,7 @@
     },
     {
       "name": "Prompt2Play",
-      "description": "Prompt2Play\" es un servidor MCP revolucionario que convierte descripciones de texto en prototipos de juegos jugables en segundos, democratizando el desarrollo de juegos. Utilizando Kotlin y Java con Gradle, destaca por generar experiencias jugables completas a partir de simples descripciones, incorporando características como NPCs impulsados por IA, iteración inteligente y exportación multi-engine a Phaser, Unity y Godot.",
+      "description": "MCP revolucionario que convierte descripciones de texto en prototipos de juegos jugables en segundos. Prompt2Play genera experiencias jugables completas a partir de lenguaje natural, destacándose por su pipeline integral, NPCs con IA, iteración inteligente, exportación a múltiples motores y análisis semántico de género automático. Desarrollado en Kotlin, con soporte para Java, Gradle y exportación a Phaser, Unity y Godot.",
       "url": "https://github.com/CandyGZ/Prompt2Play",
       "created_at": "2025-11-04T22:58:06+00:00",
       "updated_at": "2025-11-05T17:24:03+00:00",
@@ -355,7 +355,7 @@
     },
     {
       "name": "pmex-docker",
-      "description": "Desarrollo del Sistema de Gestión de Carga de Buques (SGCB) para terminales petroleras, con instalación simplificada a través de Docker. Utiliza Django, PostgreSQL y Docker Compose, ofreciendo una implementación rápida y sin configuraciones adicionales. Incluye scripts automatizados, respaldos automáticos y portabilidad total para una gestión eficiente de operaciones de carga.",
+      "description": "Desarrollo de un Sistema de Gestión de Carga de Buques (SGCB) para terminales petroleras, con instalación simplificada a través de Docker. Utiliza tecnologías como Python, Docker, Django y PostgreSQL, ofreciendo una instalación rápida y sin configuraciones manuales. Incluye scripts automatizados, respaldos automáticos y total portabilidad, facilitando la gestión y control de operaciones de carga.",
       "url": "https://github.com/CandyGZ/pmex-docker",
       "created_at": "2025-11-04T06:05:42+00:00",
       "updated_at": "2025-11-04T19:18:59+00:00",
@@ -368,11 +368,11 @@
         "Dockerfile": 404
       },
       "technologies": [
-        "Docker",
-        "Django",
+        "pip",
         "Docker Compose",
         "Python",
-        "pip"
+        "Docker",
+        "Django"
       ],
       "stars": 0,
       "commits": 3,
@@ -380,7 +380,7 @@
     },
     {
       "name": "GithubIA",
-      "description": "GithubIA\" es un asistente de código basado en IA para GitHub que automatiza tareas de desarrollo como revisiones de código y generación de documentación. Utilizando Python, pip y FastAPI, este proyecto integra la API de OpenAI para proporcionar sugerencias detalladas directamente en los Pull Requests, agilizando el proceso de revisión y mejorando la calidad del código de manera eficiente.",
+      "description": "GithubIA\" es un asistente de código basado en IA para GitHub que automatiza tareas de desarrollo como revisiones de código y generación de documentación. Utiliza Python, pip y FastAPI, integrándose con la API de OpenAI para ofrecer sugerencias detalladas en los Pull Requests y generar documentación profesional bajo demanda.",
       "url": "https://github.com/CandyGZ/GithubIA",
       "created_at": "2025-09-28T05:31:21+00:00",
       "updated_at": "2025-10-29T18:32:10+00:00",
@@ -388,9 +388,9 @@
         "Python": 14641
       },
       "technologies": [
-        "Python",
         "pip",
-        "FastAPI"
+        "FastAPI",
+        "Python"
       ],
       "stars": 0,
       "commits": 7,
@@ -398,7 +398,7 @@
     },
     {
       "name": "pemex",
-      "description": "Proyecto \"pemex\": Sistema de Gestión de Inventario y Carga de Crudo para terminales petroleras, utilizando JavaScript, CSS, Python y HTML. Implementa cálculos dinámicos de existencia, recibo y carga de crudo, asegurando la disponibilidad y optimización de almacenamiento. Tecnologías clave: Python, pip. Detalles en README: Proceso secuencial de cálculos diarios basados en existencia inicial y final, recibo total del día y carga total a buques.",
+      "description": "Proyecto \"pemex\": Implementación de un Sistema de Gestión de Inventario y Carga de Crudo en una terminal, utilizando JavaScript, CSS, Python y HTML. El objetivo es optimizar la disponibilidad de producto y la capacidad de almacenamiento, calculando volúmenes de crudo de manera dinámica. Tecnologías clave: pip, Python. Características: seguimiento detallado de existencias, cálculos precisos de recibos y cargas, operación secuencial día a día.",
       "url": "https://github.com/CandyGZ/pemex",
       "created_at": "2025-10-06T23:49:37+00:00",
       "updated_at": "2025-10-27T17:25:18+00:00",
@@ -409,8 +409,8 @@
         "HTML": 21191
       },
       "technologies": [
-        "Python",
-        "pip"
+        "pip",
+        "Python"
       ],
       "stars": 0,
       "commits": 4,
@@ -418,7 +418,7 @@
     },
     {
       "name": "Pemex_proy",
-      "description": "Proyecto \"Pemex_proy\": Sistema de Gestión de Inventario y Carga de Crudo para terminales petroleras. Utiliza JavaScript, CSS, Python, HTML y Django para optimizar la disponibilidad de producto, cálculo de volúmenes y capacidad de almacenamiento. Con cálculos dinámicos de existencia, recibo y cupo, garantiza una administración eficiente y precisa del crudo en la terminal.",
+      "description": "Proyecto \"Pemex_proy\": Sistema de Gestión de Inventario y Carga de Crudo para terminales petroleras, enfocado en asegurar la disponibilidad de producto y optimizar la capacidad de almacenamiento. Utiliza JavaScript, CSS, Python, HTML, pip y Django. Documento detalla cálculos de existencia, recibo y cupo.",
       "url": "https://github.com/CandyGZ/Pemex_proy",
       "created_at": "2025-10-26T18:41:36+00:00",
       "updated_at": "2025-10-26T18:41:58+00:00",
@@ -429,9 +429,9 @@
         "HTML": 38497
       },
       "technologies": [
-        "Python",
         "pip",
-        "Django"
+        "Django",
+        "Python"
       ],
       "stars": 0,
       "commits": 4,
@@ -439,7 +439,7 @@
     },
     {
       "name": "la_dIAbla",
-      "description": "Proyecto la_dIAbla: Desarrollo de un sistema de IA para Meta Facebook utilizando Python y tecnologías como Flask y pip. Incluye funcionalidades para iniciar el servidor de desarrollo, postear mensajes y verificar permisos de página a través de comandos específicos en el README.",
+      "description": "Proyecto la_dIAbla: Desarrollo de IA para Meta Facebook utilizando Python, con implementación de pip y Flask. El proyecto incluye funciones para iniciar el servidor de desarrollo y enviar mensajes de prueba, así como verificación de permisos de página a través de solicitudes curl.",
       "url": "https://github.com/CandyGZ/la_dIAbla",
       "created_at": "2025-10-18T22:37:08+00:00",
       "updated_at": "2025-10-23T15:26:54+00:00",
@@ -447,9 +447,9 @@
         "Python": 18313
       },
       "technologies": [
+        "pip",
         "Flask",
-        "Python",
-        "pip"
+        "Python"
       ],
       "stars": 0,
       "commits": 11,
@@ -457,7 +457,7 @@
     },
     {
       "name": "SlidesGeneratorIA",
-      "description": "SlidesGeneratorIA es un sistema innovador diseñado para automatizar la creación de presentaciones en PowerPoint sobre un tema específico. Utilizando la API de OpenAI y la biblioteca python-pptx, genera diapositivas con encabezados y contenido informativo de forma eficiente. Con funciones como la configuración de clave de API, interacción con el modelo GPT-3 de OpenAI y generación de contenido a medida, este proyecto demuestra un enfoque avanzado en la generación automatizada de presentaciones.",
+      "description": "SlidesGeneratorIA es un sistema innovador que automatiza la creación de presentaciones en PowerPoint a partir de un simple tema. Utilizando la API de OpenAI y la biblioteca python-pptx, este proyecto genera slides con títulos y contenido informativo de manera eficiente. Con el uso de tecnologías como openai y python-pptx, SlidesGeneratorIA simplifica el proceso de generación de presentaciones al permitir al usuario escribir el tema y obtener una presentación lista para su uso.",
       "url": "https://github.com/CandyGZ/SlidesGeneratorIA",
       "created_at": "2023-10-06T13:47:33+00:00",
       "updated_at": "2025-10-05T13:35:39+00:00",
@@ -471,7 +471,7 @@
     },
     {
       "name": "PrintingCenter",
-      "description": "Proyecto PrintingCenter: Un sistema personalizado para un centro de impresión que permite el seguimiento de órdenes pendientes. Desarrollado en Python, esta herramienta facilita la gestión de trabajos de impresión al encontrar y mostrar el archivo más reciente con información sobre los trabajos pendientes, permitiendo confirmar trabajos completados y generar informes para la jornada siguiente.",
+      "description": "Proyecto: PrintingCenter\nImpulsa la eficiencia de los centros de impresión con un sistema personalizado en Python que permite rastrear órdenes pendientes, identificar el último trabajo completado y generar informes para la planificación diaria. Con funciones para la búsqueda automática de archivos, confirmación de trabajos y registro de tareas completadas, este sistema optimiza la gestión de trabajos de impresión de manera efectiva y organizada.",
       "url": "https://github.com/CandyGZ/PrintingCenter",
       "created_at": "2023-10-06T01:16:36+00:00",
       "updated_at": "2025-10-05T13:34:42+00:00",
@@ -485,7 +485,7 @@
     },
     {
       "name": "ToDoList-Flet",
-      "description": "Desarrollé el proyecto ToDoList-Flet, una aplicación de gestión de tareas diseñada para facilitar la creación de listas de tareas simples y amigables para niños. Utilizando la biblioteca Flet en Python, implementé una interfaz de usuario intuitiva y personalizable, junto con una biblioteca personalizada de checkboxes para mejorar la interactividad. La app destaca por su enfoque en la usabilidad y la versatilidad de Python para el desarrollo de aplicaciones complejas y de rápida implementación.",
+      "description": "Proyecto: ToDoList-Flet\nDesarrollé el proyecto ToDoList-Flet, una aplicación de gestión de tareas diseñada para la administración de listas simples de tareas para niños, con una interfaz amigable. Utilizando tecnologías como Flet, una biblioteca de Python para interfaces de usuario multiplataforma, y una biblioteca personalizada de checkboxes, logré crear una aplicación intuitiva y eficiente para el manejo de tareas.",
       "url": "https://github.com/CandyGZ/ToDoList-Flet",
       "created_at": "2023-10-23T17:05:04+00:00",
       "updated_at": "2025-10-05T13:32:48+00:00",
@@ -499,7 +499,7 @@
     },
     {
       "name": "Virtual-Disk",
-      "description": "Proyecto Virtual-Disk: Implementación en Python de un simulador de almacenamiento en bloques, similar a Amazon EBS. Destaca la clase SimpleBlockStorage como controlador central, creando un \"disco virtual\" en mi_disco.dat y permitiendo la escritura y lectura eficiente de datos en bloques numerados. Este enfoque, basado en la manipulación directa de datos según su posición numérica, refleja la eficacia de sistemas como Amazon EBS o discos duros convencionales.",
+      "description": "Proyecto Virtual-Disk: Desarrollo de un simulador de almacenamiento en bloques, similar a Amazon EBS, utilizando Python. El proyecto incluye la clase SimpleBlockStorage que gestiona un \"disco virtual\" almacenado en un archivo (mi_disco.dat), permitiendo la escritura y lectura eficiente de datos en bloques numerados. Esta implementación se enfoca en la manipulación directa de datos a través de bloques, destacando la eficiencia y simplicidad del sistema.",
       "url": "https://github.com/CandyGZ/Virtual-Disk",
       "created_at": "2025-08-25T18:20:25+00:00",
       "updated_at": "2025-10-05T13:30:51+00:00",
@@ -513,7 +513,7 @@
     },
     {
       "name": "API-detalles-producto",
-      "description": "Proyecto: API-detalles-producto\nDescripción mejorada: Desarrollé una API backend altamente eficiente para soportar páginas de detalle de productos, inspirada en plataformas de e-commerce. Esta API REST, construida con Spring Boot y Java 17, proporciona de forma rápida y precisa todos los detalles necesarios de los productos, permitiendo a los usuarios acceder a información detallada de manera efectiva. Tecnologías clave incluyen Spring Boot, Java 17, Jackson para JSON y SLF4J, garantizando un funcionamiento óptimo y una integración sin fisuras con sistemas automatizados.",
+      "description": "API-detalles-producto es un proyecto backend especializado en proporcionar datos esenciales para la visualización detallada de productos en plataformas de e-commerce. Construido en Java con Spring Boot, esta API garantiza una entrega eficiente de información detallada, ofreciendo endpoints para consultar la salud del sistema, detalles de productos específicos y descripciones asociadas. Utilizando tecnologías clave como Spring Boot 3.2, Java 17, Jackson para JSON y SLF4J, esta solución se destaca por su funcionalidad robusta y su capacidad para soportar una experiencia de usuario enriquecida.",
       "url": "https://github.com/CandyGZ/API-detalles-producto",
       "created_at": "2025-09-17T04:04:42+00:00",
       "updated_at": "2025-10-05T13:28:45+00:00",
@@ -521,8 +521,8 @@
         "Java": 39547
       },
       "technologies": [
-        "Java",
-        "Maven"
+        "Maven",
+        "Java"
       ],
       "stars": 0,
       "commits": 9,
@@ -533,7 +533,7 @@
     },
     {
       "name": "ShapeCalculator",
-      "description": "**Proyecto ShapeCalculator: Calculadora de Formas Geométricas en Python**\nEl proyecto ShapeCalculator es una aplicación de línea de comandos que permite calcular áreas, perímetros, diagonales y la inclusión de formas geométricas. Escrito en Python, este programa es ideal para estudiantes, ingenieros y matemáticos que buscan realizar cálculos precisos de formas comunes de manera eficiente. Con una estructura clara de archivos y pruebas automatizadas, ShapeCalculator garantiza resultados exactos y confiables para diversas aplicaciones técnicas.",
+      "description": "El proyecto **ShapeCalculator** es una aplicación en Python que calcula áreas, perímetros y diagonales de rectángulos y cuadrados, así como la cantidad de veces que una forma cabe dentro de otra. Con algoritmos eficientes y una estructura clara de archivos, este proyecto es ideal para profesionales y estudiantes que necesitan cálculos precisos de formas geométricas comunes. Su README detalla la estructura del proyecto e instrucciones para su instalación, destacando la importancia de Python 3.6 o superior y el uso de pruebas automatizadas para garantizar la fiabilidad de las funciones implementadas.",
       "url": "https://github.com/CandyGZ/ShapeCalculator",
       "created_at": "2023-09-23T03:21:45+00:00",
       "updated_at": "2025-10-05T13:27:34+00:00",
@@ -547,7 +547,7 @@
     },
     {
       "name": "CV_reviewer",
-      "description": "CV_reviewer\" es un sistema automatizado para revisar y analizar currículums vitae, facilitando la identificación de habilidades clave y experiencias relevantes para perfiles laborales específicos. Utilizando algoritmos de procesamiento de lenguaje natural, este proyecto mejora la eficiencia en la selección de candidatos al destacar aspectos destacados en los CVs.",
+      "description": "CV_reviewer\" es una herramienta diseñada para analizar y mejorar la calidad de los CVs de forma automatizada. Utilizando algoritmos de procesamiento de lenguaje natural, identifica áreas de mejora en la redacción, formato y relevancia de la información. Con una interfaz intuitiva, brinda retroalimentación detallada para optimizar la presentación de los perfiles profesionales.\n\nDetalles técnicos adicionales del README: No especificado",
       "url": "https://github.com/CandyGZ/CV_reviewer",
       "created_at": "2025-10-05T02:13:02+00:00",
       "updated_at": "2025-10-05T02:13:03+00:00",
@@ -559,7 +559,7 @@
     },
     {
       "name": "Code-to-Mermaid-generator",
-      "description": "Desarrollé un script en TypeScript, denominado Code-to-Mermaid-generator, que transforma tu proyecto en sintaxis Mermaid para Draw.io. Este script analiza tu código en busca de patrones clave, construye un modelo interno de la aplicación basado en decoradores y conexiones, y genera un diagrama visual de tus componentes y sus interacciones. Utiliza expresiones regulares para identificar relaciones tanto en el backend (NestJS) como en el frontend (Next.js), simplificando así la visualización de la arquitectura de tu proyecto.",
+      "description": "Proyecto: Generador de Mermaid a partir de Código\nEste script en TypeScript transforma tu proyecto en sintaxis Mermaid para Draw.io, realizando un análisis estático simplificado de tu código. Identifica componentes clave en el Backend (NestJS) y Frontend (Next.js) para representar visualmente las relaciones entre ellos. Utiliza expresiones regulares para reconocer patrones y generar un diagrama claro y estructurado.",
       "url": "https://github.com/CandyGZ/Code-to-Mermaid-generator",
       "created_at": "2025-09-20T14:26:42+00:00",
       "updated_at": "2025-09-28T11:54:29+00:00",
@@ -573,7 +573,7 @@
     },
     {
       "name": "VaadinToHTML",
-      "description": "Proyecto: VaadinToHTML\n\nTransformación de una aplicación legacy Vaadin 8 en una SPA moderna sin reescribir la lógica de negocio. Esta re-arquitectura innovadora permitió superar la obsolescencia tecnológica y el acoplamiento UI-backend, rescatando una aplicación robusta y compleja. Utilizando herramientas avanzadas y estrategias de migración inteligentes, se logró actualizar la tecnología manteniendo la funcionalidad original intacta.",
+      "description": "Proyecto: VaadinToHTML\n\nTransformación de una aplicación legacy de Vaadin 8 en una moderna SPA sin reescribir la lógica de negocio. Este proyecto destaca por la migración exitosa de una UI compleja construida en Java a una arquitectura de micro-frontend, manteniendo la funcionalidad original. Utilizando técnicas de deconstrucción y re-arquitectura, logramos superar obstáculos como la falta de dependencias actualizadas, asegurando la viabilidad a largo plazo del sistema. Tecnologías destacadas: Vaadin, migración de monolito a microfrontend, SPA, Java.",
       "url": "https://github.com/CandyGZ/VaadinToHTML",
       "created_at": "2025-09-27T05:17:13+00:00",
       "updated_at": "2025-09-27T15:56:55+00:00",
@@ -585,7 +585,7 @@
     },
     {
       "name": "CV-reviewer",
-      "description": "Proyecto CV-reviewer: Plataforma que utiliza inteligencia artificial para revisar y mejorar CVs automáticamente. Desarrollado con JavaScript, Python, HTML y CSS, integrando tecnologías como npm y Node.js para ofrecer una experiencia eficiente y precisa en la optimización de currículums.",
+      "description": "Desarrollé un CV-reviewer que utiliza inteligencia artificial para mejorar currículums de manera automatizada. Este proyecto, creado con JavaScript, Python, HTML y CSS, se apoya en tecnologías como Node.js y npm para ofrecer una revisión exhaustiva y precisa de CVs, optimizando la presentación y relevancia de la información.",
       "url": "https://github.com/CandyGZ/CV-reviewer",
       "created_at": "2025-09-23T19:39:05+00:00",
       "updated_at": "2025-09-24T19:01:27+00:00",
@@ -596,8 +596,8 @@
         "CSS": 366
       },
       "technologies": [
-        "npm",
-        "Node.js"
+        "Node.js",
+        "npm"
       ],
       "stars": 0,
       "commits": 10,
@@ -605,7 +605,7 @@
     },
     {
       "name": "Subasteria",
-      "description": "Proyecto Subasteria: Plataforma para encontrar la oferta más alta de manera única y eficiente. Desarrollado con TypeScript, JavaScript, CSS y Shell, utilizando Docker Compose para la gestión de contenedores. Su funcionalidad principal se centra en facilitar la búsqueda y adquisición de ofertas destacadas.",
+      "description": "Proyecto Subasteria: Plataforma para encontrar ofertas únicas y obtener los mejores productos. Desarrollado en TypeScript, JavaScript y CSS, con implementación en Docker utilizando Docker Compose. Destaca por su funcionalidad de encontrar la máxima oferta, facilitando la experiencia de subastas en línea de forma eficiente y segura.",
       "url": "https://github.com/CandyGZ/Subasteria",
       "created_at": "2025-09-14T23:49:33+00:00",
       "updated_at": "2025-09-23T15:33:24+00:00",
@@ -625,7 +625,7 @@
     },
     {
       "name": "Bartola",
-      "description": "Desarrollé Bartola, un Gestor Financiero Personal basado en Django para el seguimiento detallado de ingresos, gastos y estrategias de pago. Esta aplicación web, construida con CSS, Python, SCSS, HTML, JavaScript y PHP, permite una gestión eficiente de las finanzas personales. Destaca por su capacidad de planificación financiera y su funcionalidad intuitiva, facilitando el control y la organización de las finanzas de manera efectiva.",
+      "description": "Desarrollé Bartola, un Gestor Financiero Personal construido con Django, Python, CSS, HTML, JavaScript y PHP. Permite el seguimiento detallado de ingresos, gastos y estrategias de pago, facilitando la planificación financiera. Con tecnologías como pip y funcionalidades como la creación de un superusuario para el admin, Bartola ofrece una solución robusta y personalizable para el control financiero personal.",
       "url": "https://github.com/CandyGZ/Bartola",
       "created_at": "2025-09-09T16:33:23+00:00",
       "updated_at": "2025-09-11T19:14:41+00:00",
@@ -638,9 +638,9 @@
         "PHP": 2124
       },
       "technologies": [
-        "Python",
         "pip",
-        "Django"
+        "Django",
+        "Python"
       ],
       "stars": 0,
       "commits": 8,
@@ -648,7 +648,7 @@
     },
     {
       "name": "Email_notifier",
-      "description": "Proyecto Email_notifier: Herramienta de notificación por correo electrónico para gestionar tareas diarias de forma eficiente y oportuna. Desarrollado con tecnologías modernas para garantizar una comunicación efectiva y personalizada. Utiliza Python para la automatización de envíos y ofrece una interfaz intuitiva para configurar recordatorios personalizados.",
+      "description": "Proyecto Email_notifier:\nDesarrollé un notificador de correos que envía recordatorios de tareas diarias de manera eficiente y oportuna. Implementado con tecnologías modernas, como Python y Flask, este proyecto destaca por su capacidad para automatizar la comunicación y mejorar la productividad del usuario. Funcionalidades clave incluyen la programación de correos, personalización de mensajes y seguimiento de tareas pendientes de forma intuitiva.",
       "url": "https://github.com/CandyGZ/Email_notifier",
       "created_at": "2025-09-01T14:59:18+00:00",
       "updated_at": "2025-09-01T14:59:19+00:00",
@@ -660,7 +660,7 @@
     },
     {
       "name": "EnglishTeacher",
-      "description": "Proyecto \"EnglishTeacher\": Aplicación desarrollada en Python que brinda un enfoque personalizado para el aprendizaje del idioma inglés. Destaca por sus algoritmos de recomendación de lecciones basados en el progreso del usuario y su interfaz intuitiva. Los detalles técnicos se detallan en el README del repositorio.",
+      "description": "Proyecto EnglishTeacher: Plataforma de aprendizaje de inglés desarrollada en Python que ofrece lecciones interactivas y personalizadas para mejorar la fluidez y comprensión del idioma. Implementa algoritmos de recomendación para adaptar el contenido a las necesidades de cada usuario. Detalles técnicos: integración de API de traducción para soportar múltiples idiomas y análisis de sentimiento para evaluar el progreso del estudiante.",
       "url": "https://github.com/CandyGZ/EnglishTeacher",
       "created_at": "2023-10-02T23:22:27+00:00",
       "updated_at": "2025-08-25T18:31:48+00:00",
@@ -674,7 +674,7 @@
     },
     {
       "name": "neocoins2",
-      "description": "Proyecto \"neocoins2\": Plataforma de gestión de criptomonedas que permite a los usuarios monitorear y administrar sus inversiones de forma segura y eficiente. Destaca por su interfaz intuitiva, gráficos en tiempo real y herramientas avanzadas de análisis.README: Utiliza una arquitectura basada en microservicios y tecnologías de cifrado robustas para garantizar la seguridad de los datos financieros.",
+      "description": "neocoins2\" es un proyecto innovador que busca revolucionar el mundo de las criptomonedas mediante el desarrollo de nuevas funcionalidades y mejoras en la seguridad. Destaca por su enfoque en la descentralización y la privacidad de las transacciones. El README detalla el uso de algoritmos criptográficos avanzados y protocolos de consenso eficientes para garantizar la integridad de la red.",
       "url": "https://github.com/CandyGZ/neocoins2",
       "created_at": "2025-04-17T20:55:03+00:00",
       "updated_at": "2025-04-17T20:55:03+00:00",
@@ -686,7 +686,7 @@
     },
     {
       "name": "NeoCoins",
-      "description": "Desarrollé NeoCoins, un TradingGame que combina Python, HTML, JavaScript y CSS para crear una plataforma interactiva de intercambio de criptomonedas. Implementé funcionalidades avanzadas de trading virtual, ofreciendo a los usuarios una experiencia realista y educativa en el mundo de las inversiones digitales.",
+      "description": "Desarrollé NeoCoins, un TradingGame que combina Python, HTML, JavaScript y CSS para crear una experiencia interactiva y educativa en el mundo de las criptomonedas. Implementé funcionalidades de trading en tiempo real y visualizaciones dinámicas para fomentar el aprendizaje práctico.",
       "url": "https://github.com/CandyGZ/NeoCoins",
       "created_at": "2025-04-17T02:27:12+00:00",
       "updated_at": "2025-04-17T02:58:00+00:00",
@@ -703,7 +703,7 @@
     },
     {
       "name": "ValenteSys",
-      "description": "Desarrollo de ValenteSys, un sistema web interactivo que combina JavaScript, HTML, Python y CSS para ofrecer una experiencia de usuario dinámica y atractiva. Destaca por su enfoque innovador en la presentación de datos y su arquitectura modular. ¡Descubre cómo la tecnología y la creatividad se unen en ValenteSys!",
+      "description": "Proyecto ValenteSys: Plataforma web desarrollada con JavaScript, HTML, Python y CSS. Brinda soluciones innovadoras para la gestión eficiente de sistemas, destacando por su interfaz intuitiva y funcionalidades inteligentes. Tecnologías clave incluyen la integración de Python para análisis de datos y personalización de estilos con CSS.",
       "url": "https://github.com/CandyGZ/ValenteSys",
       "created_at": "2025-04-09T19:29:02+00:00",
       "updated_at": "2025-04-10T18:40:07+00:00",
@@ -720,7 +720,7 @@
     },
     {
       "name": "DashboardIIMAS",
-      "description": "Desarrollo de un panel interactivo para visualizar datos en tiempo real, utilizando Python para el back-end y HTML, JavaScript para el front-end. Destaca por su capacidad de análisis y presentación de información de forma intuitiva. Incorpora gráficos dinámicos y funcionalidades personalizables para una experiencia de usuario óptima.",
+      "description": "Desarrollo de un panel interactivo para el Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas (IIMAS) utilizando Python, HTML y JavaScript. DashboardIIMAS ofrece visualizaciones dinámicas de datos para facilitar la toma de decisiones basadas en información actualizada. El proyecto destaca por su capacidad de personalización y facilidad de uso, impulsando la eficiencia en el análisis de datos para la comunidad académica del instituto.",
       "url": "https://github.com/CandyGZ/DashboardIIMAS",
       "created_at": "2025-03-14T01:56:59+00:00",
       "updated_at": "2025-03-14T01:58:53+00:00",
@@ -736,7 +736,7 @@
     },
     {
       "name": "dashboard",
-      "description": "Proyecto: Sistema de Autenticación Django utilizando SQLite\nEste proyecto implementa un sólido sistema de autenticación utilizando Django y SQLite, ofreciendo funcionalidades clave como registro de usuarios, autenticación segura, gestión de sesiones y manejo de contraseñas. Destacando tecnologías como Django, SQLite y HTML/JavaScript, proporciona una base confiable para el desarrollo de aplicaciones web seguras y escalables.",
+      "description": "Proyecto: Sistema de Autenticación Django utilizando SQLite\nEste proyecto presenta un robusto sistema de autenticación web implementado con Django y SQLite, ofreciendo funcionalidades clave como registro de usuarios, inicio de sesión seguro, gestión de sesiones y administración de contraseñas. Destaca por su arquitectura escalable y segura, utilizando tecnologías como Django, SQLite y HTML/CSS/JavaScript.",
       "url": "https://github.com/CandyGZ/dashboard",
       "created_at": "2025-03-07T17:33:11+00:00",
       "updated_at": "2025-03-07T18:42:39+00:00",
@@ -746,9 +746,9 @@
         "JavaScript": 1780
       },
       "technologies": [
-        "Python",
         "pip",
-        "Django"
+        "Django",
+        "Python"
       ],
       "stars": 0,
       "commits": 2,
@@ -756,7 +756,7 @@
     },
     {
       "name": "PlagueDetectorID",
-      "description": "PlagueDetectorID es un software de reconocimiento de plagas que utiliza Python, C, Cython, C++, Fortran y otras tecnologías para identificar y clasificar pestes de forma eficiente. Con una combinación de lenguajes y tecnologías, este proyecto destaca por su capacidad de detección precisa y rápida. Además, su estructura modular y documentación detallada facilitan su uso y mantenimiento.",
+      "description": "Desarrollo de software de reconocimiento de plagas, PlagueDetectorID, utilizando Python, C, Cython, C++, Fortran y otras tecnologías. Destaca por su capacidad para identificar y clasificar pestes de forma eficiente. Se basa en un README que describe el proyecto como un software de reconocimiento de plagas.",
       "url": "https://github.com/CandyGZ/PlagueDetectorID",
       "created_at": "2025-02-13T18:35:31+00:00",
       "updated_at": "2025-02-17T19:35:47+00:00",
@@ -772,8 +772,8 @@
         "Batchfile": 1389
       },
       "technologies": [
-        "Python",
-        "pip"
+        "pip",
+        "Python"
       ],
       "stars": 1,
       "commits": 1,
@@ -781,7 +781,7 @@
     },
     {
       "name": "PestRecognition",
-      "description": "Proyecto PestRecognition: Software de reconocimiento de plagas desarrollado en Python. Esta herramienta innovadora permite identificar y clasificar plagas de forma eficiente, facilitando la gestión y control de infestaciones. Utiliza algoritmos avanzados para analizar imágenes y proporciona resultados precisos en tiempo real.",
+      "description": "Proyecto PestRecognition: Software de reconocimiento de plagas desarrollado en Python. Permite identificar de forma eficiente y precisa diferentes tipos de plagas, facilitando su control y manejo. El proyecto incluye un README que describe la estructura y funcionalidades del software, lo que destaca su enfoque técnico y su utilidad práctica en el campo de la agricultura y la gestión de plagas.",
       "url": "https://github.com/LEAI-IIMAS/PestRecognition",
       "created_at": "2024-05-09T22:59:37+00:00",
       "updated_at": "2024-05-10T00:07:11+00:00",
@@ -795,7 +795,7 @@
     },
     {
       "name": "Weather-cards",
-      "description": "Proyecto Weather-cards: Desarrollo de una aplicación web utilizando React y componentes funcionales, con estilos modulares y CSS para mostrar tarjetas meteorológicas. Utiliza tecnologías como npm, Node.js y React, con énfasis en la implementación de estilos atractivos y funcionales. Destaca por su enfoque en la visualización de datos de manera clara y efectiva, utilizando JavaScript, HTML y CSS junto con herramientas de desarrollo como Shell.",
+      "description": "Proyecto Weather-cards: Desarrollado en React con componentes funcionales y estilos modulares para mostrar tarjetas meteorológicas. Utiliza Node.js y npm para gestionar dependencias, y CSS para estilizar el contenido. Destaca por su capacidad de visualización clara y precisa de datos climáticos, ofreciendo una experiencia interactiva y atractiva para los usuarios.",
       "url": "https://github.com/CandyGZ/Weather-cards",
       "created_at": "2022-06-30T04:57:17+00:00",
       "updated_at": "2023-10-05T18:03:35+00:00",
@@ -806,8 +806,8 @@
         "Shell": 53
       },
       "technologies": [
-        "npm",
         "Node.js",
+        "npm",
         "React"
       ],
       "stars": 1,
@@ -816,7 +816,7 @@
     },
     {
       "name": "countclicker",
-      "description": "Proyecto \"countclicker\": Aplicación web desarrollada con CSS, JavaScript y HTML para contar y registrar clics de manera interactiva. Destaca por su interfaz intuitiva y funcionalidad de seguimiento preciso. El README detalla el uso de eventos de clic, manipulación del DOM y almacenamiento local para una experiencia de usuario eficiente.",
+      "description": "Proyecto 'countclicker' desarrollado con CSS, JavaScript, y HTML para contar y visualizar clics de manera interactiva. Destaca por su simplicidad y utilidad en aplicaciones web. Clave su implementación de eventos de clic, almacenamiento local y diseño responsive. README detalla cómo integrar en proyectos existentes y personalizar funcionalidades.",
       "url": "https://github.com/CandyGZ/countclicker",
       "created_at": "2022-07-09T04:26:14+00:00",
       "updated_at": "2023-10-05T18:03:30+00:00",
@@ -832,7 +832,7 @@
     },
     {
       "name": "2DoList",
-      "description": "Desarrollé 2DoList, una aplicación web para gestionar tareas usando JavaScript, HTML y CSS. Destaca por su estilo de escritura manual, fondos de papel y la integración de fuentes de Google para una experiencia única. Perfecto para organizarse de manera divertida y eficiente.",
+      "description": "Proyecto \"2DoList\" desarrollado en JavaScript, HTML y CSS, destaca por su estilo de escritura a mano y diseño de fondo de papel, agregando diversión a la gestión de tareas. Incluye estilos CSS personalizados y la integración de fuentes de Google para una experiencia visual única. Enlace al perfil de LinkedIn de la autora: linkedin.com/in/candy-elizabeth-garcia-zarate.",
       "url": "https://github.com/CandyGZ/2DoList",
       "created_at": "2022-08-02T23:51:54+00:00",
       "updated_at": "2023-10-05T18:03:25+00:00",
@@ -848,7 +848,7 @@
     },
     {
       "name": "ArithmeticArranger",
-      "description": "Proyecto: ArithmeticArranger\nDesarrollado para FreeCodeCamp, ArithmeticArranger es una aplicación en Python que permite organizar y mostrar operaciones aritméticas de manera clara y ordenada. El proyecto incluye dos archivos: arithmetic_arranger con la funcionalidad básica y arithmetic_arrangerVWork con mejoras usando zip y maps. Aunque el segundo archivo no pasa las pruebas de FreeCodeCamp, sirve como un ejemplo avanzado para optimizar el código y evitar repeticiones.",
+      "description": "Proyecto: ArithmeticArranger\nDescripción: Desarrollado como parte del desafío de FreeCodeCamp, ArithmeticArranger es una herramienta en Python que permite organizar y mostrar de manera elegante operaciones aritméticas. El código incluye una versión mejorada (arithmetic_arrangerVWork) que utiliza zip y map para mayor eficiencia, aunque no es compatible con las pruebas de FreeCodeCamp. Este proyecto destaca por su funcionalidad de alineación de operaciones y la capacidad de mostrar resultados de manera clara y ordenada.",
       "url": "https://github.com/CandyGZ/ArithmeticArranger",
       "created_at": "2023-09-17T20:43:09+00:00",
       "updated_at": "2023-10-05T18:03:21+00:00",
@@ -862,7 +862,7 @@
     },
     {
       "name": "Time_Calculator",
-      "description": "Desarrollé el proyecto Time_Calculator en Python para calcular la hora final basada en una hora y minutos dados, junto con una duración específica en horas y minutos. Esta aplicación es útil para realizar cálculos precisos de tiempo de manera eficiente. El proyecto presenta una funcionalidad clave para la gestión del tiempo, implementada con Python de manera efectiva y robusta.",
+      "description": "Desarrollé Time_Calculator, un proyecto en Python que calcula la hora final a partir de una hora y minutos dados, junto con una duración en horas y minutos. Su funcionalidad precisa y eficiente lo convierte en una herramienta valiosa para realizar cálculos de tiempo de manera sencilla. Este proyecto destaca por su capacidad de manejar con precisión conversiones de tiempo, facilitando la gestión y planificación temporal.",
       "url": "https://github.com/CandyGZ/Time_Calculator",
       "created_at": "2023-09-20T19:42:21+00:00",
       "updated_at": "2023-10-05T18:03:19+00:00",
@@ -876,7 +876,7 @@
     },
     {
       "name": "FCC-BudgetApp",
-      "description": "Desarrollé la aplicación FCC-BudgetApp en Python, una herramienta especializada en administración de presupuestos con categorías y gráficos visuales. Su funcionalidad central radica en ofrecer una interfaz intuitiva para el seguimiento detallado de gastos y visualización de datos financieros.",
+      "description": "Desarrollé FCC-BudgetApp, una aplicación de presupuesto en Python que permite gestionar gastos por categorías y visualizar gráficos. Destaca por su funcionalidad intuitiva y capacidad para ofrecer una visión clara de las finanzas personales. Implementado con Python, este proyecto demuestra mi habilidad para crear soluciones prácticas y efectivas en el ámbito de la gestión financiera.",
       "url": "https://github.com/CandyGZ/FCC-BudgetApp",
       "created_at": "2023-09-22T16:47:57+00:00",
       "updated_at": "2023-10-05T18:03:15+00:00",
@@ -890,7 +890,7 @@
     },
     {
       "name": "FCC-ProbabilityCalc",
-      "description": "Proyecto FCC-ProbabilityCalc: Desarrollo en Python para calcular las probabilidades de obtener un número específico de bolas al elegir x cantidad al azar de un sombrero n veces. Esta herramienta técnica permite analizar escenarios de probabilidad con precisión y eficiencia, facilitando la toma de decisiones fundamentadas. Funcionalidades clave incluyen cálculo de combinaciones y permutaciones.",
+      "description": "Proyecto FCC-ProbabilityCalc: Aplicación en Python para calcular las probabilidades de obtener una cantidad específica de bolas al seleccionar x cantidad al azar de un sombrero n veces. Utiliza algoritmos de probabilidad para ofrecer resultados precisos. Tecnologías clave: Python. Funcionalidades principales: cálculo preciso de probabilidades en situaciones de selección aleatoria.",
       "url": "https://github.com/CandyGZ/FCC-ProbabilityCalc",
       "created_at": "2023-09-26T23:55:40+00:00",
       "updated_at": "2023-10-05T18:03:00+00:00",
@@ -904,7 +904,7 @@
     },
     {
       "name": "LandingPage-Pikachu",
-      "description": "Proyecto: LandingPage-Pikachu\nDescripción: LandingPage-Pikachu es una página de aterrizaje interactiva con temática de Pikachu, destacando por su animación de bolas que simulan los icónicos Pokeballs con efectos realistas de gravedad y rebote. Desarrollado con HTML, CSS y JavaScript, este proyecto ofrece una experiencia visual única con animaciones de caída, rebote elástico y detención natural de las bolas, demostrando habilidades técnicas en la implementación de dinámicas físicas en la web.",
+      "description": "Proyecto LandingPage-Pikachu: Un landing page interactivo con temática de Pikachu, destacando por su animación de bolas rebotantes que simulan la física de gravidad y rebote con realismo. Desarrollado con HTML, CSS y JavaScript, este proyecto exhibe una estructura HTML, estilos visuales personalizados y lógica de animación en JavaScript para crear una experiencia cautivadora y única.",
       "url": "https://github.com/CandyGZ/LandingPage-Pikachu",
       "created_at": "2023-10-05T17:34:31+00:00",
       "updated_at": "2023-10-05T18:02:29+00:00",
@@ -918,7 +918,7 @@
     },
     {
       "name": "repositorio-henry",
-      "description": "Proyecto: repositorio-henry\n\nDesarrollado como parte de un proyecto académico, repositorio-henry es una plataforma que facilita la gestión y revisión de tareas y trabajos prácticos. Utilizando tecnologías modernas y metodologías ágiles, este sistema permite a los usuarios subir, revisar y calificar tareas de manera eficiente. Entre sus funcionalidades clave se encuentran la gestión de usuarios, la asignación de tareas y la retroalimentación en tiempo real.",
+      "description": "Proyecto: repositorio-henry\n\nDesarrollado como parte de una tarea académica, repositorio-henry es un sistema que destaca por su organización y estructura eficiente. Utilizando tecnologías modernas, este proyecto permite gestionar repositorios de manera efectiva, facilitando la colaboración y el seguimiento de versiones. Implementado con Node.js y Express, incluye funcionalidades clave como la creación, actualización y eliminación de archivos, así como la integración con sistemas de control de versiones.",
       "url": "https://github.com/CandyGZ/repositorio-henry",
       "created_at": "2022-04-13T20:48:19+00:00",
       "updated_at": "2022-06-25T18:00:27+00:00",
@@ -930,7 +930,7 @@
     },
     {
       "name": "M1-Challenge",
-      "description": "Proyecto \"M1-Challenge\": Desarrollo de ejercicios prácticos en JavaScript utilizando npm y Node.js. El objetivo es completar el código en distintos archivos para que pasen los tests predefinidos. El proyecto brinda una oportunidad para poner en práctica habilidades de programación y lógica, con un enfoque en la resolución de problemas concretos.",
+      "description": "Proyecto \"M1-Challenge\": Desarrollo de ejercicios de programación en JavaScript utilizando Node.js y npm. El proyecto proporciona tests preconfigurados para verificar la correcta implementación de los desafíos planteados en 10 archivos distintos. Incluye instrucciones detalladas para la ejecución de los tests y la resolución de los ejercicios, asegurando un aprendizaje efectivo y práctico en el desarrollo de aplicaciones con tecnologías web.",
       "url": "https://github.com/CandyGZ/M1-Challenge",
       "created_at": "2022-06-17T18:24:36+00:00",
       "updated_at": "2022-06-17T18:26:09+00:00",
@@ -938,8 +938,8 @@
         "JavaScript": 25434
       },
       "technologies": [
-        "npm",
-        "Node.js"
+        "Node.js",
+        "npm"
       ],
       "stars": 0,
       "commits": 1,
@@ -947,7 +947,7 @@
     },
     {
       "name": "Henry-M1",
-      "description": "Proyecto \"Henry-M1\": Plataforma educativa para el aprendizaje de fundamentos de JavaScript, utilizando tecnologías como JavaScript, Nunjucks, HTML y Python. Incluye módulos de estudio, proceso de subida de trabajos y recursos extras como patrones de JavaScript y manejo de errores. Se puede acceder al contenido completo del repositorio a través de `npm install` y `npm start`.",
+      "description": "Proyecto \"Henry-M1\": Plataforma educativa para el aprendizaje de fundamentos de JavaScript, con módulos interactivos y recursos avanzados. Utiliza JavaScript, Nunjucks, HTML y Python, con Node.js y npm como tecnologías principales. Su README contiene instrucciones para visualizar el contenido en formato web y guías detalladas para subir trabajos a repositorios.",
       "url": "https://github.com/CandyGZ/Henry-M1",
       "created_at": "2022-06-07T00:44:38+00:00",
       "updated_at": "2022-06-07T05:31:27+00:00",
@@ -958,8 +958,8 @@
         "Python": 264
       },
       "technologies": [
-        "npm",
-        "Node.js"
+        "Node.js",
+        "npm"
       ],
       "stars": 0,
       "commits": 4,
@@ -967,7 +967,7 @@
     },
     {
       "name": "2022-04-23-eevee147",
-      "description": "Proyecto \"2022-04-23-eevee147\": Desafío técnico Henry Challenge sobre JavaScript para evaluar conceptos básicos. Requiere investigar por cuenta propia y resolver de manera individual. Tecnologías clave: JavaScript, npm, Node.js. Incluye pasos detallados en README para clonar el repositorio y completar el checkpoint.",
+      "description": "Proyecto \"2022-04-23-eevee147\": Desafío técnico Henry Challenge sobre JavaScript para evaluar conceptos básicos. Utiliza JavaScript, Node.js y npm. El README detalla los pasos para resolver el checkpoint, fomentando la investigación individual y el aprendizaje autodidacta.",
       "url": "https://github.com/soyhenry-checkpoints-4/2022-04-23-eevee147",
       "created_at": "2022-04-23T04:47:58+00:00",
       "updated_at": "2022-04-23T04:48:02+00:00",
@@ -975,8 +975,8 @@
         "JavaScript": 15895
       },
       "technologies": [
-        "npm",
-        "Node.js"
+        "Node.js",
+        "npm"
       ],
       "stars": 0,
       "commits": 1,
@@ -984,7 +984,7 @@
     },
     {
       "name": "Clase26",
-      "description": "Proyecto Clase26 - angryBirdsAlum: Aplicación web que implementa Angry Birds stage 2 con Herencia de Clases e Imágenes. Desarrollado con JavaScript, HTML y CSS, destacando la funcionalidad de Inheritance y la integración de imágenes para una experiencia interactiva única.",
+      "description": "Proyecto Clase26: angryBirdsAlum es una aplicación web desarrollada con JavaScript, HTML y CSS, que implementa la etapa 2 de Angry Birds con herencia de clases e imágenes. Este proyecto destaca por su enfoque en la programación orientada a objetos y la integración de elementos visuales para una experiencia interactiva y atractiva.",
       "url": "https://github.com/CandyGZ/Clase26",
       "created_at": "2022-03-24T22:55:41+00:00",
       "updated_at": "2022-03-24T22:58:24+00:00",
@@ -1000,7 +1000,7 @@
     },
     {
       "name": "ProyectoAlumn43",
-      "description": "Desarrollé el proyecto ProyectoAlumn43, una aplicación web diseñada para ser implementada por estudiantes en un entorno educativo. Este proyecto, creado con JavaScript, HTML y CSS, brinda la oportunidad de practicar la identificación y resolución de bugs, fomentando así el desarrollo de habilidades de depuración y análisis de código.",
+      "description": "ProyectoAlumn43 es un proyecto en JavaScript, HTML y CSS diseñado para estudiantes con bugs predefinidos que brindan oportunidades de aprendizaje y resolución de problemas. Este proyecto ofrece una experiencia práctica y desafiante para mejorar las habilidades de programación, permitiendo a los alumnos explorar y corregir errores.",
       "url": "https://github.com/CandyGZ/ProyectoAlumn43",
       "created_at": "2022-03-22T20:43:09+00:00",
       "updated_at": "2022-03-22T20:44:44+00:00",
@@ -1016,7 +1016,7 @@
     },
     {
       "name": "CarreradeAutos",
-      "description": "Proyecto CarreradeAutos: Plataforma de carreras de autos en línea, desarrollada utilizando JavaScript, CSS y HTML. Destaca por su diseño interactivo y dinámico, ofreciendo a los usuarios una experiencia envolvente. Incorpora funcionalidades como selección de pistas, personalización de vehículos y marcadores en tiempo real.",
+      "description": "Desarrollé CarreradeAutos, un proyecto interactivo que combina JavaScript, CSS y HTML para ofrecer una experiencia de juego envolvente. Con funcionalidades de carreras y diseño atractivo, este proyecto destaca por su dinamismo y entretenimiento. Las tecnologías clave utilizadas incluyen JavaScript para la lógica del juego, CSS para el diseño visual y HTML para la estructura de la página.",
       "url": "https://github.com/CandyGZ/CarreradeAutos",
       "created_at": "2022-03-22T17:22:02+00:00",
       "updated_at": "2022-03-22T17:22:49+00:00",
@@ -1032,7 +1032,7 @@
     },
     {
       "name": "CanguroParte1",
-      "description": "Proyecto CanguroParte1: Desarrollado con JavaScript, HTML y CSS, este proyecto tiene como objetivo completar la parte 1 según las instrucciones proporcionadas en sketch.js. Destaca por su enfoque técnico preciso y la implementación de funcionalidades clave en el desarrollo web.",
+      "description": "Proyecto: CanguroParte1\nEste proyecto consiste en una parte inicial para completar un ejercicio de programación en JavaScript, HTML y CSS. El objetivo es seguir las instrucciones proporcionadas en sketch.js para desarrollar una funcionalidad específica. Tecnologías clave incluyen JavaScript para la lógica, HTML para la estructura y CSS para el diseño.",
       "url": "https://github.com/CandyGZ/CanguroParte1",
       "created_at": "2022-03-18T01:12:18+00:00",
       "updated_at": "2022-03-18T01:13:29+00:00",
@@ -1048,7 +1048,7 @@
     },
     {
       "name": "Clase42-Alum",
-      "description": "Proyecto Clase42-Alum es una aplicación web desarrollada con JavaScript, CSS y HTML que tiene como objetivo facilitar la gestión de alumnos en un entorno educativo. Destaca por su interfaz intuitiva y funciones de seguimiento académico. Detalles técnicos disponibles en el README.",
+      "description": "Proyecto Clase42-Alum: Aplicación web interactiva desarrollada con JavaScript, CSS y HTML para facilitar la gestión de alumnos en un entorno educativo. Destaca por su interfaz intuitiva y funciones de seguimiento personalizado. Para más detalles técnicos, consultar el archivo README del repositorio correspondiente.",
       "url": "https://github.com/CandyGZ/Clase42-Alum",
       "created_at": "2022-03-18T00:32:47+00:00",
       "updated_at": "2022-03-18T00:33:27+00:00",
@@ -1064,7 +1064,7 @@
     },
     {
       "name": "Clase40-alum",
-      "description": "Proyecto \"Clase40-alum\": Plataforma basada en JavaScript, CSS y HTML para la gestión de alumnos en el ámbito educativo. Destaca por su interfaz intuitiva y funcionalidades personalizables. El README incluye instrucciones detalladas de instalación y uso, así como información sobre la estructura del código y posibles mejoras a futuro.",
+      "description": "Proyecto \"Clase40-alum\": Aplicación web desarrollada con JavaScript, CSS y HTML para gestionar el seguimiento académico de alumnos de una clase. Destaca por su interfaz intuitiva y funcionalidades de registro y seguimiento de asistencias, calificaciones y tareas. Detalles técnicos en el README.",
       "url": "https://github.com/CandyGZ/Clase40-alum",
       "created_at": "2022-03-17T22:26:57+00:00",
       "updated_at": "2022-03-17T22:27:31+00:00",
@@ -1080,7 +1080,7 @@
     },
     {
       "name": "clase41",
-      "description": "Proyecto \"clase41\": Aplicación web desarrollada en JavaScript, CSS y HTML para la gestión de clases online. Permite a los alumnos acceder a material didáctico, interactuar con el profesor y realizar actividades de aprendizaje de forma intuitiva. Tecnologías clave incluyen JavaScript para la interactividad, CSS para el diseño y HTML para la estructura.",
+      "description": "Proyecto: clase41\n\nDesarrollado como una solución completa y profesional para la gestión de clases online, clase41 ofrece una interfaz interactiva y amigable para alumnos. Utilizando JavaScript, CSS y HTML, este proyecto destaca por su facilidad de uso y funcionalidades personalizables. Entre las características clave se incluyen la visualización de horarios, tareas asignadas y recursos educativos, brindando una experiencia educativa enriquecedora.",
       "url": "https://github.com/CandyGZ/clase41",
       "created_at": "2022-03-15T16:52:07+00:00",
       "updated_at": "2022-03-15T16:53:08+00:00",
@@ -1096,7 +1096,7 @@
     },
     {
       "name": "clase38",
-      "description": "Proyecto clase38: Aplicación web en desarrollo que busca completar una funcionalidad específica. Utiliza JavaScript, HTML y CSS para lograr una interfaz interactiva y atractiva. Se espera que la implementación final aporte una solución efectiva y eficiente para la tarea pendiente.",
+      "description": "Proyecto clase38: Aplicación web en desarrollo que busca completar una funcionalidad clave. Utiliza JavaScript, HTML y CSS para lograr una interfaz interactiva y atractiva. Se espera que la implementación final aporte una solución efectiva y eficiente para usuarios finales.",
       "url": "https://github.com/CandyGZ/clase38",
       "created_at": "2022-03-11T17:24:30+00:00",
       "updated_at": "2022-03-11T17:25:05+00:00",
@@ -1112,7 +1112,7 @@
     },
     {
       "name": "Alumn-Clase40",
-      "description": "Proyecto Alumn-Clase40 es una plataforma interactiva desarrollada con JavaScript, CSS y HTML, diseñada para mejorar la experiencia de aprendizaje en entornos educativos. Destaca por su enfoque innovador en la enseñanza, ofreciendo funcionalidades dinámicas y atractivas para los usuarios. Utiliza tecnologías modernas para garantizar un rendimiento óptimo y una navegación intuitiva.",
+      "description": "Proyecto Alumn-Clase40: Plataforma interactiva desarrollada en JavaScript, CSS y HTML para la actividad clase40. Destaca por su enfoque innovador en la enseñanza, ofreciendo una experiencia dinámica y personalizada para los alumnos. Tecnologías clave incluyen JavaScript para la interactividad, CSS para el diseño y HTML para la estructura del sitio.",
       "url": "https://github.com/CandyGZ/Alumn-Clase40",
       "created_at": "2022-03-10T15:48:48+00:00",
       "updated_at": "2022-03-10T15:49:52+00:00",
@@ -1128,7 +1128,7 @@
     },
     {
       "name": "StudClase38",
-      "description": "Proyecto: StudClase38\nStudClase38 es una plataforma web interactiva diseñada para facilitar la enseñanza y el aprendizaje en entornos virtuales. Desarrollado con JavaScript, HTML y CSS, este proyecto permite a los usuarios completar actividades educativas de forma dinámica y personalizada. Con funcionalidades como la interacción en tiempo real y la facilidad de uso, StudClase38 brinda una experiencia educativa enriquecedora y efectiva.",
+      "description": "Desarrollé StudClase38, una plataforma interactiva diseñada para facilitar la completitud de actividades educativas. Utilizando JavaScript, HTML y CSS, permito a los usuarios navegar de manera intuitiva y completar tareas de forma eficiente. Esta aplicación destaca por su diseño amigable y su enfoque en la experiencia del usuario, brindando una solución efectiva para el aprendizaje interactivo.",
       "url": "https://github.com/CandyGZ/StudClase38",
       "created_at": "2022-03-01T22:15:18+00:00",
       "updated_at": "2022-03-01T22:16:08+00:00",
@@ -1144,7 +1144,7 @@
     },
     {
       "name": "clase24",
-      "description": "Proyecto \"clase24\": Desarrollo de la etapa final de una clase con enfoque en Angry Birds. Implementado con JavaScript, HTML y CSS. README incluye extracto \"# angryBirdsStage1 - Stage 1 Angry Birds\".",
+      "description": "Proyecto \"clase24\": Implementación final de una aplicación web en JavaScript, HTML y CSS. Este proyecto presenta una etapa inicial de Angry Birds, demostrando habilidades en desarrollo front-end. El README incluye información sobre el estado actual y el propósito del proyecto.",
       "url": "https://github.com/CandyGZ/clase24",
       "created_at": "2022-02-24T23:57:21+00:00",
       "updated_at": "2022-02-24T23:58:25+00:00",
@@ -1160,7 +1160,7 @@
     },
     {
       "name": "Sangria",
-      "description": "Proyecto Sangria: Desarrollo de un ejercicio técnico utilizando JavaScript, HTML y CSS para crear una aplicación web interactiva. Este proyecto destaca por su enfoque en la práctica de programación front-end y la integración de tecnologías web clave. Funcionalidades principales incluyen la manipulación dinámica de elementos HTML, estilos CSS personalizados y la implementación de lógica de programación en JavaScript para mejorar la experiencia del usuario.",
+      "description": "Desarrollé Sangria, un proyecto de ejercicio que destaca por su implementación en JavaScript, HTML y CSS. Esta aplicación demuestra mis habilidades en el diseño y desarrollo web, incluyendo funcionalidades interactivas y responsivas para una experiencia de usuario óptima.",
       "url": "https://github.com/CandyGZ/Sangria",
       "created_at": "2022-02-18T18:43:36+00:00",
       "updated_at": "2022-02-18T18:44:28+00:00",
@@ -1176,7 +1176,7 @@
     },
     {
       "name": "P-ndulo",
-      "description": "Proyecto P-ndulo: Aplicación de péndulo desarrollada en JavaScript y HTML. El proyecto NC27 ofrece una simulación interactiva y educativa de un péndulo, mostrando conceptos de física de manera visual. Utiliza tecnologías web para brindar una experiencia de aprendizaje envolvente.",
+      "description": "Proyecto: P-ndulo\nDesarrollado en JavaScript y HTML, el proyecto NC27 es un péndulo interactivo que combina elegancia y funcionalidad. Con una interfaz intuitiva, permite explorar los principios físicos del movimiento armónico simple. ¡Descubre la belleza de la física en acción con este proyecto!",
       "url": "https://github.com/CandyGZ/P-ndulo",
       "created_at": "2022-02-09T00:52:01+00:00",
       "updated_at": "2022-02-09T00:54:21+00:00",
@@ -1191,7 +1191,7 @@
     },
     {
       "name": "clasr27full",
-      "description": "Desarrollo de una aplicación web interactiva \"clasr27full\" utilizando JavaScript y HTML para facilitar la clasificación de datos de forma eficiente y precisa. Destaca por su interfaz intuitiva y capacidad de procesamiento rápido. El proyecto incorpora algoritmos de clasificación avanzados para optimizar la precisión del resultado.",
+      "description": "Proyecto \"clasr27full\": Aplicación web desarrollada en JavaScript y HTML con el objetivo de ofrecer una experiencia de clasificación de datos eficiente y precisa. Utiliza algoritmos avanzados para procesar grandes volúmenes de información de manera rápida y efectiva. Detalles técnicos adicionales disponibles en el README del repositorio.",
       "url": "https://github.com/CandyGZ/clasr27full",
       "created_at": "2022-01-26T01:45:30+00:00",
       "updated_at": "2022-01-26T01:46:07+00:00",
@@ -1206,7 +1206,7 @@
     },
     {
       "name": "c29stud",
-      "description": "Desarrollo del proyecto \"c29stud\" que emplea JavaScript, HTML y CSS para su implementación. Este proyecto, enfocado en AngryBirdsStage4, destaca por su uso innovador de tecnologías web para crear una experiencia interactiva única. El README incluye detalles sobre la versión y el propósito del juego.",
+      "description": "Desarrollo del proyecto \"c29stud\", que utiliza JavaScript, HTML y CSS para crear AngryBirdsStage4. Destacando la implementación de funcionalidades interactivas y visuales a través de estos lenguajes. El README presenta: # AngryBirdsStage4.",
       "url": "https://github.com/CandyGZ/c29stud",
       "created_at": "2022-01-20T19:33:06+00:00",
       "updated_at": "2022-01-20T19:34:29+00:00",
@@ -1222,7 +1222,7 @@
     },
     {
       "name": "RefClase28",
-      "description": "Proyecto RefClase28: Plataforma de desarrollo web (JavaScript, HTML, CSS) que destaca por su implementación de AngryBirdsStage4. Su README muestra un enfoque técnico sólido y detallado, resaltando el uso de tecnologías clave para lograr funcionalidades avanzadas en el proyecto.",
+      "description": "Proyecto RefClase28: Desarrollo del proyecto finalC28 utilizando JavaScript, HTML y CSS. Incluye AngryBirdsStage4, con funcionalidades clave aún por especificar. Presenta un potencial técnico significativo para la implementación de características avanzadas.",
       "url": "https://github.com/CandyGZ/RefClase28",
       "created_at": "2022-01-19T00:55:25+00:00",
       "updated_at": "2022-01-19T00:56:18+00:00",
@@ -1238,7 +1238,7 @@
     },
     {
       "name": "C28v1-Prof",
-      "description": "Desarrollé el proyecto C28v1-Prof, una clase completa utilizando JavaScript, HTML y CSS para ofrecer una experiencia dinámica y visualmente atractiva. Este proyecto destaca por su enfoque técnico sólido, combinando funcionalidades interactivas y un diseño atractivo. Implementé tecnologías clave como JavaScript para la lógica de programación, HTML para la estructura del sitio y CSS para el diseño y estilo, asegurando un resultado final de alta calidad y profesionalismo.",
+      "description": "Proyecto C28v1-Prof es un CV interactivo desarrollado con JavaScript, HTML y CSS, diseñado para ofrecer una presentación profesional y atractiva de habilidades y experiencia. Destaca por su diseño limpio y funcionalidades interactivas que permiten una experiencia de usuario mejorada. Incluye secciones personalizables y adaptables para destacar información relevante de manera efectiva.",
       "url": "https://github.com/CandyGZ/C28v1-Prof",
       "created_at": "2022-01-18T03:40:15+00:00",
       "updated_at": "2022-01-18T03:41:20+00:00",
@@ -1254,7 +1254,7 @@
     },
     {
       "name": "C28V1-Stud",
-      "description": "Proyecto C28V1-Stud: Desarrollo de Resortera utilizando JavaScript, HTML y CSS. Destaca por introducir Constraints en Angry Birds Stage 3, ofreciendo una experiencia interactiva única. Tecnologías clave incluyen JavaScript para la lógica del juego y CSS para el diseño.",
+      "description": "Proyecto C28V1-Stud: Desarrollo de Resortera utilizando JavaScript, HTML y CSS. Destacando la introducción de Constraint en Angry Birds Stage 3. Tecnologías clave incluyen JavaScript, HTML y CSS para implementar funcionalidades avanzadas en el juego.",
       "url": "https://github.com/CandyGZ/C28V1-Stud",
       "created_at": "2022-01-18T03:38:11+00:00",
       "updated_at": "2022-01-18T03:39:55+00:00",
@@ -1270,7 +1270,7 @@
     },
     {
       "name": "C21v2prof",
-      "description": "Desarrollo del proyecto C21v2prof con JavaScript, HTML y CSS para crear una plataforma educativa interactiva. Destaca por su diseño intuitivo y funcionalidad didáctica. Incluye características como animaciones interactivas y estructura modular para facilitar la escalabilidad del sistema.",
+      "description": "Proyecto \"C21v2prof\": Aplicación web desarrollada con JavaScript, HTML y CSS para optimizar la gestión y visualización de datos. Destaca por su interfaz intuitiva y funcionalidades avanzadas. Detalles técnicos en README disponibles para implementación y personalización.",
       "url": "https://github.com/CandyGZ/C21v2prof",
       "created_at": "2022-01-16T20:34:12+00:00",
       "updated_at": "2022-01-16T23:08:53+00:00",
@@ -1286,7 +1286,7 @@
     },
     {
       "name": "C21v2-Stud",
-      "description": "Proyecto \"C21v2-Stud\": Plataforma web interactiva desarrollada en JavaScript, HTML y CSS. Diseñada para facilitar el estudio y la práctica de conceptos educativos, destacando por su flexibilidad y usabilidad. Basado en el repositorio # C21_matterjs-Boilerplate.",
+      "description": "Proyecto \"C21v2-Stud\": Desarrollo de una aplicación web utilizando JavaScript, HTML y CSS para brindar una experiencia interactiva y visualmente atractiva. Basado en el boilerplate \"C21_matterjs-Boilerplate\", este proyecto destaca por su enfoque innovador en la creación de soluciones digitales.",
       "url": "https://github.com/CandyGZ/C21v2-Stud",
       "created_at": "2021-11-11T20:56:28+00:00",
       "updated_at": "2022-01-16T20:16:39+00:00",
@@ -1302,7 +1302,7 @@
     },
     {
       "name": "ProyectoP-nduloNewton",
-      "description": "ProyectoP-nduloNewton es un proyecto en desarrollo diseñado para prácticas técnicas, enfocado en la implementación de un péndulo de Newton. Destaca por su potencial para mejorar habilidades en física y programación. Utiliza tecnologías modernas para simular el movimiento del péndulo y ofrece una experiencia de aprendizaje interactiva.",
+      "description": "Proyecto: Péndulo Newton\nDescripción mejorada: Proyecto en desarrollo enfocado en simular el comportamiento de un péndulo de Newton para propósitos de práctica. Destaca por su enfoque didáctico y potencial para mejorar la comprensión de principios físicos. Implementado con lenguajes y tecnologías a especificar en etapas posteriores.",
       "url": "https://github.com/CandyGZ/ProyectoP-nduloNewton",
       "created_at": "2021-12-02T18:34:35+00:00",
       "updated_at": "2021-12-02T18:34:41+00:00",
@@ -1314,7 +1314,7 @@
     },
     {
       "name": "Reference-AndryBirds-c25",
-      "description": "Proyecto Reference-AndryBirds-c25: Desarrollo de Angry Birds stage 2 con Herencia de Clases e Imágenes, implementado en JavaScript, HTML y CSS. Este proyecto destaca por su estructura orientada a objetos y la integración de imágenes para una experiencia visual atractiva y dinámica en el juego.",
+      "description": "Proyecto: Reference-AndryBirds-c25\nEste proyecto de Angry Birds Stage 2 destaca por su implementación de Clase de Herencia y manejo de Imágenes, desarrollado con JavaScript, HTML y CSS. Proporciona una experiencia interactiva basada en tecnologías web clave, ofreciendo un avance significativo en la funcionalidad del juego.",
       "url": "https://github.com/CandyGZ/Reference-AndryBirds-c25",
       "created_at": "2021-12-01T00:42:48+00:00",
       "updated_at": "2021-12-01T00:45:50+00:00",
@@ -1330,7 +1330,7 @@
     },
     {
       "name": "C25",
-      "description": "Proyecto \"C25\": Desarrollo de actividad estudiantil para Angry Birds Stage 2 utilizando JavaScript, HTML y CSS. Proporciona un enlace interactivo para que los estudiantes participen en la actividad y mejoren sus habilidades en programación web. El README indica que el proyecto se centra en la etapa 2 del juego y proporciona una experiencia práctica para los alumnos.",
+      "description": "Proyecto \"C25\" es una actividad estudiantil de Angry Birds Stage 2 que utiliza JavaScript, HTML y CSS para ofrecer una experiencia interactiva única. Destaca por su enfoque educativo y la aplicación práctica de los lenguajes web mencionados. El README proporciona un enlace para que los estudiantes participen en la actividad.",
       "url": "https://github.com/CandyGZ/C25",
       "created_at": "2021-12-01T00:07:15+00:00",
       "updated_at": "2021-12-01T00:09:14+00:00",
@@ -1346,7 +1346,7 @@
     },
     {
       "name": "ProC21-Collision",
-      "description": "ProC21-Collision\" es un algoritmo en JavaScript que detecta colisiones entre dos objetos, brindando una solución eficiente para este escenario. Utilizando HTML y CSS para la visualización, este proyecto se enfoca en la precisión de la detección y la optimización del rendimiento. Según el README, se destaca su función principal de detectar colisiones de manera efectiva.",
+      "description": "Implementación de un algoritmo en JavaScript para detectar colisiones entre dos objetos en entornos web. Utilizando JavaScript, HTML y CSS, ProC21-Collision ofrece una solución eficiente para la detección precisa de colisiones, crucial en el desarrollo de juegos y aplicaciones interactivas. El README del proyecto describe el algoritmo como una herramienta fundamental para mejorar la experiencia de usuario y la dinámica de interacción en aplicaciones web.",
       "url": "https://github.com/CandyGZ/ProC21-Collision",
       "created_at": "2021-11-11T20:58:00+00:00",
       "updated_at": "2021-11-30T22:08:14+00:00",
@@ -1362,7 +1362,7 @@
     },
     {
       "name": "ProC25Reference",
-      "description": "ProC25Reference\" es un proyecto que proporciona una referencia centralizada para el estándar ProC25. Su valor radica en facilitar el acceso rápido a información detallada y actualizada sobre este estándar. Entre sus características se incluyen una interfaz intuitiva, búsqueda avanzada y organización estructurada de contenidos.",
+      "description": "Desarrollo de un sistema de referencia ProC25 para análisis de datos en la industria química. Destaca por su precisión en cálculos de concentraciones y propiedades termodinámicas. El README incluye detalles sobre algoritmos de cálculo numérico y métodos de validación.",
       "url": "https://github.com/CandyGZ/ProC25Reference",
       "created_at": "2021-11-26T01:10:46+00:00",
       "updated_at": "2021-11-26T01:11:08+00:00",
@@ -1374,7 +1374,7 @@
     },
     {
       "name": "ProC25V1",
-      "description": "Desarrollo de la actividad estudiantil Angry Birds Stage 2, denominada ProC25V1, enfocada en la práctica de conceptos de JavaScript, HTML y CSS. El proyecto ofrece a los estudiantes la oportunidad de aplicar y mejorar sus habilidades de programación web, utilizando tecnologías clave para la creación de una etapa interactiva inspirada en el popular juego.README: # angryBirdsStage2StudentActivity.",
+      "description": "Desarrollo del proyecto ProC25V1 enfocado en la actividad estudiantil de Angry Birds Stage 2. Utiliza JavaScript, HTML y CSS para ofrecer una experiencia interactiva y educativa. README: # angryBirdsStage2StudentActivity - Enlace de actividad para estudiantes de Angry Birds Stage 2.",
       "url": "https://github.com/CandyGZ/ProC25V1",
       "created_at": "2021-11-25T05:33:49+00:00",
       "updated_at": "2021-11-25T05:34:52+00:00",
@@ -1390,7 +1390,7 @@
     },
     {
       "name": "ProC24",
-      "description": "ProC24 es un emocionante proyecto inspirado en Angry Birds, desarrollado utilizando JavaScript, HTML y CSS. TopplingBoxes es una aplicación que desafía la física, donde el objetivo es derribar cajas estratégicamente. Con un enfoque en la interactividad y la jugabilidad, este proyecto destaca por su uso creativo de tecnologías web para una experiencia única y entretenida.",
+      "description": "Proyecto ProC24: Desarrollo de un juego inspirado en Angry Birds, denominado \"Toppling Boxes\", utilizando JavaScript, HTML y CSS. Destaca por su dinamismo y desafíos interactivos. El proyecto cuenta con un README que presenta la estructura y funcionalidades del juego, brindando una visión clara de su implementación técnica.",
       "url": "https://github.com/CandyGZ/ProC24",
       "created_at": "2021-11-23T03:01:09+00:00",
       "updated_at": "2021-11-23T03:01:49+00:00",
@@ -1406,7 +1406,7 @@
     },
     {
       "name": "C22-V1",
-      "description": "Proyecto C22-V1: Desarrollo de una Bouncy Ball con matter.js. Proyecto creativo que combina JavaScript, HTML y CSS para crear una experiencia interactiva. La física del motor matter.js permite una simulación realista del rebote de la pelota, destacando el dominio técnico en la implementación de elementos dinámicos en la web.",
+      "description": "Proyecto C22-V1: Desarrollo de Bouncy Ball con motor de física matter.js. Implementación en JavaScript, HTML y CSS para crear una animación interactiva de rebote. README destaca la creación de una bola dinámica con efectos realistas gracias a la física del motor.",
       "url": "https://github.com/CandyGZ/C22-V1",
       "created_at": "2021-11-23T02:29:40+00:00",
       "updated_at": "2021-11-23T02:31:01+00:00",
@@ -1422,7 +1422,7 @@
     },
     {
       "name": "Angrybirds-Stage2.5",
-      "description": "Implementación de Angry Birds stage 2.5 con herencia de clases e imágenes, utilizando JavaScript, HTML y CSS. Destaca por su funcionalidad avanzada y mejora la experiencia de usuario a través de una interfaz visualmente atractiva.",
+      "description": "Proyecto \"Angrybirds-Stage2.5\": Implementación de Angry Birds fase 2.5 con herencia de clases e imágenes. Utiliza JavaScript, HTML y CSS para ofrecer una experiencia mejorada y dinámica. El README destaca el uso de Class Inheritance y el manejo de imágenes para enriquecer la jugabilidad.",
       "url": "https://github.com/CandyGZ/Angrybirds-Stage2.5",
       "created_at": "2021-11-18T19:05:02+00:00",
       "updated_at": "2021-11-18T19:05:35+00:00",
@@ -1438,7 +1438,7 @@
     },
     {
       "name": "Topplingboxes",
-      "description": "Proyecto \"TopplingBoxes\": Aplicación web desarrollada con JavaScript, HTML y CSS para simular el efecto de cajas que caen al azar. Destaca por su interactividad y dinamismo. Incluye un README con información detallada sobre su funcionamiento y uso.",
+      "description": "Proyecto \"TopplingBoxes\": Aplicación web desarrollada con JavaScript, HTML y CSS que simula el efecto de cajas que se desploman al interactuar con el usuario. Destaca por su interactividad y diseño visual atractivo.README: # TopplingBoxes\nToppling Boxes",
       "url": "https://github.com/CandyGZ/Topplingboxes",
       "created_at": "2021-11-18T19:03:41+00:00",
       "updated_at": "2021-11-18T19:04:10+00:00",
@@ -1454,7 +1454,7 @@
     },
     {
       "name": "MotoresF",
-      "description": "Proyecto MotoresF: Boilerplate de motores físicos en JavaScript, HTML y CSS, diseñado para acelerar el desarrollo de proyectos p5.play. Este boilerplate proporciona una base sólida para la implementación de motores físicos en aplicaciones web, promoviendo la eficiencia y la calidad del código. Tecnologías clave: JavaScript, HTML, CSS.",
+      "description": "Proyecto MotoresF: Boilerplate para motores físicos en JavaScript, HTML y CSS, diseñado para agilizar el desarrollo de aplicaciones interactivas. Incluye p5.play-boilerplate, facilitando la integración de físicas en juegos y simulaciones. Perfecto para desarrolladores que buscan una base sólida y eficiente.",
       "url": "https://github.com/CandyGZ/MotoresF",
       "created_at": "2021-11-16T02:22:04+00:00",
       "updated_at": "2021-11-16T02:22:56+00:00",
@@ -1470,7 +1470,7 @@
     },
     {
       "name": "Trex-color",
-      "description": "Proyecto Trex-color: Desarrollé un juego del Trex a color utilizando JavaScript, HTML y CSS para ofrecer una experiencia visualmente atractiva y divertida. Implementé funcionalidades interactivas como saltos, esquivar obstáculos y contadores de puntuación para mejorar la jugabilidad.",
+      "description": "Proyecto Trex-color: Implementación del clásico juego del Trex en color utilizando JavaScript, HTML y CSS. Incluye una interfaz visual mejorada que añade una nueva dimensión de diversión al juego. Tecnologías clave: JavaScript para la funcionalidad del juego, HTML para la estructura y CSS para el diseño.",
       "url": "https://github.com/CandyGZ/Trex-color",
       "created_at": "2021-10-21T22:44:29+00:00",
       "updated_at": "2021-10-21T22:46:19+00:00",
@@ -1486,7 +1486,7 @@
     },
     {
       "name": "Trex",
-      "description": "Proyecto: Trex JavaScript Game\nDesarrollé Trex, un juego interactivo programado en JavaScript con integración de HTML y CSS. El proyecto destaca por su dinamismo y desafíos de programación, ofreciendo una experiencia de juego cautivadora. Las funcionalidades clave incluyen controles de teclado, detección de colisiones y animaciones fluidas.",
+      "description": "Proyecto: Trex\nDesarrollado como un juego en JavaScript, Trex es un proyecto técnico que combina habilidades en JavaScript, HTML y CSS para crear una experiencia de juego interactiva y cautivadora. Con funcionalidades como animaciones fluidas y controles intuitivos, este proyecto destaca por su enfoque en la jugabilidad y la experiencia del usuario.",
       "url": "https://github.com/CandyGZ/Trex",
       "created_at": "2021-10-04T21:39:15+00:00",
       "updated_at": "2021-10-21T22:41:03+00:00",
@@ -1502,7 +1502,7 @@
     },
     {
       "name": "workshop-todo-native-mobile",
-      "description": "Desarrollo de una aplicación Todo List en React Native, integrando una base de datos de DataStax AstraDB y desplegando en Netlify. El proyecto permite la gestión de tareas en dispositivos móviles Android e iOS, así como en navegadores web, utilizando tecnologías como npm, Node.js y React. Incluye una interfaz intuitiva y funcionalidades avanzadas para una experiencia de usuario óptima.",
+      "description": "Desarrollo de una aplicación móvil y web Todo List en React Native utilizando Node.js, npm y React. El proyecto incluye integración con una base de datos AstraDB de DataStax y despliegue en Netlify. Permite a los usuarios gestionar tareas en dispositivos Android e iOS, así como en navegadores web, ofreciendo una experiencia multiplataforma completa.",
       "url": "https://github.com/CandyGZ/workshop-todo-native-mobile",
       "created_at": "2021-08-26T15:26:03+00:00",
       "updated_at": "2021-08-26T15:29:30+00:00",
@@ -1511,8 +1511,8 @@
         "Shell": 201
       },
       "technologies": [
-        "npm",
         "Node.js",
+        "npm",
         "React"
       ],
       "stars": 0,
@@ -1521,7 +1521,7 @@
     },
     {
       "name": "t-rex",
-      "description": "Proyecto \"t-rex\": Aplicación web desarrollada con TypeScript, SCSS, HTML y JavaScript, utilizando npm, Node.js y Angular. Destaca por su enfoque en la creación de interfaces interactivas y dinámicas, combinando tecnologías modernas para ofrecer una experiencia de usuario fluida y atractiva.",
+      "description": "Proyecto \"t-rex\": Plataforma web desarrollada con TypeScript, SCSS, HTML y JavaScript, utilizando Node.js, npm, Angular y TypeScript. Ofrece una interfaz intuitiva y dinámica para la gestión eficiente de tareas y proyectos. Características clave incluyen modularidad, rendimiento optimizado y arquitectura escalable.",
       "url": "https://github.com/CandyGZ/t-rex",
       "created_at": "2021-08-17T13:48:20+00:00",
       "updated_at": "2021-08-17T13:48:43+00:00",
@@ -1532,10 +1532,10 @@
         "JavaScript": 2325
       },
       "technologies": [
-        "npm",
-        "TypeScript",
         "Node.js",
-        "Angular"
+        "npm",
+        "Angular",
+        "TypeScript"
       ],
       "stars": 0,
       "commits": 1,
@@ -1543,7 +1543,7 @@
     },
     {
       "name": "WebAdminFraccionamientos",
-      "description": "Proyecto \"WebAdminFraccionamientos\": Integración de HybridMenu en Vaadin 8 con Spring Boot para crear menús dinámicos. Permite agregar elementos y vistas personalizadas fácilmente. Tecnologías clave: CSS, Java, TSQL, Maven. Funcionalidad destacada: soporte completo de SpringNavigator.",
+      "description": "Proyecto \"WebAdminFraccionamientos\": Integración de HybridMenu en Vaadin 8 basado en Spring Boot con soporte completo de SpringNavigator. Permite personalizar menús y vistas fácilmente. Lenguajes: CSS, Java, TSQL. Tecnologías: Maven, Java.",
       "url": "https://github.com/saulnoelm/WebAdminFraccionamientos",
       "created_at": "2019-05-23T05:35:11+00:00",
       "updated_at": "2020-03-26T03:37:06+00:00",
@@ -1553,8 +1553,8 @@
         "TSQL": 407498
       },
       "technologies": [
-        "Java",
-        "Maven"
+        "Maven",
+        "Java"
       ],
       "stars": 0,
       "commits": 159,
@@ -1562,7 +1562,7 @@
     },
     {
       "name": "anac",
-      "description": "Desarrollo de un sistema de gestión de contenido flexible y escalable para facilitar la creación y administración de información de manera eficiente. Destaca por su capacidad para adaptarse a las necesidades de cada usuario, ofreciendo una interfaz intuitiva y funcionalidades personalizables. El proyecto se basa en una arquitectura modular que permite la fácil integración de nuevas funcionalidades y extensiones.",
+      "description": "Desarrollo del proyecto \"anac\" con el objetivo de implementar un sistema de análisis de datos para optimizar procesos internos. Se destacan las capacidades de procesamiento eficiente y generación de informes detallados. El proyecto se enfoca en el uso de tecnologías de vanguardia para asegurar la precisión y escalabilidad de las operaciones.",
       "url": "https://github.com/CandyGZ/anac",
       "created_at": "2019-10-25T04:53:27+00:00",
       "updated_at": "2019-10-25T04:53:27+00:00",
@@ -1579,7 +1579,7 @@
     "CSS": 4.55,
     "TypeScript": 2.81,
     "Java": 2.15,
-    "HTML": 0.68,
+    "HTML": 0.69,
     "Blade": 0.67,
     "TSQL": 0.62,
     "C": 0.59,
@@ -1622,5 +1622,5 @@
     "npm",
     "pip"
   ],
-  "generated_at": "2025-11-19T20:21:34.295258"
+  "generated_at": "2025-11-19T22:43:37.703736"
 }
