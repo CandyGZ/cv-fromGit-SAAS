@@ -117,73 +117,120 @@ jobs:
           # Verificar si existe README.md
           if [ ! -f "README.md" ]; then
             echo "⚠️ No se encontró README.md en el repositorio de perfil"
+            echo "ℹ️  El README NO fue modificado"
             cd ..
             exit 0
           fi
 
-          # Buscar la frase específica
-          if grep -q "¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" README.md; then
-            echo "✓ Frase encontrada, actualizando CV en README..."
+          # SEGURIDAD: Buscar la frase específica ANTES de hacer cualquier modificación
+          if ! grep -q "¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" README.md; then
+            echo ""
+            echo "⚠️⚠️⚠️ ATENCIÓN ⚠️⚠️⚠️"
+            echo "No se encontró la frase marcadora en README.md"
+            echo ""
+            echo "Frase buscada:"
+            echo "  '¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :'"
+            echo ""
+            echo "🛡️  POR SEGURIDAD: El README NO será modificado"
+            echo ""
+            echo "Para habilitar la actualización automática:"
+            echo "1. Edita tu README de perfil"
+            echo "2. Agrega esta línea EXACTA donde quieras que aparezca el CV:"
+            echo "   ¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :"
+            echo "3. Guarda los cambios"
+            echo "4. Vuelve a ejecutar este workflow"
+            echo ""
+            cd ..
+            exit 0
+          fi
 
-            # Crear marcadores para identificar el contenido auto-generado
-            MARKER_START="<!-- AUTO-GENERATED-CV-START -->"
-            MARKER_END="<!-- AUTO-GENERATED-CV-END -->"
+          echo "✓ Frase marcadora encontrada - Procediendo de forma segura..."
+          echo ""
 
-            # Preparar el contenido del CV con marcadores
-            echo "$MARKER_START" > /tmp/cv_section.md
-            cat ../CV.md >> /tmp/cv_section.md
-            echo "" >> /tmp/cv_section.md
-            echo "$MARKER_END" >> /tmp/cv_section.md
+          # SEGURIDAD: Crear backup del README original
+          cp README.md README.md.backup
+          echo "✓ Backup creado: README.md.backup"
 
-            # Si ya existen los marcadores, reemplazar el contenido entre ellos
-            if grep -q "$MARKER_START" README.md; then
-              echo "Reemplazando CV existente..."
-              # Usar awk para reemplazar entre marcadores
-              awk -v start="$MARKER_START" -v end="$MARKER_END" '
-                BEGIN { skip=0 }
-                $0 ~ start { skip=1; next }
-                $0 ~ end { skip=0; next }
-                !skip { print }
-              ' README.md > README_temp.md
+          # Crear marcadores para identificar el contenido auto-generado
+          MARKER_START="<!-- AUTO-GENERATED-CV-START -->"
+          MARKER_END="<!-- AUTO-GENERATED-CV-END -->"
 
-              # Insertar nuevo CV después de la frase
-              awk -v marker="¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" '
-                { print }
-                $0 ~ marker {
-                  print ""
-                  system("cat /tmp/cv_section.md")
-                }
-              ' README_temp.md > README.md
-              rm README_temp.md
-            else
-              echo "Insertando CV por primera vez..."
-              # Insertar después de la frase
-              awk -v marker="¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" '
-                { print }
-                $0 ~ marker {
-                  print ""
-                  system("cat /tmp/cv_section.md")
-                }
-              ' README.md > README_temp.md
-              mv README_temp.md README.md
-            fi
+          # Preparar el contenido del CV con marcadores
+          echo "$MARKER_START" > /tmp/cv_section.md
+          cat ../CV.md >> /tmp/cv_section.md
+          echo "" >> /tmp/cv_section.md
+          echo "$MARKER_END" >> /tmp/cv_section.md
 
-            # Configurar git
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git config user.name "github-actions[bot]"
+          # Si ya existen los marcadores, reemplazar el contenido entre ellos
+          if grep -q "$MARKER_START" README.md; then
+            echo "✓ CV existente encontrado - Actualizando..."
+            # Usar awk para reemplazar entre marcadores
+            awk -v start="$MARKER_START" -v end="$MARKER_END" '
+              BEGIN { skip=0 }
+              $0 ~ start { skip=1; next }
+              $0 ~ end { skip=0; next }
+              !skip { print }
+            ' README.md > README_temp.md
 
-            # Commit y push si hay cambios
-            git add README.md
-            if git diff --staged --quiet; then
-              echo "No hay cambios en el README del perfil"
-            else
-              git commit -m "🤖 Actualizar CV automáticamente - $(date +'%Y-%m-%d %H:%M:%S')"
-              git push
-              echo "✅ README del perfil actualizado exitosamente!"
-            fi
+            # Insertar nuevo CV después de la frase
+            awk -v marker="¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" '
+              { print }
+              $0 ~ marker {
+                print ""
+                system("cat /tmp/cv_section.md")
+              }
+            ' README_temp.md > README_new.md
+            rm README_temp.md
           else
-            echo "⚠️ No se encontró la frase especificada en README.md"
-            echo "Buscando: '¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :'"
+            echo "✓ Primera vez - Insertando CV..."
+            # Insertar después de la frase
+            awk -v marker="¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" '
+              { print }
+              $0 ~ marker {
+                print ""
+                system("cat /tmp/cv_section.md")
+              }
+            ' README.md > README_new.md
+          fi
+
+          # SEGURIDAD: Verificar que el nuevo archivo no esté vacío
+          if [ ! -s README_new.md ]; then
+            echo "❌ ERROR: El archivo generado está vacío"
+            echo "🛡️  Restaurando desde backup..."
+            mv README.md.backup README.md
+            echo "✓ README restaurado - Sin cambios aplicados"
+            cd ..
+            exit 0
+          fi
+
+          # SEGURIDAD: Verificar que el nuevo archivo contenga la frase original
+          if ! grep -q "¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" README_new.md; then
+            echo "❌ ERROR: La frase marcadora desapareció durante el procesamiento"
+            echo "🛡️  Restaurando desde backup..."
+            mv README.md.backup README.md
+            echo "✓ README restaurado - Sin cambios aplicados"
+            cd ..
+            exit 0
+          fi
+
+          # Todo OK - Aplicar cambios
+          mv README_new.md README.md
+          echo "✓ Cambios aplicados exitosamente"
+
+          # Configurar git
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+          # Commit y push si hay cambios
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "ℹ️  No hay cambios en el contenido del README"
+          else
+            git commit -m "🤖 Actualizar CV automáticamente - $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+            echo ""
+            echo "✅ README del perfil actualizado exitosamente!"
+            echo "📄 Ver en: https://github.com/${{ github.repository_owner }}"
           fi
 
           cd ..
