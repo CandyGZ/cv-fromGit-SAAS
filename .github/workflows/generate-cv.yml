@@ -104,12 +104,96 @@ jobs:
           fi
           python generate_cv.py
 
-      - name: Commit and push if changes
+      - name: Update Profile README
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+        run: |
+          echo "📝 Actualizando README del perfil..."
+
+          # Clonar repositorio de perfil
+          git clone https://x-access-token:$GITHUB_TOKEN@github.com/${{ github.repository_owner }}/${{ github.repository_owner }}.git profile-repo
+          cd profile-repo
+
+          # Verificar si existe README.md
+          if [ ! -f "README.md" ]; then
+            echo "⚠️ No se encontró README.md en el repositorio de perfil"
+            cd ..
+            exit 0
+          fi
+
+          # Buscar la frase específica
+          if grep -q "¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" README.md; then
+            echo "✓ Frase encontrada, actualizando CV en README..."
+
+            # Crear marcadores para identificar el contenido auto-generado
+            MARKER_START="<!-- AUTO-GENERATED-CV-START -->"
+            MARKER_END="<!-- AUTO-GENERATED-CV-END -->"
+
+            # Preparar el contenido del CV con marcadores
+            echo "$MARKER_START" > /tmp/cv_section.md
+            cat ../CV.md >> /tmp/cv_section.md
+            echo "" >> /tmp/cv_section.md
+            echo "$MARKER_END" >> /tmp/cv_section.md
+
+            # Si ya existen los marcadores, reemplazar el contenido entre ellos
+            if grep -q "$MARKER_START" README.md; then
+              echo "Reemplazando CV existente..."
+              # Usar awk para reemplazar entre marcadores
+              awk -v start="$MARKER_START" -v end="$MARKER_END" '
+                BEGIN { skip=0 }
+                $0 ~ start { skip=1; next }
+                $0 ~ end { skip=0; next }
+                !skip { print }
+              ' README.md > README_temp.md
+
+              # Insertar nuevo CV después de la frase
+              awk -v marker="¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" '
+                { print }
+                $0 ~ marker {
+                  print ""
+                  system("cat /tmp/cv_section.md")
+                }
+              ' README_temp.md > README.md
+              rm README_temp.md
+            else
+              echo "Insertando CV por primera vez..."
+              # Insertar después de la frase
+              awk -v marker="¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" '
+                { print }
+                $0 ~ marker {
+                  print ""
+                  system("cat /tmp/cv_section.md")
+                }
+              ' README.md > README_temp.md
+              mv README_temp.md README.md
+            fi
+
+            # Configurar git
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git config user.name "github-actions[bot]"
+
+            # Commit y push si hay cambios
+            git add README.md
+            if git diff --staged --quiet; then
+              echo "No hay cambios en el README del perfil"
+            else
+              git commit -m "🤖 Actualizar CV automáticamente - $(date +'%Y-%m-%d %H:%M:%S')"
+              git push
+              echo "✅ README del perfil actualizado exitosamente!"
+            fi
+          else
+            echo "⚠️ No se encontró la frase especificada en README.md"
+            echo "Buscando: '¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :'"
+          fi
+
+          cd ..
+
+      - name: Commit and push CV files
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          # Copiar CV.html a docs/ para GitHub Pages
+          # Copiar CV.html a docs/ para GitHub Pages (por si decides usarlo)
           mkdir -p docs
           cp CV.html docs/index.html
           cp CV.md docs/CV.md
@@ -119,7 +203,7 @@ jobs:
 
           # Verificar si hay cambios
           if git diff --quiet && git diff --staged --quiet; then
-            echo "No hay cambios en el CV"
+            echo "No hay cambios en los archivos de CV"
           else
             # Hacer commit
             git commit -m "🤖 Actualizar CV automáticamente - $(date +'%Y-%m-%d %H:%M:%S')"
@@ -139,6 +223,6 @@ jobs:
             echo ""
             echo "✅ CV actualizado exitosamente!"
             echo ""
-            echo "📄 Ver CV en Markdown: https://github.com/${{ github.repository }}/blob/${{ github.ref_name }}/CV.md"
-            echo "🌐 Ver CV en HTML (después de activar Pages): https://${{ github.repository_owner }}.github.io/CV-from-git/"
+            echo "📄 Ver CV en tu perfil: https://github.com/${{ github.repository_owner }}"
+            echo "📄 Ver CV en este repo: https://github.com/${{ github.repository }}/blob/${{ github.ref_name }}/CV.md"
           fi
