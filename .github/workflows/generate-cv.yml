@@ -27,7 +27,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Check secrets
+      - name: Check secrets and permissions
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
         run: |
           if [ -z "${{ secrets.PERSONAL_GITHUB_TOKEN }}" ]; then
             echo "❌ ERROR: El secret PERSONAL_GITHUB_TOKEN no está configurado"
@@ -39,8 +41,55 @@ jobs:
             echo "4. Value: Tu token personal de GitHub (debe empezar con ghp_)"
             echo ""
             exit 1
+          fi
+
+          echo "✓ Secret PERSONAL_GITHUB_TOKEN está configurado"
+          echo "Longitud: ${#GITHUB_TOKEN} caracteres"
+          echo ""
+          echo "Verificando permisos del token..."
+
+          # Test del token intentando acceder a la API de usuario
+          response=$(curl -s -w "\n%{http_code}" -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user)
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | head -n-1)
+
+          if [ "$http_code" = "200" ]; then
+            echo "✓ Token válido y con permisos correctos"
+            username=$(echo "$body" | grep -o '"login":"[^"]*"' | cut -d'"' -f4)
+            echo "✓ Usuario autenticado: $username"
+          elif [ "$http_code" = "401" ]; then
+            echo "❌ ERROR: Token inválido o expirado"
+            echo ""
+            echo "El token no es válido. Por favor:"
+            echo "1. Ve a https://github.com/settings/tokens"
+            echo "2. Genera un nuevo Classic Personal Access Token"
+            echo "3. Selecciona los siguientes scopes:"
+            echo "   - repo (acceso completo a repositorios)"
+            echo "   - read:user (leer perfil de usuario)"
+            echo "   - user:email (leer email de usuario)"
+            echo "4. Actualiza el secret PERSONAL_GITHUB_TOKEN con el nuevo token"
+            exit 1
+          elif [ "$http_code" = "403" ]; then
+            echo "❌ ERROR: Token sin permisos suficientes"
+            echo ""
+            echo "El token existe pero no tiene los permisos necesarios."
+            echo ""
+            echo "Para corregir esto:"
+            echo "1. Ve a https://github.com/settings/tokens"
+            echo "2. Encuentra tu token actual y editalo, O crea uno nuevo"
+            echo "3. Asegúrate de seleccionar estos scopes:"
+            echo "   ✓ repo (acceso completo a repositorios)"
+            echo "   ✓ read:user (leer perfil de usuario)"
+            echo "   ✓ user:email (leer email de usuario)"
+            echo "4. Actualiza el secret PERSONAL_GITHUB_TOKEN con el token corregido"
+            echo ""
+            echo "Response del API:"
+            echo "$body"
+            exit 1
           else
-            echo "✓ Secret PERSONAL_GITHUB_TOKEN está configurado"
+            echo "❌ ERROR inesperado (HTTP $http_code)"
+            echo "$body"
+            exit 1
           fi
 
       - name: Generate CV
