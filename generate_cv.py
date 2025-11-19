@@ -419,8 +419,8 @@ Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
         # Proyectos destacados
         md_content += "\n## Proyectos Destacados\n\n"
 
-        # Mostrar top 10 proyectos más recientes
-        for repo in cv_data['repositories'][:10]:
+        # Mostrar top 30 proyectos más recientes
+        for repo in cv_data['repositories'][:30]:
             md_content += f"### [{repo['name']}]({repo['url']})\n\n"
             md_content += f"{repo['description']}\n\n"
 
@@ -723,7 +723,7 @@ Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
             <h2>Proyectos Destacados</h2>
 """
 
-        for repo in cv_data['repositories'][:10]:
+        for repo in cv_data['repositories'][:30]:
             html_content += f"""            <div class="project">
                 <h3><a href="{repo['url']}" target="_blank">{repo['name']}</a></h3>
                 <p class="project-description">{repo['description']}</p>
