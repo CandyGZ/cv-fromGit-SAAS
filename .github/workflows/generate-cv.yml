@@ -109,4 +109,23 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add CV.md CV.html cv_data.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Actualizar CV automáticamente - $(date +'%Y-%m-%d %H:%M:%S')" && git push)
+
+          # Verificar si hay cambios
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No hay cambios en el CV"
+          else
+            # Hacer commit
+            git commit -m "🤖 Actualizar CV automáticamente - $(date +'%Y-%m-%d %H:%M:%S')"
+
+            # Pull con rebase para sincronizar cambios remotos
+            git pull --rebase origin ${{ github.ref_name }} || {
+              echo "Error al hacer pull. Intentando resolver..."
+              git rebase --abort
+              git pull --no-rebase origin ${{ github.ref_name }}
+              git push origin ${{ github.ref_name }}
+              exit 0
+            }
+
+            # Push de los cambios
+            git push origin ${{ github.ref_name }}
+          fi
