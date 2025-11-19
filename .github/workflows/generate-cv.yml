@@ -1,0 +1,49 @@
+name: Generate CV from GitHub
+
+on:
+  # Ejecución diaria a las 00:00 UTC
+  schedule:
+    - cron: '0 0 * * *'
+
+  # Permite ejecución manual desde la interfaz de GitHub
+  workflow_dispatch:
+
+  # Ejecutar cuando se hace push a main
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  generate-cv:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate CV
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python generate_cv.py
+
+      - name: Commit and push if changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add CV.md CV.html cv_data.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Actualizar CV automáticamente - $(date +'%Y-%m-%d %H:%M:%S')" && git push)
