@@ -8,11 +8,12 @@ on:
   # Permite ejecución manual desde la interfaz de GitHub
   workflow_dispatch:
 
-  # Ejecutar cuando se hace push a main
+  # Ejecutar cuando se hace push a main o a la rama de desarrollo
   push:
     branches:
       - main
       - master
+      - 'claude/**'
 
 jobs:
   generate-cv:
