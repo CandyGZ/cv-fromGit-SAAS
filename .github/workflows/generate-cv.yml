@@ -232,34 +232,43 @@ jobs:
           # Si ya existen los marcadores, reemplazar el contenido entre ellos
           if grep -q "$MARKER_START" README.md; then
             echo "✓ CV existente encontrado - Actualizando..."
-            # Usar awk para reemplazar entre marcadores
-            awk -v start="$MARKER_START" -v end="$MARKER_END" '
-              BEGIN { skip=0 }
-              $0 ~ start { skip=1; next }
-              $0 ~ end { skip=0; next }
-              !skip { print }
-            ' README.md > README_temp.md
 
-            # Insertar nuevo CV después de la frase
-            awk -v marker="¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" '
-              { print }
-              $0 ~ marker {
-                print ""
-                system("cat /tmp/cv_section.md")
-              }
-            ' README_temp.md > README_new.md
-            rm README_temp.md
+            # Extraer contenido antes del marcador de inicio
+            sed -n "1,/$MARKER_START/p" README.md | head -n -1 > README_new.md
+
+            # Agregar el nuevo CV
+            cat /tmp/cv_section.md >> README_new.md
+
+            # Agregar contenido después del marcador de fin
+            sed -n "/$MARKER_END/,\$p" README.md | tail -n +2 >> README_new.md
           else
             echo "✓ Primera vez - Insertando CV..."
-            # Insertar después de la frase
-            awk -v marker="¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" '
-              { print }
-              $0 ~ marker {
-                print ""
-                system("cat /tmp/cv_section.md")
-              }
-            ' README.md > README_new.md
+
+            # Buscar la línea con la frase marcadora y dividir el archivo
+            grep -n "¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" README.md | cut -d: -f1 > /tmp/line_num.txt
+            line_num=$(cat /tmp/line_num.txt)
+
+            if [ -z "$line_num" ]; then
+              echo "❌ ERROR: No se pudo encontrar el número de línea de la frase"
+              cd ..
+              exit 0
+            fi
+
+            echo "  Frase encontrada en línea: $line_num"
+
+            # Crear el nuevo README
+            # Parte 1: Desde el inicio hasta la línea con la frase (inclusive)
+            head -n "$line_num" README.md > README_new.md
+
+            # Parte 2: Agregar línea vacía y el CV
+            echo "" >> README_new.md
+            cat /tmp/cv_section.md >> README_new.md
+
+            # Parte 3: Agregar el resto del archivo original (después de la frase)
+            tail -n +$((line_num + 1)) README.md >> README_new.md
           fi
+
+          echo "✓ Archivo nuevo creado ($(wc -l < README_new.md) líneas)"
 
           # SEGURIDAD: Verificar que el nuevo archivo no esté vacío
           if [ ! -s README_new.md ]; then
