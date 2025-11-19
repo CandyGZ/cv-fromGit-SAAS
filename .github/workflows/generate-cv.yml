@@ -108,7 +108,14 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add CV.md CV.html cv_data.json
+
+          # Copiar CV.html a docs/ para GitHub Pages
+          mkdir -p docs
+          cp CV.html docs/index.html
+          cp CV.md docs/CV.md
+
+          # Agregar todos los archivos generados
+          git add CV.md CV.html cv_data.json docs/
 
           # Verificar si hay cambios
           if git diff --quiet && git diff --staged --quiet; then
@@ -128,4 +135,10 @@ jobs:
 
             # Push de los cambios
             git push origin ${{ github.ref_name }}
+
+            echo ""
+            echo "✅ CV actualizado exitosamente!"
+            echo ""
+            echo "📄 Ver CV en Markdown: https://github.com/${{ github.repository }}/blob/${{ github.ref_name }}/CV.md"
+            echo "🌐 Ver CV en HTML (después de activar Pages): https://${{ github.repository_owner }}.github.io/CV-from-git/"
           fi

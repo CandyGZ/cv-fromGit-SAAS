@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - CandyGZ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            font-size: 1.2em;
+            color: #555;
+            font-style: italic;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .language-bar {
+            margin: 15px 0;
+        }
+
+        .language-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .bar {
+            background: #e0e0e0;
+            height: 25px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            color: white;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .project {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .project h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .project h3 a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .project h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .project-description {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .project-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .project-meta strong {
+            color: #333;
+        }
+
+        .stars {
+            color: #f39c12;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://avatars.githubusercontent.com/u/24537149?v=4" alt="CandyGZ" class="avatar">
+            <h1>CandyGZ</h1>
+            <div class="contact-info">
+                <a href="https://github.com/CandyGZ" target="_blank">@CandyGZ</a>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">73</div>
+                    <div>Repositorios</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">5</div>
+                    <div>Seguidores</div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <h2>Lenguajes de Programación</h2>
+            <div class="language-bar">
+                <div class="language-name">JavaScript</div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 61.77%">61.77%</div>
+                </div>
+            </div>
+            <div class="language-bar">
+                <div class="language-name">Python</div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 24.92%">24.92%</div>
+                </div>
+            </div>
+            <div class="language-bar">
+                <div class="language-name">CSS</div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 4.55%">4.55%</div>
+                </div>
+            </div>
+            <div class="language-bar">
+                <div class="language-name">TypeScript</div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 2.81%">2.81%</div>
+                </div>
+            </div>
+            <div class="language-bar">
+                <div class="language-name">Java</div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 2.15%">2.15%</div>
+                </div>
+            </div>
+            <div class="language-bar">
+                <div class="language-name">HTML</div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 0.68%">0.68%</div>
+                </div>
+            </div>
+            <div class="language-bar">
+                <div class="language-name">Blade</div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 0.67%">0.67%</div>
+                </div>
+            </div>
+            <div class="language-bar">
+                <div class="language-name">TSQL</div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 0.62%">0.62%</div>
+                </div>
+            </div>
+            <div class="language-bar">
+                <div class="language-name">C</div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 0.59%">0.59%</div>
+                </div>
+            </div>
+            <div class="language-bar">
+                <div class="language-name">PHP</div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 0.39%">0.39%</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Tecnologías y Herramientas</h2>
+            <div class="skills">
+                <span class="skill">Angular</span>
+                <span class="skill">Composer</span>
+                <span class="skill">Django</span>
+                <span class="skill">Docker</span>
+                <span class="skill">Docker Compose</span>
+                <span class="skill">Express.js</span>
+                <span class="skill">FastAPI</span>
+                <span class="skill">Flask</span>
+                <span class="skill">Gradle</span>
+                <span class="skill">Java</span>
+                <span class="skill">Maven</span>
+                <span class="skill">Next.js</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">NumPy</span>
+                <span class="skill">PHP</span>
+                <span class="skill">Pandas</span>
+                <span class="skill">Python</span>
+                <span class="skill">React</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">npm</span>
+                <span class="skill">pip</span>
+            </div>
+        </section>
+        <section>
+            <h2>Proyectos Destacados</h2>
+            <div class="project">
+                <h3><a href="https://github.com/CandyGZ/CV-from-git" target="_blank">CV-from-git</a></h3>
+                <p class="project-description">Sin descripción</p>
+                <div class="project-meta">
+                    <span><strong>Lenguajes:</strong> Python, HTML</span>
+                    <span><strong>Tecnologías:</strong> pip, Python</span>
+                    <span><strong>Actualizado:</strong> 2025-11-19</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/CandyGZ/tamago" target="_blank">tamago</a></h3>
+                <p class="project-description">Sin descripción</p>
+                <div class="project-meta">
+                    <span><strong>Lenguajes:</strong> TypeScript, HTML, JavaScript</span>
+                    <span><strong>Tecnologías:</strong> npm, Node.js, TypeScript</span>
+                    <span><strong>Actualizado:</strong> 2025-11-19</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/CandyGZ/interviewassist" target="_blank">interviewassist</a></h3>
+                <p class="project-description">Sin descripción</p>
+                <div class="project-meta">
+                    <span><strong>Lenguajes:</strong> Python, JavaScript, HTML, CSS</span>
+                    <span><strong>Actualizado:</strong> 2025-11-19</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/CandyGZ/CandyGZ" target="_blank">CandyGZ</a></h3>
+                <p class="project-description">Sin descripción</p>
+                <div class="project-meta">
+                    <span><strong>Actualizado:</strong> 2025-11-19</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/CandyGZ/Asesor-tesis" target="_blank">Asesor-tesis</a></h3>
+                <p class="project-description">Sin descripción</p>
+                <div class="project-meta">
+                    <span><strong>Lenguajes:</strong> TypeScript, PLpgSQL, JavaScript, CSS</span>
+                    <span><strong>Tecnologías:</strong> npm, React, TypeScript, Node.js, Next.js</span>
+                    <span><strong>Actualizado:</strong> 2025-11-19</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/CandyGZ/ticktets-wisp" target="_blank">ticktets-wisp</a></h3>
+                <p class="project-description">Sin descripción</p>
+                <div class="project-meta">
+                    <span><strong>Lenguajes:</strong> TypeScript, CSS, JavaScript</span>
+                    <span><strong>Tecnologías:</strong> npm, React, TypeScript, Node.js, Next.js</span>
+                    <span><strong>Actualizado:</strong> 2025-11-19</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/CandyGZ/ICD" target="_blank">ICD</a></h3>
+                <p class="project-description">Sin descripción</p>
+                <div class="project-meta">
+                    <span><strong>Lenguajes:</strong> Python, HTML, JavaScript, CSS</span>
+                    <span><strong>Actualizado:</strong> 2025-11-18</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/CandyGZ/wibosoft_page" target="_blank">wibosoft_page</a></h3>
+                <p class="project-description">Sin descripción</p>
+                <div class="project-meta">
+                    <span><strong>Actualizado:</strong> 2025-11-18</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/CandyGZ/Multiagent" target="_blank">Multiagent</a></h3>
+                <p class="project-description">Sin descripción</p>
+                <div class="project-meta">
+                    <span><strong>Lenguajes:</strong> Python</span>
+                    <span><strong>Tecnologías:</strong> pip, Python</span>
+                    <span><strong>Actualizado:</strong> 2025-11-17</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/CandyGZ/FinanceKids" target="_blank">FinanceKids</a></h3>
+                <p class="project-description">Sin descripción</p>
+                <div class="project-meta">
+                    <span><strong>Lenguajes:</strong> TypeScript, Solidity, CSS, Shell, JavaScript</span>
+                    <span><strong>Tecnologías:</strong> npm, Node.js, TypeScript</span>
+                    <span><strong>Actualizado:</strong> 2025-11-16</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            CV generado automáticamente desde GitHub - 2025-11-19 18:12:00
+        </footer>
+    </div>
+</body>
+</html>

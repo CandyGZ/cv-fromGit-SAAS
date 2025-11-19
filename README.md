@@ -33,6 +33,40 @@ El sistema puede detectar automáticamente:
 - Terraform, Ansible
 - npm, pip, Maven, Gradle, Cargo, Composer, Bundler
 
+## 🌐 Mostrar tu CV en GitHub
+
+Una vez generado el CV, tienes varias formas de mostrarlo:
+
+### Opción 1: GitHub Pages (Recomendado)
+
+Tu CV se publicará automáticamente como página web en: `https://candygz.github.io/CV-from-git/`
+
+**Activar GitHub Pages:**
+1. Ve a Settings → Pages
+2. En "Source", selecciona "Deploy from a branch"
+3. En "Branch", selecciona el branch donde ejecutaste el workflow (ej: `claude/github-cv-generator-...`)
+4. En "Folder", selecciona `/docs`
+5. Click "Save"
+6. Espera 1-2 minutos y tu CV estará disponible en la URL de arriba
+
+### Opción 2: README del Perfil
+
+Puedes copiar el contenido de `CV.md` al README de tu repositorio de perfil:
+
+1. Ve a tu repositorio de perfil: `https://github.com/CandyGZ/CandyGZ`
+2. Edita el README.md
+3. Copia y pega el contenido de tu `CV.md` generado
+4. Commit los cambios
+
+### Opción 3: Link desde tu Perfil
+
+En tu README de perfil, agrega un enlace:
+```markdown
+## 📄 Mi CV Completo
+
+🔗 [Ver mi CV actualizado automáticamente](https://candygz.github.io/CV-from-git/)
+```
+
 ## 🚀 Uso
 
 ### Configuración Inicial
