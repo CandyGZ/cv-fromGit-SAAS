@@ -26,11 +26,32 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Check secrets
+        run: |
+          if [ -z "${{ secrets.PERSONAL_GITHUB_TOKEN }}" ]; then
+            echo "❌ ERROR: El secret PERSONAL_GITHUB_TOKEN no está configurado"
+            echo ""
+            echo "Para configurarlo:"
+            echo "1. Ve a Settings → Secrets and variables → Actions"
+            echo "2. Click 'New repository secret'"
+            echo "3. Name: PERSONAL_GITHUB_TOKEN"
+            echo "4. Value: Tu token personal de GitHub (debe empezar con ghp_)"
+            echo ""
+            exit 1
+          else
+            echo "✓ Secret PERSONAL_GITHUB_TOKEN está configurado"
+          fi
+
       - name: Generate CV
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
+          echo "Longitud del token: ${#GITHUB_TOKEN} caracteres"
+          if [ ${#GITHUB_TOKEN} -lt 20 ]; then
+            echo "❌ ERROR: El token parece inválido (muy corto)"
+            exit 1
+          fi
           python generate_cv.py
 
       - name: Commit and push if changes
