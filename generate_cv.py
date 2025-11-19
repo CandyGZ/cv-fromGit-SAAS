@@ -326,19 +326,27 @@ Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
 
     def generate_cv_data(self):
         """Genera los datos del CV analizando todos los repositorios"""
+        print(f"\n{'='*60}")
         print(f"Analizando repositorios de {self.user.login}...")
+        print(f"{'='*60}\n")
+        sys.stdout.flush()
 
         repos = self.get_repositories()
-        print(f"Encontrados {len(repos)} repositorios (sin forks)")
+        total_repos = len(repos)
+        print(f"✓ Encontrados {total_repos} repositorios (sin forks)\n")
+        sys.stdout.flush()
 
         analyzed_repos = []
         all_languages = Counter()
         all_technologies = set()
 
-        for repo in repos:
-            print(f"  Analizando: {repo.name}")
+        for idx, repo in enumerate(repos, 1):
+            print(f"[{idx}/{total_repos}] Analizando: {repo.name}")
+            sys.stdout.flush()
             repo_data = self.analyze_repository(repo)
             analyzed_repos.append(repo_data)
+            print(f"    ✓ Completado: {repo.name}")
+            sys.stdout.flush()
 
             # Acumular lenguajes y tecnologías
             for lang, bytes_count in repo_data['languages'].items():
@@ -761,6 +769,11 @@ Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
 
 def main():
     """Función principal"""
+    print("\n" + "="*60)
+    print("GENERADOR DE CV DESDE GITHUB")
+    print("="*60 + "\n")
+    sys.stdout.flush()
+
     # Obtener token de GitHub desde variable de entorno
     github_token = os.environ.get('GITHUB_TOKEN')
     if not github_token:
@@ -773,8 +786,17 @@ def main():
     # API key de OpenAI (opcional)
     openai_api_key = os.environ.get('OPENAI_API_KEY')
 
+    if openai_api_key:
+        print("✓ OpenAI habilitado - Las descripciones serán mejoradas con IA")
+    else:
+        print("ℹ️  OpenAI no configurado - Usando descripciones originales")
+    print()
+    sys.stdout.flush()
+
     try:
         # Generar CV
+        print("Iniciando análisis...")
+        sys.stdout.flush()
         generator = GitHubCVGenerator(github_token, username, openai_api_key)
         cv_data = generator.generate_cv_data()
 
