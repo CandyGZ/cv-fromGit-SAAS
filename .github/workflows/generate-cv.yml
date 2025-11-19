@@ -92,6 +92,58 @@ jobs:
             exit 1
           fi
 
+      - name: Check Profile README first
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+        run: |
+          echo "🔍 Verificando README del perfil ANTES de generar CV..."
+          echo "(Para no desperdiciar tokens de OpenAI si no se puede actualizar)"
+          echo ""
+
+          # Clonar repositorio de perfil
+          git clone https://x-access-token:$GITHUB_TOKEN@github.com/${{ github.repository_owner }}/${{ github.repository_owner }}.git profile-check
+          cd profile-check
+
+          # Verificar si existe README.md
+          if [ ! -f "README.md" ]; then
+            echo "⚠️⚠️⚠️ ATENCIÓN ⚠️⚠️⚠️"
+            echo "No se encontró README.md en el repositorio de perfil"
+            echo ""
+            echo "🛑 El CV NO será generado (para ahorrar tokens de OpenAI)"
+            echo ""
+            echo "Para habilitar la generación automática:"
+            echo "1. Crea un repositorio con tu username: ${{ github.repository_owner }}/${{ github.repository_owner }}"
+            echo "2. Agrega un README.md"
+            echo "3. Incluye esta frase EXACTA donde quieras que aparezca el CV:"
+            echo "   ¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :"
+            exit 1
+          fi
+
+          # CRÍTICO: Buscar la frase específica ANTES de generar el CV
+          if ! grep -q "¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :" README.md; then
+            echo ""
+            echo "⚠️⚠️⚠️ ATENCIÓN ⚠️⚠️⚠️"
+            echo "No se encontró la frase marcadora en README.md"
+            echo ""
+            echo "Frase buscada:"
+            echo "  '¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :'"
+            echo ""
+            echo "🛑 El CV NO será generado (para ahorrar tokens de OpenAI)"
+            echo ""
+            echo "Para habilitar la generación automática:"
+            echo "1. Edita tu README de perfil: https://github.com/${{ github.repository_owner }}/${{ github.repository_owner }}"
+            echo "2. Agrega esta línea EXACTA donde quieras que aparezca el CV:"
+            echo "   ¿ Quieres ver qué es lo último en lo que he trabajado en GitHub ? :"
+            echo "3. Guarda los cambios"
+            echo "4. Vuelve a ejecutar este workflow"
+            echo ""
+            exit 1
+          fi
+
+          echo "✅ Frase encontrada en README del perfil"
+          echo "✅ Procediendo a generar el CV..."
+          cd ..
+
       - name: Generate CV
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}

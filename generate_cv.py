@@ -110,6 +110,11 @@ La descripción debe:
 4. Incluir detalles técnicos relevantes del README si están disponibles
 5. Estar en español
 6. No incluir palabras como "Este proyecto" o "Este repositorio"
+7. IMPORTANTE: Por privacidad de clientes, NO mencionar nombres específicos de empresas o clientes. Usar descripciones genéricas como:
+   - "Pemex" → "empresa petrolera"
+   - "IIMAS" → "institución académica"
+   - "Henry" → "plataforma educativa"
+   - Cualquier nombre propio de empresa → descripción genérica del sector
 
 Responde SOLO con la descripción, sin explicaciones adicionales."""
             else:
@@ -128,6 +133,11 @@ Genera una descripción que:
 4. Aproveche la información del README para dar detalles técnicos relevantes
 5. Esté en español
 6. Sea completa pero concisa
+7. IMPORTANTE: Por privacidad de clientes, NO mencionar nombres específicos de empresas o clientes. Reemplaza con descripciones genéricas:
+   - "Pemex" o "pemex" → "empresa petrolera"
+   - "IIMAS" → "institución académica"
+   - "Henry" → "plataforma educativa"
+   - Cualquier nombre propio de empresa/cliente → descripción genérica del sector
 
 Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
 
@@ -432,14 +442,12 @@ Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
                 techs = ', '.join(repo['technologies'])
                 md_content += f"**Tecnologías**: {techs}  \n"
 
-            md_content += f"**Última actualización**: {self._format_date(repo['updated_at'])}  \n"
-
             if repo['stars'] > 0:
                 md_content += f"⭐ {repo['stars']} estrellas  \n"
 
             md_content += "\n---\n\n"
 
-        md_content += f"\n*CV generado automáticamente desde GitHub - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*\n"
+        md_content += f"\n*CV generado automáticamente desde GitHub*\n"
 
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(md_content)
@@ -740,9 +748,6 @@ Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
                 html_content += f"""                    <span><strong>Tecnologías:</strong> {techs}</span>
 """
 
-            html_content += f"""                    <span><strong>Actualizado:</strong> {self._format_date(repo['updated_at'])}</span>
-"""
-
             if repo['stars'] > 0:
                 html_content += f"""                    <span class="stars">⭐ {repo['stars']} estrellas</span>
 """
@@ -754,7 +759,7 @@ Responde SOLO con la descripción mejorada, sin explicaciones adicionales."""
         html_content += f"""        </section>
 
         <footer>
-            CV generado automáticamente desde GitHub - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+            CV generado automáticamente desde GitHub
         </footer>
     </div>
 </body>
