@@ -3,6 +3,7 @@ name: Generate CV from GitHub
 on:
   # Solo permite ejecución manual desde la interfaz de GitHub
   # (Schedule y push deshabilitados para evitar consumo de tokens de OpenAI)
+  # Última actualización: 2025-11-19 23:00 UTC
   workflow_dispatch:
 
 jobs:
