@@ -23,6 +23,31 @@ class GitHubCVGenerator:
         self.github = Github(github_token)
         self.user = self.github.get_user(username) if username else self.github.get_user()
 
+    @staticmethod
+    def _format_date(date_obj, format_str='%Y-%m-%d'):
+        """
+        Formatea una fecha que puede ser string o datetime object
+
+        Args:
+            date_obj: String ISO o datetime object
+            format_str: Formato de salida
+
+        Returns:
+            String con la fecha formateada
+        """
+        if isinstance(date_obj, str):
+            # Si es string, parsearlo a datetime primero
+            try:
+                date_obj = datetime.fromisoformat(date_obj.replace('Z', '+00:00'))
+            except:
+                return date_obj  # Si falla, devolver el string original
+
+        # Si es datetime, formatearlo
+        if hasattr(date_obj, 'strftime'):
+            return date_obj.strftime(format_str)
+
+        return str(date_obj)  # Fallback
+
     def get_repositories(self):
         """Obtiene todos los repositorios públicos del usuario (sin forks)"""
         repos = []
@@ -138,7 +163,11 @@ class GitHubCVGenerator:
                         pass
 
         except Exception as e:
-            print(f"  [Warning] No se pudieron detectar tecnologías: {e}")
+            # Ignorar errores en repositorios vacíos o sin acceso
+            if "404" in str(e) or "empty" in str(e).lower():
+                pass  # Repositorio vacío, es normal
+            else:
+                print(f"  [Warning] No se pudieron detectar tecnologías: {e}")
 
         return list(technologies)
 
@@ -242,7 +271,7 @@ class GitHubCVGenerator:
                 techs = ', '.join(repo['technologies'])
                 md_content += f"**Tecnologías**: {techs}  \n"
 
-            md_content += f"**Última actualización**: {repo['updated_at'].strftime('%Y-%m-%d')}  \n"
+            md_content += f"**Última actualización**: {self._format_date(repo['updated_at'])}  \n"
 
             if repo['stars'] > 0:
                 md_content += f"⭐ {repo['stars']} estrellas  \n"
@@ -550,7 +579,7 @@ class GitHubCVGenerator:
                 html_content += f"""                    <span><strong>Tecnologías:</strong> {techs}</span>
 """
 
-            html_content += f"""                    <span><strong>Actualizado:</strong> {repo['updated_at'].strftime('%Y-%m-%d')}</span>
+            html_content += f"""                    <span><strong>Actualizado:</strong> {self._format_date(repo['updated_at'])}</span>
 """
 
             if repo['stars'] > 0:
