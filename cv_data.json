@@ -1,0 +1,1625 @@
+{
+  "user": {
+    "name": "CandyGZ",
+    "login": "CandyGZ",
+    "bio": null,
+    "location": null,
+    "email": null,
+    "blog": "",
+    "avatar_url": "https://avatars.githubusercontent.com/u/24537149?v=4",
+    "public_repos": 73,
+    "followers": 5,
+    "following": 3
+  },
+  "repositories": [
+    {
+      "name": "CV-from-git",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/CV-from-git",
+      "created_at": "2025-11-19T16:28:28+00:00",
+      "updated_at": "2025-11-19T18:02:53+00:00",
+      "languages": {
+        "Python": 20648
+      },
+      "technologies": [
+        "Python",
+        "pip"
+      ],
+      "stars": 0,
+      "commits": 4,
+      "topics": []
+    },
+    {
+      "name": "tamago",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/tamago",
+      "created_at": "2025-11-19T06:26:15+00:00",
+      "updated_at": "2025-11-19T17:24:39+00:00",
+      "languages": {
+        "TypeScript": 59914,
+        "HTML": 13935,
+        "JavaScript": 142
+      },
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "npm"
+      ],
+      "stars": 0,
+      "commits": 19,
+      "topics": []
+    },
+    {
+      "name": "interviewassist",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/interviewassist",
+      "created_at": "2025-11-19T16:00:20+00:00",
+      "updated_at": "2025-11-19T16:15:30+00:00",
+      "languages": {
+        "Python": 61017,
+        "JavaScript": 10775,
+        "HTML": 1172,
+        "CSS": 1148
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "CandyGZ",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/CandyGZ",
+      "created_at": "2022-08-08T15:49:07+00:00",
+      "updated_at": "2025-11-19T12:52:52+00:00",
+      "languages": {},
+      "technologies": [],
+      "stars": 0,
+      "commits": 373,
+      "topics": []
+    },
+    {
+      "name": "Asesor-tesis",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/Asesor-tesis",
+      "created_at": "2025-11-19T00:35:32+00:00",
+      "updated_at": "2025-11-19T05:27:13+00:00",
+      "languages": {
+        "TypeScript": 294861,
+        "PLpgSQL": 26785,
+        "JavaScript": 2007,
+        "CSS": 1545
+      },
+      "technologies": [
+        "Node.js",
+        "Next.js",
+        "TypeScript",
+        "npm",
+        "React"
+      ],
+      "stars": 0,
+      "commits": 13,
+      "topics": []
+    },
+    {
+      "name": "ticktets-wisp",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/ticktets-wisp",
+      "created_at": "2025-11-18T03:49:22+00:00",
+      "updated_at": "2025-11-19T05:11:46+00:00",
+      "languages": {
+        "TypeScript": 793636,
+        "CSS": 1563,
+        "JavaScript": 200
+      },
+      "technologies": [
+        "Node.js",
+        "Next.js",
+        "TypeScript",
+        "npm",
+        "React"
+      ],
+      "stars": 0,
+      "commits": 29,
+      "topics": []
+    },
+    {
+      "name": "ICD",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/ICD",
+      "created_at": "2025-11-17T02:53:18+00:00",
+      "updated_at": "2025-11-18T23:18:54+00:00",
+      "languages": {
+        "Python": 361920,
+        "HTML": 78241,
+        "JavaScript": 23407,
+        "CSS": 14031
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 20,
+      "topics": []
+    },
+    {
+      "name": "wibosoft_page",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/wibosoft_page",
+      "created_at": "2025-11-18T06:05:39+00:00",
+      "updated_at": "2025-11-18T06:05:39+00:00",
+      "languages": {},
+      "technologies": [],
+      "stars": 0,
+      "commits": 0,
+      "topics": []
+    },
+    {
+      "name": "Multiagent",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/Multiagent",
+      "created_at": "2025-11-16T23:38:32+00:00",
+      "updated_at": "2025-11-17T04:14:36+00:00",
+      "languages": {
+        "Python": 202710
+      },
+      "technologies": [
+        "Python",
+        "pip"
+      ],
+      "stars": 0,
+      "commits": 3,
+      "topics": []
+    },
+    {
+      "name": "FinanceKids",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/FinanceKids",
+      "created_at": "2025-11-05T20:20:33+00:00",
+      "updated_at": "2025-11-16T21:00:31+00:00",
+      "languages": {
+        "TypeScript": 444731,
+        "Solidity": 35077,
+        "CSS": 4295,
+        "Shell": 634,
+        "JavaScript": 496
+      },
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "npm"
+      ],
+      "stars": 0,
+      "commits": 36,
+      "topics": []
+    },
+    {
+      "name": "acuarios-rs",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/acuarios-rs",
+      "created_at": "2025-11-16T15:11:01+00:00",
+      "updated_at": "2025-11-16T15:12:40+00:00",
+      "languages": {
+        "TypeScript": 72346,
+        "JavaScript": 13254,
+        "CSS": 8706,
+        "Procfile": 209
+      },
+      "technologies": [
+        "Node.js",
+        "Next.js",
+        "TypeScript",
+        "npm",
+        "React"
+      ],
+      "stars": 0,
+      "commits": 3,
+      "topics": []
+    },
+    {
+      "name": "acuarios",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/acuarios",
+      "created_at": "2025-11-16T06:11:16+00:00",
+      "updated_at": "2025-11-16T06:11:16+00:00",
+      "languages": {},
+      "technologies": [],
+      "stars": 0,
+      "commits": 0,
+      "topics": []
+    },
+    {
+      "name": "Store",
+      "description": "Store in Laravel, PHP",
+      "url": "https://github.com/CandyGZ/Store",
+      "created_at": "2025-09-30T00:11:21+00:00",
+      "updated_at": "2025-11-16T05:36:44+00:00",
+      "languages": {
+        "JavaScript": 1127242,
+        "CSS": 823714,
+        "Blade": 438270,
+        "PHP": 250264
+      },
+      "technologies": [
+        "PHP",
+        "Node.js",
+        "Composer",
+        "npm"
+      ],
+      "stars": 0,
+      "commits": 7,
+      "topics": []
+    },
+    {
+      "name": "pemx-erik",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/pemx-erik",
+      "created_at": "2025-11-04T01:47:45+00:00",
+      "updated_at": "2025-11-16T04:11:03+00:00",
+      "languages": {
+        "JavaScript": 120685,
+        "Python": 110974,
+        "CSS": 96615,
+        "HTML": 21263,
+        "Batchfile": 5453
+      },
+      "technologies": [
+        "Python",
+        "Django",
+        "pip"
+      ],
+      "stars": 0,
+      "commits": 6,
+      "topics": []
+    },
+    {
+      "name": "cv--vercel",
+      "description": "version de cv reviewer para vercel",
+      "url": "https://github.com/CandyGZ/cv--vercel",
+      "created_at": "2025-10-15T17:21:18+00:00",
+      "updated_at": "2025-11-13T09:40:12+00:00",
+      "languages": {
+        "JavaScript": 255117,
+        "Python": 169888,
+        "CSS": 18397,
+        "PLpgSQL": 17726,
+        "HTML": 1372,
+        "Shell": 1333
+      },
+      "technologies": [
+        "Node.js",
+        "React",
+        "npm"
+      ],
+      "stars": 0,
+      "commits": 313,
+      "topics": []
+    },
+    {
+      "name": "ScrumResumeForGoogleMeet",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/ScrumResumeForGoogleMeet",
+      "created_at": "2025-11-07T17:09:11+00:00",
+      "updated_at": "2025-11-07T17:44:21+00:00",
+      "languages": {
+        "TypeScript": 42414,
+        "HTML": 15501,
+        "JavaScript": 12467,
+        "Shell": 6199,
+        "CSS": 5279
+      },
+      "technologies": [
+        "TypeScript",
+        "Express.js",
+        "Node.js",
+        "npm"
+      ],
+      "stars": 0,
+      "commits": 4,
+      "topics": []
+    },
+    {
+      "name": "TradingStrategy",
+      "description": "a very simple trading strategy incluiding graph and calc about % earning and actual balance",
+      "url": "https://github.com/CandyGZ/TradingStrategy",
+      "created_at": "2023-10-09T16:02:36+00:00",
+      "updated_at": "2025-11-05T17:35:24+00:00",
+      "languages": {
+        "Python": 91051
+      },
+      "technologies": [
+        "Pandas",
+        "NumPy",
+        "Python",
+        "pip"
+      ],
+      "stars": 0,
+      "commits": 10,
+      "topics": []
+    },
+    {
+      "name": "Prompt2Play",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/Prompt2Play",
+      "created_at": "2025-11-04T22:58:06+00:00",
+      "updated_at": "2025-11-05T17:24:03+00:00",
+      "languages": {
+        "Kotlin": 27986
+      },
+      "technologies": [
+        "Gradle",
+        "Java"
+      ],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "pmex-docker",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/pmex-docker",
+      "created_at": "2025-11-04T06:05:42+00:00",
+      "updated_at": "2025-11-04T19:18:59+00:00",
+      "languages": {
+        "Python": 71920,
+        "HTML": 21263,
+        "Batchfile": 16517,
+        "JavaScript": 11554,
+        "CSS": 4138,
+        "Dockerfile": 404
+      },
+      "technologies": [
+        "Docker",
+        "pip",
+        "Docker Compose",
+        "Django",
+        "Python"
+      ],
+      "stars": 0,
+      "commits": 3,
+      "topics": []
+    },
+    {
+      "name": "GithubIA",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/GithubIA",
+      "created_at": "2025-09-28T05:31:21+00:00",
+      "updated_at": "2025-10-29T18:32:10+00:00",
+      "languages": {
+        "Python": 14641
+      },
+      "technologies": [
+        "FastAPI",
+        "Python",
+        "pip"
+      ],
+      "stars": 0,
+      "commits": 7,
+      "topics": []
+    },
+    {
+      "name": "pemex",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/pemex",
+      "created_at": "2025-10-06T23:49:37+00:00",
+      "updated_at": "2025-10-27T17:25:18+00:00",
+      "languages": {
+        "JavaScript": 121016,
+        "CSS": 96615,
+        "Python": 70711,
+        "HTML": 21191
+      },
+      "technologies": [
+        "Python",
+        "pip"
+      ],
+      "stars": 0,
+      "commits": 4,
+      "topics": []
+    },
+    {
+      "name": "Pemex_proy",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/Pemex_proy",
+      "created_at": "2025-10-26T18:41:36+00:00",
+      "updated_at": "2025-10-26T18:41:58+00:00",
+      "languages": {
+        "JavaScript": 109131,
+        "CSS": 96545,
+        "Python": 68106,
+        "HTML": 38497
+      },
+      "technologies": [
+        "Python",
+        "Django",
+        "pip"
+      ],
+      "stars": 0,
+      "commits": 4,
+      "topics": []
+    },
+    {
+      "name": "la_dIAbla",
+      "description": "IA for Meta Facebook",
+      "url": "https://github.com/CandyGZ/la_dIAbla",
+      "created_at": "2025-10-18T22:37:08+00:00",
+      "updated_at": "2025-10-23T15:26:54+00:00",
+      "languages": {
+        "Python": 18313
+      },
+      "technologies": [
+        "Flask",
+        "Python",
+        "pip"
+      ],
+      "stars": 0,
+      "commits": 11,
+      "topics": []
+    },
+    {
+      "name": "SlidesGeneratorIA",
+      "description": "Create a bunch of presentation slides just writing the Topic",
+      "url": "https://github.com/CandyGZ/SlidesGeneratorIA",
+      "created_at": "2023-10-06T13:47:33+00:00",
+      "updated_at": "2025-10-05T13:35:39+00:00",
+      "languages": {
+        "Python": 2307
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 4,
+      "topics": []
+    },
+    {
+      "name": "PrintingCenter",
+      "description": "This is a custom system for a printing center that needs pending order tracking.",
+      "url": "https://github.com/CandyGZ/PrintingCenter",
+      "created_at": "2023-10-06T01:16:36+00:00",
+      "updated_at": "2025-10-05T13:34:42+00:00",
+      "languages": {
+        "Python": 5762
+      },
+      "technologies": [],
+      "stars": 1,
+      "commits": 5,
+      "topics": []
+    },
+    {
+      "name": "ToDoList-Flet",
+      "description": "Introduction to Flet (Flutter)",
+      "url": "https://github.com/CandyGZ/ToDoList-Flet",
+      "created_at": "2023-10-23T17:05:04+00:00",
+      "updated_at": "2025-10-05T13:32:48+00:00",
+      "languages": {
+        "Python": 14432
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 10,
+      "topics": []
+    },
+    {
+      "name": "Virtual-Disk",
+      "description": "Simulates block storage (kind of like Amazon EBS)",
+      "url": "https://github.com/CandyGZ/Virtual-Disk",
+      "created_at": "2025-08-25T18:20:25+00:00",
+      "updated_at": "2025-10-05T13:30:51+00:00",
+      "languages": {
+        "Python": 2193
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 4,
+      "topics": []
+    },
+    {
+      "name": "API-detalles-producto",
+      "description": "API backend que proporciona todos los datos necesarios para soportar una página de detalle de artículo, inspirada en sitios de e-commerce. Su API Entrega eficientemente los detalles del producto requeridos",
+      "url": "https://github.com/CandyGZ/API-detalles-producto",
+      "created_at": "2025-09-17T04:04:42+00:00",
+      "updated_at": "2025-10-05T13:28:45+00:00",
+      "languages": {
+        "Java": 39547
+      },
+      "technologies": [
+        "Java",
+        "Maven"
+      ],
+      "stars": 0,
+      "commits": 9,
+      "topics": [
+        "api",
+        "api-rest"
+      ]
+    },
+    {
+      "name": "ShapeCalculator",
+      "description": "calculate area, perimeter and diagonal of rectangle or squares, calculate how many times a shape gets inside another",
+      "url": "https://github.com/CandyGZ/ShapeCalculator",
+      "created_at": "2023-09-23T03:21:45+00:00",
+      "updated_at": "2025-10-05T13:27:34+00:00",
+      "languages": {
+        "Python": 10533
+      },
+      "technologies": [],
+      "stars": 1,
+      "commits": 7,
+      "topics": []
+    },
+    {
+      "name": "CV_reviewer",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/CV_reviewer",
+      "created_at": "2025-10-05T02:13:02+00:00",
+      "updated_at": "2025-10-05T02:13:03+00:00",
+      "languages": {},
+      "technologies": [],
+      "stars": 0,
+      "commits": 0,
+      "topics": []
+    },
+    {
+      "name": "Code-to-Mermaid-generator",
+      "description": "A script that reads your project and translates it into Mermaid syntax for Draw.io",
+      "url": "https://github.com/CandyGZ/Code-to-Mermaid-generator",
+      "created_at": "2025-09-20T14:26:42+00:00",
+      "updated_at": "2025-09-28T11:54:29+00:00",
+      "languages": {
+        "TypeScript": 8565
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 5,
+      "topics": []
+    },
+    {
+      "name": "VaadinToHTML",
+      "description": "De Monolito a Micro-frontend: Crónica de una Migración Inevitable",
+      "url": "https://github.com/CandyGZ/VaadinToHTML",
+      "created_at": "2025-09-27T05:17:13+00:00",
+      "updated_at": "2025-09-27T15:56:55+00:00",
+      "languages": {},
+      "technologies": [],
+      "stars": 0,
+      "commits": 6,
+      "topics": []
+    },
+    {
+      "name": "CV-reviewer",
+      "description": "check and improves CV with AI",
+      "url": "https://github.com/CandyGZ/CV-reviewer",
+      "created_at": "2025-09-23T19:39:05+00:00",
+      "updated_at": "2025-09-24T19:01:27+00:00",
+      "languages": {
+        "JavaScript": 22596,
+        "Python": 15045,
+        "HTML": 1721,
+        "CSS": 366
+      },
+      "technologies": [
+        "Node.js",
+        "npm"
+      ],
+      "stars": 0,
+      "commits": 10,
+      "topics": []
+    },
+    {
+      "name": "Subasteria",
+      "description": "encuentra la máxima oferta única y llévatelo",
+      "url": "https://github.com/CandyGZ/Subasteria",
+      "created_at": "2025-09-14T23:49:33+00:00",
+      "updated_at": "2025-09-23T15:33:24+00:00",
+      "languages": {
+        "TypeScript": 108757,
+        "Dockerfile": 1909,
+        "JavaScript": 477,
+        "Shell": 430,
+        "CSS": 277
+      },
+      "technologies": [
+        "Docker Compose"
+      ],
+      "stars": 0,
+      "commits": 8,
+      "topics": []
+    },
+    {
+      "name": "Bartola",
+      "description": "Finanzas Personales",
+      "url": "https://github.com/CandyGZ/Bartola",
+      "created_at": "2025-09-09T16:33:23+00:00",
+      "updated_at": "2025-09-11T19:14:41+00:00",
+      "languages": {
+        "CSS": 131280,
+        "Python": 115300,
+        "SCSS": 113215,
+        "HTML": 109797,
+        "JavaScript": 27734,
+        "PHP": 2124
+      },
+      "technologies": [
+        "Python",
+        "Django",
+        "pip"
+      ],
+      "stars": 0,
+      "commits": 8,
+      "topics": []
+    },
+    {
+      "name": "Email_notifier",
+      "description": "Notificador de correos de tareas diarias por correo",
+      "url": "https://github.com/CandyGZ/Email_notifier",
+      "created_at": "2025-09-01T14:59:18+00:00",
+      "updated_at": "2025-09-01T14:59:19+00:00",
+      "languages": {},
+      "technologies": [],
+      "stars": 0,
+      "commits": 0,
+      "topics": []
+    },
+    {
+      "name": "EnglishTeacher",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/EnglishTeacher",
+      "created_at": "2023-10-02T23:22:27+00:00",
+      "updated_at": "2025-08-25T18:31:48+00:00",
+      "languages": {
+        "Python": 9767
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "neocoins2",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/neocoins2",
+      "created_at": "2025-04-17T20:55:03+00:00",
+      "updated_at": "2025-04-17T20:55:03+00:00",
+      "languages": {},
+      "technologies": [],
+      "stars": 0,
+      "commits": 0,
+      "topics": []
+    },
+    {
+      "name": "NeoCoins",
+      "description": "TradingGame",
+      "url": "https://github.com/CandyGZ/NeoCoins",
+      "created_at": "2025-04-17T02:27:12+00:00",
+      "updated_at": "2025-04-17T02:58:00+00:00",
+      "languages": {
+        "Python": 13127,
+        "HTML": 12068,
+        "JavaScript": 3541,
+        "CSS": 1109
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "ValenteSys",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/ValenteSys",
+      "created_at": "2025-04-09T19:29:02+00:00",
+      "updated_at": "2025-04-10T18:40:07+00:00",
+      "languages": {
+        "JavaScript": 13020,
+        "HTML": 11052,
+        "Python": 9849,
+        "CSS": 8782
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "DashboardIIMAS",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/DashboardIIMAS",
+      "created_at": "2025-03-14T01:56:59+00:00",
+      "updated_at": "2025-03-14T01:58:53+00:00",
+      "languages": {
+        "Python": 25384,
+        "HTML": 10758,
+        "JavaScript": 1780
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "dashboard",
+      "description": "sencillo",
+      "url": "https://github.com/CandyGZ/dashboard",
+      "created_at": "2025-03-07T17:33:11+00:00",
+      "updated_at": "2025-03-07T18:42:39+00:00",
+      "languages": {
+        "Python": 19874,
+        "HTML": 10758,
+        "JavaScript": 1780
+      },
+      "technologies": [
+        "Python",
+        "Django",
+        "pip"
+      ],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "PlagueDetectorID",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/PlagueDetectorID",
+      "created_at": "2025-02-13T18:35:31+00:00",
+      "updated_at": "2025-02-17T19:35:47+00:00",
+      "languages": {
+        "Python": 14755666,
+        "C": 386605,
+        "Cython": 125737,
+        "C++": 85980,
+        "Fortran": 37029,
+        "PowerShell": 25697,
+        "HTML": 16287,
+        "Meson": 4589,
+        "Batchfile": 1389
+      },
+      "technologies": [
+        "Python",
+        "pip"
+      ],
+      "stars": 1,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "PestRecognition",
+      "description": "Pest Recognition Software",
+      "url": "https://github.com/LEAI-IIMAS/PestRecognition",
+      "created_at": "2024-05-09T22:59:37+00:00",
+      "updated_at": "2024-05-10T00:07:11+00:00",
+      "languages": {
+        "Python": 8055
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "Weather-cards",
+      "description": "React, function components, style modules, css",
+      "url": "https://github.com/CandyGZ/Weather-cards",
+      "created_at": "2022-06-30T04:57:17+00:00",
+      "updated_at": "2023-10-05T18:03:35+00:00",
+      "languages": {
+        "JavaScript": 5368,
+        "HTML": 4651,
+        "CSS": 3176,
+        "Shell": 53
+      },
+      "technologies": [
+        "Node.js",
+        "React",
+        "npm"
+      ],
+      "stars": 1,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "countclicker",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/countclicker",
+      "created_at": "2022-07-09T04:26:14+00:00",
+      "updated_at": "2023-10-05T18:03:30+00:00",
+      "languages": {
+        "CSS": 2062,
+        "JavaScript": 1941,
+        "HTML": 1662
+      },
+      "technologies": [],
+      "stars": 1,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "2DoList",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/2DoList",
+      "created_at": "2022-08-02T23:51:54+00:00",
+      "updated_at": "2023-10-05T18:03:25+00:00",
+      "languages": {
+        "JavaScript": 8890,
+        "HTML": 7983,
+        "CSS": 1969
+      },
+      "technologies": [],
+      "stars": 1,
+      "commits": 4,
+      "topics": []
+    },
+    {
+      "name": "ArithmeticArranger",
+      "description": "proyect for FreeCodeCamp",
+      "url": "https://github.com/CandyGZ/ArithmeticArranger",
+      "created_at": "2023-09-17T20:43:09+00:00",
+      "updated_at": "2023-10-05T18:03:21+00:00",
+      "languages": {
+        "Python": 5679
+      },
+      "technologies": [],
+      "stars": 1,
+      "commits": 3,
+      "topics": []
+    },
+    {
+      "name": "Time_Calculator",
+      "description": "Given some hour and minute and some duration in hours and minutes, calculate the final time",
+      "url": "https://github.com/CandyGZ/Time_Calculator",
+      "created_at": "2023-09-20T19:42:21+00:00",
+      "updated_at": "2023-10-05T18:03:19+00:00",
+      "languages": {
+        "Python": 6761
+      },
+      "technologies": [],
+      "stars": 1,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "FCC-BudgetApp",
+      "description": "budget app with categories and graphs",
+      "url": "https://github.com/CandyGZ/FCC-BudgetApp",
+      "created_at": "2023-09-22T16:47:57+00:00",
+      "updated_at": "2023-10-05T18:03:15+00:00",
+      "languages": {
+        "Python": 22705
+      },
+      "technologies": [],
+      "stars": 1,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "FCC-ProbabilityCalc",
+      "description": "Translate the possibilities of obtaining a certain number of balls when picking x quantity at random from a blind hat n number of times",
+      "url": "https://github.com/CandyGZ/FCC-ProbabilityCalc",
+      "created_at": "2023-09-26T23:55:40+00:00",
+      "updated_at": "2023-10-05T18:03:00+00:00",
+      "languages": {
+        "Python": 5213
+      },
+      "technologies": [],
+      "stars": 1,
+      "commits": 3,
+      "topics": []
+    },
+    {
+      "name": "LandingPage-Pikachu",
+      "description": "a sample website cover with pokeballs bouncing",
+      "url": "https://github.com/CandyGZ/LandingPage-Pikachu",
+      "created_at": "2023-10-05T17:34:31+00:00",
+      "updated_at": "2023-10-05T18:02:29+00:00",
+      "languages": {
+        "HTML": 4524
+      },
+      "technologies": [],
+      "stars": 1,
+      "commits": 3,
+      "topics": []
+    },
+    {
+      "name": "repositorio-henry",
+      "description": "Homework",
+      "url": "https://github.com/CandyGZ/repositorio-henry",
+      "created_at": "2022-04-13T20:48:19+00:00",
+      "updated_at": "2022-06-25T18:00:27+00:00",
+      "languages": {},
+      "technologies": [],
+      "stars": 0,
+      "commits": 0,
+      "topics": []
+    },
+    {
+      "name": "M1-Challenge",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/M1-Challenge",
+      "created_at": "2022-06-17T18:24:36+00:00",
+      "updated_at": "2022-06-17T18:26:09+00:00",
+      "languages": {
+        "JavaScript": 25434
+      },
+      "technologies": [
+        "Node.js",
+        "npm"
+      ],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "Henry-M1",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/Henry-M1",
+      "created_at": "2022-06-07T00:44:38+00:00",
+      "updated_at": "2022-06-07T05:31:27+00:00",
+      "languages": {
+        "JavaScript": 102537,
+        "Nunjucks": 6996,
+        "HTML": 2529,
+        "Python": 264
+      },
+      "technologies": [
+        "Node.js",
+        "npm"
+      ],
+      "stars": 0,
+      "commits": 4,
+      "topics": []
+    },
+    {
+      "name": "2022-04-23-eevee147",
+      "description": "Sin descripción",
+      "url": "https://github.com/soyhenry-checkpoints-4/2022-04-23-eevee147",
+      "created_at": "2022-04-23T04:47:58+00:00",
+      "updated_at": "2022-04-23T04:48:02+00:00",
+      "languages": {
+        "JavaScript": 15895
+      },
+      "technologies": [
+        "Node.js",
+        "npm"
+      ],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "Clase26",
+      "description": "angrybirdsAlum",
+      "url": "https://github.com/CandyGZ/Clase26",
+      "created_at": "2022-03-24T22:55:41+00:00",
+      "updated_at": "2022-03-24T22:58:24+00:00",
+      "languages": {
+        "JavaScript": 342373,
+        "HTML": 587,
+        "CSS": 42
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "ProyectoAlumn43",
+      "description": "Proyecto incompleto con bugs listo para alumno",
+      "url": "https://github.com/CandyGZ/ProyectoAlumn43",
+      "created_at": "2022-03-22T20:43:09+00:00",
+      "updated_at": "2022-03-22T20:44:44+00:00",
+      "languages": {
+        "JavaScript": 3733948,
+        "HTML": 630,
+        "CSS": 78
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "CarreradeAutos",
+      "description": "full",
+      "url": "https://github.com/CandyGZ/CarreradeAutos",
+      "created_at": "2022-03-22T17:22:02+00:00",
+      "updated_at": "2022-03-22T17:22:49+00:00",
+      "languages": {
+        "JavaScript": 150079,
+        "CSS": 25696,
+        "HTML": 1653
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "CanguroParte1",
+      "description": "parte 1 para completar Alumno, instrucciones en sketch.js",
+      "url": "https://github.com/CandyGZ/CanguroParte1",
+      "created_at": "2022-03-18T01:12:18+00:00",
+      "updated_at": "2022-03-18T01:13:29+00:00",
+      "languages": {
+        "JavaScript": 3296281,
+        "HTML": 351,
+        "CSS": 71
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "Clase42-Alum",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/Clase42-Alum",
+      "created_at": "2022-03-18T00:32:47+00:00",
+      "updated_at": "2022-03-18T00:33:27+00:00",
+      "languages": {
+        "JavaScript": 148619,
+        "CSS": 25696,
+        "HTML": 1653
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "Clase40-alum",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/Clase40-alum",
+      "created_at": "2022-03-17T22:26:57+00:00",
+      "updated_at": "2022-03-17T22:27:31+00:00",
+      "languages": {
+        "JavaScript": 144398,
+        "CSS": 1885,
+        "HTML": 1278
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "clase41",
+      "description": "incompleto para alumn",
+      "url": "https://github.com/CandyGZ/clase41",
+      "created_at": "2022-03-15T16:52:07+00:00",
+      "updated_at": "2022-03-15T16:53:08+00:00",
+      "languages": {
+        "JavaScript": 147662,
+        "CSS": 25696,
+        "HTML": 1653
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "clase38",
+      "description": "act incompleta para terminar",
+      "url": "https://github.com/CandyGZ/clase38",
+      "created_at": "2022-03-11T17:24:30+00:00",
+      "updated_at": "2022-03-11T17:25:05+00:00",
+      "languages": {
+        "JavaScript": 139979,
+        "HTML": 1561,
+        "CSS": 1230
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 3,
+      "topics": []
+    },
+    {
+      "name": "Alumn-Clase40",
+      "description": "Actividad clase40",
+      "url": "https://github.com/CandyGZ/Alumn-Clase40",
+      "created_at": "2022-03-10T15:48:48+00:00",
+      "updated_at": "2022-03-10T15:49:52+00:00",
+      "languages": {
+        "JavaScript": 144398,
+        "CSS": 1885,
+        "HTML": 1278
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "StudClase38",
+      "description": "Actividad para completar",
+      "url": "https://github.com/CandyGZ/StudClase38",
+      "created_at": "2022-03-01T22:15:18+00:00",
+      "updated_at": "2022-03-01T22:16:08+00:00",
+      "languages": {
+        "JavaScript": 207478,
+        "HTML": 1516,
+        "CSS": 86
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "clase24",
+      "description": "estado final clase",
+      "url": "https://github.com/CandyGZ/clase24",
+      "created_at": "2022-02-24T23:57:21+00:00",
+      "updated_at": "2022-02-24T23:58:25+00:00",
+      "languages": {
+        "JavaScript": 343414,
+        "HTML": 545,
+        "CSS": 42
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "Sangria",
+      "description": "Ejercicio",
+      "url": "https://github.com/CandyGZ/Sangria",
+      "created_at": "2022-02-18T18:43:36+00:00",
+      "updated_at": "2022-02-18T18:44:28+00:00",
+      "languages": {
+        "JavaScript": 3292834,
+        "HTML": 351,
+        "CSS": 71
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "P-ndulo",
+      "description": "péndulo",
+      "url": "https://github.com/CandyGZ/P-ndulo",
+      "created_at": "2022-02-09T00:52:01+00:00",
+      "updated_at": "2022-02-09T00:54:21+00:00",
+      "languages": {
+        "JavaScript": 5294186,
+        "HTML": 570
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "clasr27full",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/clasr27full",
+      "created_at": "2022-01-26T01:45:30+00:00",
+      "updated_at": "2022-01-26T01:46:07+00:00",
+      "languages": {
+        "JavaScript": 2331,
+        "HTML": 625
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "c29stud",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/c29stud",
+      "created_at": "2022-01-20T19:33:06+00:00",
+      "updated_at": "2022-01-20T19:34:29+00:00",
+      "languages": {
+        "JavaScript": 353620,
+        "HTML": 629,
+        "CSS": 46
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "RefClase28",
+      "description": "finalC28",
+      "url": "https://github.com/CandyGZ/RefClase28",
+      "created_at": "2022-01-19T00:55:25+00:00",
+      "updated_at": "2022-01-19T00:56:18+00:00",
+      "languages": {
+        "JavaScript": 353610,
+        "HTML": 629,
+        "CSS": 46
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "C28v1-Prof",
+      "description": "clase completa",
+      "url": "https://github.com/CandyGZ/C28v1-Prof",
+      "created_at": "2022-01-18T03:40:15+00:00",
+      "updated_at": "2022-01-18T03:41:20+00:00",
+      "languages": {
+        "JavaScript": 706908,
+        "HTML": 1254,
+        "CSS": 92
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "C28V1-Stud",
+      "description": "Resortera",
+      "url": "https://github.com/CandyGZ/C28V1-Stud",
+      "created_at": "2022-01-18T03:38:11+00:00",
+      "updated_at": "2022-01-18T03:39:55+00:00",
+      "languages": {
+        "JavaScript": 353298,
+        "HTML": 625,
+        "CSS": 46
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "C21v2prof",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/C21v2prof",
+      "created_at": "2022-01-16T20:34:12+00:00",
+      "updated_at": "2022-01-16T23:08:53+00:00",
+      "languages": {
+        "JavaScript": 3734,
+        "HTML": 1164,
+        "CSS": 138
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "C21v2-Stud",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/C21v2-Stud",
+      "created_at": "2021-11-11T20:56:28+00:00",
+      "updated_at": "2022-01-16T20:16:39+00:00",
+      "languages": {
+        "JavaScript": 1035,
+        "HTML": 388,
+        "CSS": 46
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 10,
+      "topics": []
+    },
+    {
+      "name": "ProyectoP-nduloNewton",
+      "description": "Incompleto, falta terminar, sirve para práctica",
+      "url": "https://github.com/CandyGZ/ProyectoP-nduloNewton",
+      "created_at": "2021-12-02T18:34:35+00:00",
+      "updated_at": "2021-12-02T18:34:41+00:00",
+      "languages": {},
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "Reference-AndryBirds-c25",
+      "description": "con imágenes cargadas",
+      "url": "https://github.com/CandyGZ/Reference-AndryBirds-c25",
+      "created_at": "2021-12-01T00:42:48+00:00",
+      "updated_at": "2021-12-01T00:45:50+00:00",
+      "languages": {
+        "JavaScript": 342311,
+        "HTML": 567,
+        "CSS": 42
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "C25",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/C25",
+      "created_at": "2021-12-01T00:07:15+00:00",
+      "updated_at": "2021-12-01T00:09:14+00:00",
+      "languages": {
+        "JavaScript": 343599,
+        "HTML": 587,
+        "CSS": 42
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "ProC21-Collision",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/ProC21-Collision",
+      "created_at": "2021-11-11T20:58:00+00:00",
+      "updated_at": "2021-11-30T22:08:14+00:00",
+      "languages": {
+        "JavaScript": 3293010,
+        "HTML": 352,
+        "CSS": 71
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "ProC25Reference",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/ProC25Reference",
+      "created_at": "2021-11-26T01:10:46+00:00",
+      "updated_at": "2021-11-26T01:11:08+00:00",
+      "languages": {},
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "ProC25V1",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/ProC25V1",
+      "created_at": "2021-11-25T05:33:49+00:00",
+      "updated_at": "2021-11-25T05:34:52+00:00",
+      "languages": {
+        "JavaScript": 343599,
+        "HTML": 587,
+        "CSS": 42
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "ProC24",
+      "description": "kind of AngryBirds",
+      "url": "https://github.com/CandyGZ/ProC24",
+      "created_at": "2021-11-23T03:01:09+00:00",
+      "updated_at": "2021-11-23T03:01:49+00:00",
+      "languages": {
+        "JavaScript": 340795,
+        "HTML": 427,
+        "CSS": 42
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "C22-V1",
+      "description": "práctica alumno",
+      "url": "https://github.com/CandyGZ/C22-V1",
+      "created_at": "2021-11-23T02:29:40+00:00",
+      "updated_at": "2021-11-23T02:31:01+00:00",
+      "languages": {
+        "JavaScript": 3632099,
+        "HTML": 398,
+        "CSS": 71
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "Angrybirds-Stage2.5",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/Angrybirds-Stage2.5",
+      "created_at": "2021-11-18T19:05:02+00:00",
+      "updated_at": "2021-11-18T19:05:35+00:00",
+      "languages": {
+        "JavaScript": 342452,
+        "HTML": 587,
+        "CSS": 42
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "Topplingboxes",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/Topplingboxes",
+      "created_at": "2021-11-18T19:03:41+00:00",
+      "updated_at": "2021-11-18T19:04:10+00:00",
+      "languages": {
+        "JavaScript": 340787,
+        "HTML": 427,
+        "CSS": 42
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "MotoresF",
+      "description": "motores físicos boilerplate",
+      "url": "https://github.com/CandyGZ/MotoresF",
+      "created_at": "2021-11-16T02:22:04+00:00",
+      "updated_at": "2021-11-16T02:22:56+00:00",
+      "languages": {
+        "JavaScript": 3631520,
+        "HTML": 351,
+        "CSS": 71
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "Trex-color",
+      "description": "Juego del Trex a color",
+      "url": "https://github.com/CandyGZ/Trex-color",
+      "created_at": "2021-10-21T22:44:29+00:00",
+      "updated_at": "2021-10-21T22:46:19+00:00",
+      "languages": {
+        "JavaScript": 3297112,
+        "HTML": 354,
+        "CSS": 71
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "Trex",
+      "description": "Trex JavaScript Game",
+      "url": "https://github.com/CandyGZ/Trex",
+      "created_at": "2021-10-04T21:39:15+00:00",
+      "updated_at": "2021-10-21T22:41:03+00:00",
+      "languages": {
+        "JavaScript": 3295765,
+        "HTML": 351,
+        "CSS": 71
+      },
+      "technologies": [],
+      "stars": 0,
+      "commits": 2,
+      "topics": []
+    },
+    {
+      "name": "workshop-todo-native-mobile",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/workshop-todo-native-mobile",
+      "created_at": "2021-08-26T15:26:03+00:00",
+      "updated_at": "2021-08-26T15:29:30+00:00",
+      "languages": {
+        "JavaScript": 19748,
+        "Shell": 201
+      },
+      "technologies": [
+        "Node.js",
+        "React",
+        "npm"
+      ],
+      "stars": 0,
+      "commits": 145,
+      "topics": []
+    },
+    {
+      "name": "t-rex",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/t-rex",
+      "created_at": "2021-08-17T13:48:20+00:00",
+      "updated_at": "2021-08-17T13:48:43+00:00",
+      "languages": {
+        "TypeScript": 16844,
+        "SCSS": 8476,
+        "HTML": 2599,
+        "JavaScript": 2325
+      },
+      "technologies": [
+        "Angular",
+        "Node.js",
+        "TypeScript",
+        "npm"
+      ],
+      "stars": 0,
+      "commits": 1,
+      "topics": []
+    },
+    {
+      "name": "WebAdminFraccionamientos",
+      "description": "Sin descripción",
+      "url": "https://github.com/saulnoelm/WebAdminFraccionamientos",
+      "created_at": "2019-05-23T05:35:11+00:00",
+      "updated_at": "2020-03-26T03:37:06+00:00",
+      "languages": {
+        "CSS": 1572667,
+        "Java": 1370099,
+        "TSQL": 407498
+      },
+      "technologies": [
+        "Java",
+        "Maven"
+      ],
+      "stars": 0,
+      "commits": 159,
+      "topics": []
+    },
+    {
+      "name": "anac",
+      "description": "Sin descripción",
+      "url": "https://github.com/CandyGZ/anac",
+      "created_at": "2019-10-25T04:53:27+00:00",
+      "updated_at": "2019-10-25T04:53:27+00:00",
+      "languages": {},
+      "technologies": [],
+      "stars": 0,
+      "commits": 0,
+      "topics": []
+    }
+  ],
+  "languages": {
+    "JavaScript": 61.78,
+    "Python": 24.93,
+    "CSS": 4.55,
+    "TypeScript": 2.82,
+    "Java": 2.15,
+    "Blade": 0.67,
+    "HTML": 0.66,
+    "TSQL": 0.62,
+    "C": 0.59,
+    "PHP": 0.39,
+    "Cython": 0.19,
+    "SCSS": 0.19,
+    "C++": 0.13,
+    "PLpgSQL": 0.07,
+    "Fortran": 0.06,
+    "Solidity": 0.05,
+    "Kotlin": 0.04,
+    "PowerShell": 0.04,
+    "Batchfile": 0.04,
+    "Shell": 0.01,
+    "Nunjucks": 0.01,
+    "Meson": 0.01,
+    "Dockerfile": 0.0,
+    "Procfile": 0.0
+  },
+  "technologies": [
+    "Angular",
+    "Composer",
+    "Django",
+    "Docker",
+    "Docker Compose",
+    "Express.js",
+    "FastAPI",
+    "Flask",
+    "Gradle",
+    "Java",
+    "Maven",
+    "Next.js",
+    "Node.js",
+    "NumPy",
+    "PHP",
+    "Pandas",
+    "Python",
+    "React",
+    "TypeScript",
+    "npm",
+    "pip"
+  ],
+  "generated_at": "2025-11-19T18:06:14.435483"
+}
