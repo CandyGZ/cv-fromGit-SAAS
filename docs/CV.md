@@ -6,12 +6,12 @@
 
 ## Lenguajes de Programación
 
-- **JavaScript**: 61.76%
-- **Python**: 24.93%
+- **JavaScript**: 61.74%
+- **Python**: 24.92%
 - **CSS**: 4.55%
 - **TypeScript**: 2.81%
 - **Java**: 2.15%
-- **HTML**: 0.69%
+- **HTML**: 0.72%
 - **Blade**: 0.67%
 - **TSQL**: 0.62%
 - **C**: 0.59%
@@ -23,246 +23,221 @@ Angular, Composer, Django, Docker, Docker Compose, Express.js, FastAPI, Flask, G
 
 ## Proyectos Destacados
 
-### [CandyGZ](https://github.com/CandyGZ/CandyGZ)
+### [CV-from-git](https://github.com/CandyGZ/CV-from-git)
 
-CandyGZ es un proyecto liderado por un desarrollador Full Stack con pasión por la tecnología y el apoyo social. Con enfoque en escalar startups y negocios mediante tecnología, ofrece colaboraciones estratégicas y apoyo pro bono a ONGs. Destaca por su interés en AI, blockchain, criptomonedas y temas financieros, así como en iniciativas educativas y de protección infantil. Disponible para proyectos ambiciosos que busquen agregar valor a través de la tecnología.
+CV-from-git" es un generador automático de CV basado en repositorios de GitHub. Analiza tus proyectos públicos, excluyendo forks, y crea un CV atractivo en Markdown y HTML. Detecta lenguajes, tecnologías y ofrece descripciones mejoradas con IA. Utiliza Python y pip, con ejecución manual mediante GitHub Actions para actualizaciones automáticas.
 
-**Última actualización**: 2025-11-19  
+**Lenguajes**: HTML, Python  
+**Tecnologías**: Python, pip  
 
 ---
 
-### [CV-from-git](https://github.com/CandyGZ/CV-from-git)
+### [CandyGZ](https://github.com/CandyGZ/CandyGZ)
 
-CV-from-git" es un generador automático de CV profesional basado en repositorios de GitHub. Analiza tus proyectos públicos, detecta lenguajes y tecnologías utilizadas, y crea un CV atractivo en Markdown y HTML. Con características como análisis automático, exclusión de forks, detección inteligente de tecnologías y diseño profesional, facilita la creación y actualización de tu CV técnico de manera eficiente.
+Proyecto "CandyGZ": Desarrollador Full Stack con pasión por la tecnología, blockchain y criptomonedas. Dispuesto a colaborar con startups, ONGs y proyectos ambiciosos para impulsar el crecimiento a través de la tecnología. Especializado en AI, trading y temas financieros, con enfoque en iniciativas sociales y educativas. Disponible para colaboraciones estratégicas basadas en equidad o reparto de ingresos.
 
-**Lenguajes**: Python, HTML  
-**Tecnologías**: pip, Python  
-**Última actualización**: 2025-11-19  
 
 ---
 
 ### [tamago](https://github.com/CandyGZ/tamago)
 
-Desarrollé Tamago, una mascota de escritorio 3D interactiva inspirada en Tamagotchi para Windows 11. Utilicé TypeScript, HTML y JavaScript, junto con tecnologías como Node.js y npm. Destaca por su sistema completo de Tamagotchi, modelo 3D animado con Three.js, sonidos sintetizados con Web Audio API y funcionalidades interactivas como alimentación y reconocimiento de voz.
+Desarrollé Tamago, un proyecto que consiste en una mascota de escritorio 3D interactiva tipo Tamagotchi para Windows 11. Con funcionalidades como sistema Tamagotchi completo, interacciones visuales y sistema de audio sintetizado, brinda una experiencia envolvente a los usuarios. Implementado con TypeScript, HTML, JavaScript, npm y Node.js, destaca por su modelo 3D animado renderizado con Three.js, sistema de partículas y control de volumen ajustable, entre otras características innovadoras.
 
 **Lenguajes**: TypeScript, HTML, JavaScript  
-**Tecnologías**: Node.js, npm, TypeScript  
-**Última actualización**: 2025-11-19  
+**Tecnologías**: npm, Node.js, TypeScript  
 
 ---
 
 ### [interviewassist](https://github.com/CandyGZ/interviewassist)
 
-Proyecto "Interview Assist": Plataforma que combina un backend en Python Flask para procesamiento de audio y un agente de escritorio en Node.js/Electron. Facilita la transcripción y la interacción con IA, con requisitos específicos como Python 3.10+, Node.js 16.x+ y FFmpeg para procesamiento de audio.
+Proyecto "interviewassist": Plataforma que combina un backend en Python con Flask para procesamiento de audio y un agente de escritorio en Node.js/Electron. Facilita la interacción con IA, transcripción y captura de audio, brindando soporte integral para entrevistas y comunicaciones. Tecnologías clave: Python, JavaScript, HTML, CSS. Requiere Python 3.10+, Node.js 16.x+, y FFmpeg para procesamiento de audio. Dirigido a optimizar procesos de comunicación y entrevistas mediante tecnología avanzada de audio.
 
 **Lenguajes**: Python, JavaScript, HTML, CSS  
-**Última actualización**: 2025-11-19  
 
 ---
 
 ### [Asesor-tesis](https://github.com/CandyGZ/Asesor-tesis)
 
-Proyecto "Asesor-tesis": Sistema de IA para asistir a estudiantes mexicanos en la finalización de sus tesis, proporcionando un chatbot especializado, generador de temas personalizados, plan de trabajo adaptado y editor académico. Desarrollado con TypeScript, PLpgSQL, JavaScript, CSS, Node.js, npm, React, Next.js y Supabase. Destaca por su enfoque en reducir el estrés y ofrecer soluciones prácticas para completar proyectos académicos de manera eficiente y efectiva.
+Desarrollé "Asesor-tesis", un sistema de IA especializado en asistir a estudiantes mexicanos en la finalización de sus tesis de manera eficiente y sin estrés. Incorpora un chatbot 24/7 para consultas rápidas, generador de temas personalizados, plan de trabajo adaptable y editor académico inteligente. Utiliza TypeScript, PLpgSQL, JavaScript, CSS, React, Next.js, npm y Node.js para ofrecer una experiencia académica completa y efectiva.
 
 **Lenguajes**: TypeScript, PLpgSQL, JavaScript, CSS  
-**Tecnologías**: Node.js, npm, React, Next.js, TypeScript  
-**Última actualización**: 2025-11-19  
+**Tecnologías**: React, TypeScript, Next.js, npm, Node.js  
 
 ---
 
 ### [ticktets-wisp](https://github.com/CandyGZ/ticktets-wisp)
 
-Desarrollo de un sistema de venta de tickets de internet por tiempo con integración a Mikrotik RouterOS y MercadoPago, utilizando TypeScript, CSS, JavaScript, Node.js, React y Next.js. Permite la venta de tickets personalizados, pagos en línea, gestión de usuarios y envío automático de códigos de activación. Incluye un Chatbot AI con ChatGPT para soporte 24/7, panel de administración completo y diseño responsive. Requiere Node.js 18, Router Mikrotik con API, cuenta de MercadoPago, servidor SMTP y OpenAI API Key.
+Desarrollo de un sistema completo de venta de tickets de internet por tiempo con integración a Mikrotik RouterOS y MercadoPago, destacando la venta de tickets por diferentes períodos, integración con plataformas de pago en línea y gestión automatizada de usuarios. Incluye un Chatbot AI con ChatGPT para soporte 24/7, panel de administración completo y diseño responsive. Requiere Node.js, Router Mikrotik, cuenta de MercadoPago, servidor SMTP y OpenAI API Key.
 
 **Lenguajes**: TypeScript, CSS, JavaScript  
-**Tecnologías**: Node.js, npm, React, Next.js, TypeScript  
-**Última actualización**: 2025-11-19  
+**Tecnologías**: React, TypeScript, Next.js, npm, Node.js  
 
 ---
 
 ### [ICD](https://github.com/CandyGZ/ICD)
 
-Proyecto ICD: Plataforma web desarrollada con Python, HTML, JavaScript y CSS para analizar datos clínicos. Destaca por su capacidad de visualización interactiva y herramientas de análisis avanzado. README incluye detalles sobre integración de API externas y algoritmos de machine learning aplicados.
+Desarrollo del proyecto "ICD" que combina Python, HTML, JavaScript y CSS para crear una plataforma interactiva de análisis de datos. Destaca por su enfoque en la visualización de información compleja de manera intuitiva. El README incluye detalles sobre la integración de bibliotecas de gráficos y funciones de interactividad para facilitar el entendimiento de datos.
 
 **Lenguajes**: Python, HTML, JavaScript, CSS  
-**Última actualización**: 2025-11-18  
 
 ---
 
 ### [wibosoft_page](https://github.com/CandyGZ/wibosoft_page)
 
-Desarrollo de wibosoft_page, un proyecto enfocado en la creación de una plataforma web interactiva para mejorar la experiencia del usuario. Destaca por su diseño intuitivo, funcionalidades avanzadas y rendimiento optimizado. Basado en tecnologías modernas y mejores prácticas de desarrollo web.
+Desarrollo de "wibosoft_page", un proyecto que busca optimizar la experiencia del usuario a través de una interfaz intuitiva y funcional. Utilizando tecnologías avanzadas, se destacan características como la navegación simplificada y la integración de contenido dinámico. [Detalles técnicos adicionales del README, si disponibles].
 
-**Última actualización**: 2025-11-18  
 
 ---
 
 ### [Multiagent](https://github.com/CandyGZ/Multiagent)
 
-Sistema profesional de múltiples agentes de IA en Python para el desarrollo automático de software empresarial. Utiliza agentes de IA en paralelo para crear proyectos completos con mínima intervención humana. Características incluyen un orquestador inteligente, refinamiento interactivo, ejecución paralela, auto-organización, CI/CD integrado, análisis de seguridad y arquitectura escalable. Nuevas funcionalidades en v1.1: sistema de preguntas inteligente, SecurityAgent, gestión de tareas humanas y testing web híbrido.
+Sistema profesional de múltiples agentes de IA para desarrollo automático de software empresarial en Python. Utiliza orquestador inteligente, refinamiento interactivo, ejecución paralela y análisis de seguridad. Incluye CI/CD integrado y arquitectura escalable para cumplir con las mejores prácticas de desarrollo. Nuevas funcionalidades v1.1 ofrecen sistema de preguntas inteligente, SecurityAgent, gestión de tareas humanas y testing web híbrido.
 
 **Lenguajes**: Python  
-**Tecnologías**: pip, Python  
-**Última actualización**: 2025-11-17  
+**Tecnologías**: Python, pip  
 
 ---
 
 ### [FinanceKids](https://github.com/CandyGZ/FinanceKids)
 
-FinanceKids es un innovador juego Play-to-Earn que combina finanzas con IA generativa, permitiendo a los jugadores construir un imperio desde cero. Con tecnologías como TypeScript, Node.js y blockchain, ofrece mecánicas de juego realistas, interacciones multiplayer y activos únicos basados en NFTs. Su IA integrada brinda una experiencia única con NPCs inteligentes, eventos dinámicos y mentoría financiera, todo respaldado por una arquitectura técnica sólida en Next.js y Phaser.
+Proyecto "FinanceKids": Juego Play-to-Earn con IA Generativa que enseña finanzas a través de la construcción de un imperio desde un puesto callejero. Utiliza TypeScript, Solidity, CSS, Shell y JavaScript, junto con tecnologías Node.js y npm. Características destacadas incluyen NPCs inteligentes, economía P2E, mecánicas realistas y soporte Blockchain & Web3 con tokens $KIDS y NFTs. Arquitectura técnica incluye Frontend Next.js 14 y Phaser 3 para el motor de juego.
 
 **Lenguajes**: TypeScript, Solidity, CSS, Shell, JavaScript  
-**Tecnologías**: Node.js, npm, TypeScript  
-**Última actualización**: 2025-11-16  
+**Tecnologías**: npm, Node.js, TypeScript  
 
 ---
 
 ### [acuarios-rs](https://github.com/CandyGZ/acuarios-rs)
 
-Automatización de generación de videos de acuarios con IA que produce videos diarios de 30 minutos y los sube a YouTube, todo a un costo mensual de $0. Utiliza tecnologías como TypeScript, Node.js y React, con funciones destacadas como generación automática, integración con YouTube y procesamiento inteligente de videos. La arquitectura incluye un Dashboard en Next.js, API para generación y subida de videos, un Scheduler en Railway y un Pipeline de Video.
+Proyecto "acuarios-rs": Un sistema automatizado que genera vídeos de acuarios de 30 minutos diarios utilizando IA y los sube a YouTube. Destaca por su funcionamiento sin costo mensual en modo inactivo en Railway. Tecnologías clave incluyen TypeScript, React, Node.js y Next.js, brindando una experiencia totalmente automatizada, basada en IA y con integración directa a YouTube.
 
 **Lenguajes**: TypeScript, JavaScript, CSS, Procfile  
-**Tecnologías**: Node.js, npm, React, Next.js, TypeScript  
-**Última actualización**: 2025-11-16  
+**Tecnologías**: React, TypeScript, Next.js, npm, Node.js  
 
 ---
 
 ### [acuarios](https://github.com/CandyGZ/acuarios)
 
-Proyecto "Acuarios": Plataforma digital que permite a los entusiastas de la acuarofilia compartir conocimientos, consejos y experiencias sobre el cuidado de peces y plantas acuáticas. Utiliza una interfaz intuitiva para facilitar la interacción y el aprendizaje entre la comunidad.README: Incluye funcionalidades de creación de perfiles, publicación de contenido multimedia, y sistema de valoración y comentarios para fomentar la participación activa de los usuarios.
+Desarrollo de un sistema de gestión de acuarios para monitorear y controlar de forma eficiente el ambiente acuático, garantizando condiciones óptimas para la vida marina. Se implementaron funcionalidades de seguimiento de parámetros como temperatura, pH y nivel de oxígeno.
 
-**Última actualización**: 2025-11-16  
 
 ---
 
 ### [Store](https://github.com/CandyGZ/Store)
 
-Proyecto Store: Plataforma de Punto de Venta en Laravel que ofrece una gestión eficiente y detallada de transacciones, comprobantes y clientes. Con una interfaz intuitiva, cálculo automático de impuestos, gestión de pagos y generación de comprobantes en PDF, este proyecto destaca por su rapidez en ventas, flexibilidad en flujos de venta y claridad en la gestión de pedidos. Tecnologías clave: PHP, JavaScript, CSS, Blade, npm, Composer y Node.js.
+Proyecto Store: Sistema de Punto de Venta desarrollado en Laravel y PHP, destacando una interfaz intuitiva y ágil para gestionar ventas, pedidos y facturación. Tecnologías clave incluyen JavaScript, CSS, Blade, Node.js, npm y Composer. Funcionalidades destacadas: Punto de Venta con flujos flexibles, cálculo automático de impuestos, gestión de clientes, control de pagos, y generación de comprobantes en PDF. La aplicación ofrece una sólida base para la administración eficiente de transacciones comerciales.
 
 **Lenguajes**: JavaScript, CSS, Blade, PHP  
-**Tecnologías**: PHP, npm, Composer, Node.js  
-**Última actualización**: 2025-11-16  
+**Tecnologías**: Node.js, npm, Composer, PHP  
 
 ---
 
 ### [pemx-erik](https://github.com/CandyGZ/pemx-erik)
 
-Desarrollo de un Sistema de Gestión de Carga de Buques (SGCB) para terminales petroleras, permitiendo la gestión eficiente de operaciones de carga. Utiliza JavaScript, Python, CSS, HTML y Batchfile, con tecnologías como pip y Django. Incluye funcionalidades como gestión de órdenes de carga, control de cargas parciales, reportes diarios, catálogos personalizables y sistema de permisos por roles. Documentación detallada disponible, con instalación y uso claros.
+Desarrollo del proyecto "pemx-erik", un Sistema de Gestión de Carga de Buques (SGCB) para terminales petroleras. Utiliza JavaScript, Python, Django, CSS, HTML y Batchfile. Destaca por su gestión de órdenes de carga, control de cargas parciales, reportes diarios e interfaz web intuitiva. Incluye documentación detallada, requisitos de instalación y pasos para la creación de la base de datos.
 
 **Lenguajes**: JavaScript, Python, CSS, HTML, Batchfile  
-**Tecnologías**: pip, Django, Python  
-**Última actualización**: 2025-11-16  
+**Tecnologías**: Python, Django, pip  
 
 ---
 
 ### [cv--vercel](https://github.com/CandyGZ/cv--vercel)
 
-Proyecto: cv--vercel
-
-Aplicación web que utiliza inteligencia artificial para mejorar currículums y preparar a usuarios para entrevistas laborales. Permite análisis detallado de CVs, generación personalizada de currículums y simulación de entrevistas con preguntas IA. Desarrollado con React, Flask, Supabase y Vite, con integración de MercadoPago y PayPal. Configuración sencilla del entorno local con Node.js, Python y Supabase.
+Desarrollé un asistente de CV y entrevistas con IA que ofrece análisis personalizado de currículums, generación de CV optimizados y simulación de entrevistas. Utilicé React y Vite en el frontend, Flask en el backend con Supabase para base de datos y autenticación, integrando MercadoPago y PayPal. Configuración sencilla con Node.js y Python, ofreciendo una experiencia completa para mejorar habilidades laborales.
 
 **Lenguajes**: JavaScript, Python, CSS, PLpgSQL, HTML, Shell  
-**Tecnologías**: Node.js, npm, React  
-**Última actualización**: 2025-11-13  
+**Tecnologías**: npm, Node.js, React  
 
 ---
 
 ### [ScrumResumeForGoogleMeet](https://github.com/CandyGZ/ScrumResumeForGoogleMeet)
 
-Aplicación para Google Meet Marketplace que genera automáticamente resúmenes tipo Scrum Master durante las reuniones, con transcripción en tiempo real, análisis inteligente de información estructurada y resúmenes profesionales en varios idiomas. Implementada con TypeScript, Node.js, Express.js y tecnologías de Google Cloud y OpenAI.
+Aplicación desarrollada para Google Meet Marketplace que automatiza la generación de resúmenes tipo Scrum Master durante reuniones. Permite transcripción en tiempo real, análisis inteligente con IA para extraer información estructurada, identificación automática de participantes y resúmenes profesionales en múltiples idiomas. Tecnologías clave incluyen TypeScript, Node.js, Express.js, Google Cloud Speech-to-Text API y OpenAI GPT-4.
 
 **Lenguajes**: TypeScript, HTML, JavaScript, Shell, CSS  
-**Tecnologías**: Node.js, npm, TypeScript, Express.js  
-**Última actualización**: 2025-11-07  
+**Tecnologías**: Express.js, npm, Node.js, TypeScript  
 
 ---
 
 ### [TradingStrategy](https://github.com/CandyGZ/TradingStrategy)
 
-TradingStrategy es un sistema avanzado de trading automático que utiliza Inteligencia Artificial, análisis técnico y precios en tiempo real para tomar decisiones de compra y venta de activos financieros. Con funciones como cuenta ficticia, IA de trading, análisis Fibonacci, indicadores técnicos, gestión de riesgo y reportes personalizados, este proyecto en Python con tecnologías como Pandas y NumPy proporciona una experiencia de simulación realista y detallada para el análisis y la ejecución de estrategias de inversión.
+Proyecto: TradingStrategy
+
+Impulsa tu experiencia en el trading con TradingStrategy, un avanzado sistema de trading automático con inteligencia artificial, análisis técnico y precios en tiempo real. Opera con dinero virtual, utiliza indicadores como RSI y MACD, y gestiona riesgos con stop-loss automáticos. Visualiza gráficos de rendimiento, personaliza reportes y simula comisiones reales. Desarrollado en Python con NumPy y Pandas, este proyecto ofrece una experiencia completa y segura para tus operaciones de trading.
 
 **Lenguajes**: Python  
-**Tecnologías**: pip, Pandas, Python, NumPy  
-**Última actualización**: 2025-11-05  
+**Tecnologías**: Python, pip, NumPy, Pandas  
 
 ---
 
 ### [Prompt2Play](https://github.com/CandyGZ/Prompt2Play)
 
-MCP revolucionario que convierte descripciones de texto en prototipos de juegos jugables en segundos. Prompt2Play genera experiencias jugables completas a partir de lenguaje natural, destacándose por su pipeline integral, NPCs con IA, iteración inteligente, exportación a múltiples motores y análisis semántico de género automático. Desarrollado en Kotlin, con soporte para Java, Gradle y exportación a Phaser, Unity y Godot.
+Desarrollé Prompt2Play, un servidor MCP revolucionario que convierte descripciones de texto en prototipos de juegos jugables en segundos. Utilizando Kotlin, Java y Gradle, este proyecto destaca por su capacidad para generar experiencias de juego completas y jugables a partir de simples descripciones, incluyendo características como un pipeline de extremo a extremo, NPCs con conversaciones impulsadas por IA, iteración inteligente y exportación a múltiples motores de juego.
 
 **Lenguajes**: Kotlin  
 **Tecnologías**: Java, Gradle  
-**Última actualización**: 2025-11-05  
 
 ---
 
 ### [pmex-docker](https://github.com/CandyGZ/pmex-docker)
 
-Desarrollo de un Sistema de Gestión de Carga de Buques (SGCB) para terminales petroleras, con instalación simplificada a través de Docker. Utiliza tecnologías como Python, Docker, Django y PostgreSQL, ofreciendo una instalación rápida y sin configuraciones manuales. Incluye scripts automatizados, respaldos automáticos y total portabilidad, facilitando la gestión y control de operaciones de carga.
+Sistema web para la gestión y control de operaciones de carga de buques en terminales petroleras, con una **instalación simplificada mediante Docker**. Utiliza tecnologías como Python, Django, Docker Compose y PostgreSQL en contenedores, permitiendo una implementación rápida y sin complicaciones. Incluye scripts automatizados, respaldos automáticos y portabilidad total, ofreciendo una solución eficiente y de alto rendimiento para la gestión de carga de buques.
 
 **Lenguajes**: Python, HTML, Batchfile, JavaScript, CSS, Dockerfile  
-**Tecnologías**: pip, Docker Compose, Python, Docker, Django  
-**Última actualización**: 2025-11-04  
+**Tecnologías**: Python, pip, Docker Compose, Django, Docker  
 
 ---
 
 ### [GithubIA](https://github.com/CandyGZ/GithubIA)
 
-GithubIA" es un asistente de código basado en IA para GitHub que automatiza tareas de desarrollo como revisiones de código y generación de documentación. Utiliza Python, pip y FastAPI, integrándose con la API de OpenAI para ofrecer sugerencias detalladas en los Pull Requests y generar documentación profesional bajo demanda.
+Desarrollo de un asistente de código con IA para GitHub que automatiza tareas de revisión y documentación. Utiliza Python, FastAPI y la API de OpenAI para analizar Pull Requests y generar documentación detallada bajo demanda. Integra un modelo de IA (GPT-4o) para sugerencias de código y actualizaciones automáticas del README.md, facilitando procesos eficientes de desarrollo colaborativo en GitHub.
 
 **Lenguajes**: Python  
-**Tecnologías**: pip, FastAPI, Python  
-**Última actualización**: 2025-10-29  
+**Tecnologías**: Python, FastAPI, pip  
 
 ---
 
 ### [pemex](https://github.com/CandyGZ/pemex)
 
-Proyecto "pemex": Implementación de un Sistema de Gestión de Inventario y Carga de Crudo en una terminal, utilizando JavaScript, CSS, Python y HTML. El objetivo es optimizar la disponibilidad de producto y la capacidad de almacenamiento, calculando volúmenes de crudo de manera dinámica. Tecnologías clave: pip, Python. Características: seguimiento detallado de existencias, cálculos precisos de recibos y cargas, operación secuencial día a día.
+Desarrollo de un sistema de Gestión de Inventario y Carga de Crudo para optimizar la disponibilidad de producto en una empresa petrolera. Utilizando JavaScript, CSS, Python, HTML y tecnologías como pip, se calculan dinámicamente los volúmenes de crudo en tiempo real, asegurando el cumplimiento de compromisos de carga y la eficiencia en el uso de la capacidad de almacenamiento.
 
 **Lenguajes**: JavaScript, CSS, Python, HTML  
-**Tecnologías**: pip, Python  
-**Última actualización**: 2025-10-27  
+**Tecnologías**: Python, pip  
 
 ---
 
 ### [Pemex_proy](https://github.com/CandyGZ/Pemex_proy)
 
-Proyecto "Pemex_proy": Sistema de Gestión de Inventario y Carga de Crudo para terminales petroleras, enfocado en asegurar la disponibilidad de producto y optimizar la capacidad de almacenamiento. Utiliza JavaScript, CSS, Python, HTML, pip y Django. Documento detalla cálculos de existencia, recibo y cupo.
+Proyecto "Pemex_proy": Desarrollo de una Aplicación de Gestión de Inventario y Carga de Crudo para una empresa petrolera. Utiliza JavaScript, CSS, Python y HTML con tecnologías como Django y pip. El sistema permite el cálculo dinámico de existencias, recibos y cupos para optimizar la disponibilidad de crudo y la capacidad de almacenamiento en la terminal.
 
 **Lenguajes**: JavaScript, CSS, Python, HTML  
-**Tecnologías**: pip, Django, Python  
-**Última actualización**: 2025-10-26  
+**Tecnologías**: Python, Django, pip  
 
 ---
 
 ### [la_dIAbla](https://github.com/CandyGZ/la_dIAbla)
 
-Proyecto la_dIAbla: Desarrollo de IA para Meta Facebook utilizando Python, con implementación de pip y Flask. El proyecto incluye funciones para iniciar el servidor de desarrollo y enviar mensajes de prueba, así como verificación de permisos de página a través de solicitudes curl.
+Desarrollé un proyecto llamado la_dIAbla, enfocado en la implementación de IA para Meta Facebook. Utilizando Python, Flask y pip, se creó un servidor de desarrollo que permite interactuar con la plataforma a través de endpoints específicos. Entre sus funcionalidades destacadas se encuentran la publicación de mensajes de prueba y la verificación de permisos de página a través de solicitudes HTTP.
 
 **Lenguajes**: Python  
-**Tecnologías**: pip, Flask, Python  
-**Última actualización**: 2025-10-23  
+**Tecnologías**: Python, pip, Flask  
 
 ---
 
 ### [SlidesGeneratorIA](https://github.com/CandyGZ/SlidesGeneratorIA)
 
-SlidesGeneratorIA es un sistema innovador que automatiza la creación de presentaciones en PowerPoint a partir de un simple tema. Utilizando la API de OpenAI y la biblioteca python-pptx, este proyecto genera slides con títulos y contenido informativo de manera eficiente. Con el uso de tecnologías como openai y python-pptx, SlidesGeneratorIA simplifica el proceso de generación de presentaciones al permitir al usuario escribir el tema y obtener una presentación lista para su uso.
+Desarrollé SlidesGeneratorIA, un sistema automatizado que crea presentaciones en PowerPoint a partir de un simple tema escrito. Utilizando la API de OpenAI y la biblioteca python-pptx, genera diapositivas con encabezados y contenido informativo de forma eficiente. Este proyecto utiliza bibliotecas clave como openai para interactuar con la API de OpenAI, json para manejar datos JSON y python-pptx para la generación programática de presentaciones. Con una configuración sencilla de la clave API de OpenAI, el usuario puede ingresar el título de la presentación y obtener una presentación completa de manera rápida y efectiva.
 
 **Lenguajes**: Python  
-**Última actualización**: 2025-10-05  
 
 ---
 
 ### [PrintingCenter](https://github.com/CandyGZ/PrintingCenter)
 
 Proyecto: PrintingCenter
-Impulsa la eficiencia de los centros de impresión con un sistema personalizado en Python que permite rastrear órdenes pendientes, identificar el último trabajo completado y generar informes para la planificación diaria. Con funciones para la búsqueda automática de archivos, confirmación de trabajos y registro de tareas completadas, este sistema optimiza la gestión de trabajos de impresión de manera efectiva y organizada.
+Impulsa la eficiencia en la gestión de trabajos de impresión con el sistema personalizado PrintingCenter. Esta herramienta en Python permite rastrear pedidos pendientes, encontrar el último archivo trabajado, confirmar tareas completadas y generar informes para planificar el trabajo del día siguiente de forma ágil y precisa.
 
 **Lenguajes**: Python  
-**Última actualización**: 2025-10-05  
 ⭐ 1 estrellas  
 
 ---
@@ -270,51 +245,49 @@ Impulsa la eficiencia de los centros de impresión con un sistema personalizado 
 ### [ToDoList-Flet](https://github.com/CandyGZ/ToDoList-Flet)
 
 Proyecto: ToDoList-Flet
-Desarrollé el proyecto ToDoList-Flet, una aplicación de gestión de tareas diseñada para la administración de listas simples de tareas para niños, con una interfaz amigable. Utilizando tecnologías como Flet, una biblioteca de Python para interfaces de usuario multiplataforma, y una biblioteca personalizada de checkboxes, logré crear una aplicación intuitiva y eficiente para el manejo de tareas.
+
+Desarrollé el ToDoList-Flet, una aplicación de gestión de tareas diseñada para facilitar la organización de listas simples para niños. Implementada con Flet, una biblioteca Python que simplifica la creación de interfaces de usuario multiplataforma, este proyecto destaca por su interfaz amigable y la utilización de una Biblioteca de Checkbox personalizada para tareas interactivas. Con Python como lenguaje principal, garantiza un desarrollo eficiente y flexible, adaptándose a diversas necesidades de aplicación.
 
 **Lenguajes**: Python  
-**Última actualización**: 2025-10-05  
 
 ---
 
 ### [Virtual-Disk](https://github.com/CandyGZ/Virtual-Disk)
 
-Proyecto Virtual-Disk: Desarrollo de un simulador de almacenamiento en bloques, similar a Amazon EBS, utilizando Python. El proyecto incluye la clase SimpleBlockStorage que gestiona un "disco virtual" almacenado en un archivo (mi_disco.dat), permitiendo la escritura y lectura eficiente de datos en bloques numerados. Esta implementación se enfoca en la manipulación directa de datos a través de bloques, destacando la eficiencia y simplicidad del sistema.
+Proyecto: Virtual-Disk
+
+Desarrollado en Python, Virtual-Disk es una solución de simulación de almacenamiento en bloques, similar a Amazon EBS. Su implementación innovadora se centra en la manipulación eficiente de datos a través de bloques numerados, en lugar de utilizar un sistema de archivos convencional. La clase SimpleBlockStorage actúa como controlador, gestionando un "disco virtual" representado por un archivo binario. Sus métodos write_block() y read_block() permiten escribir y leer datos en bloques específicos de forma precisa y ágil, mostrando un enfoque técnico avanzado en la gestión de almacenamiento.
 
 **Lenguajes**: Python  
-**Última actualización**: 2025-10-05  
 
 ---
 
 ### [API-detalles-producto](https://github.com/CandyGZ/API-detalles-producto)
 
-API-detalles-producto es un proyecto backend especializado en proporcionar datos esenciales para la visualización detallada de productos en plataformas de e-commerce. Construido en Java con Spring Boot, esta API garantiza una entrega eficiente de información detallada, ofreciendo endpoints para consultar la salud del sistema, detalles de productos específicos y descripciones asociadas. Utilizando tecnologías clave como Spring Boot 3.2, Java 17, Jackson para JSON y SLF4J, esta solución se destaca por su funcionalidad robusta y su capacidad para soportar una experiencia de usuario enriquecida.
+Proyecto: API-detalles-producto
+
+API backend diseñada para soportar páginas de detalle de productos en entornos de e-commerce, proporcionando eficientemente todos los datos necesarios. Desarrollada en Java con tecnologías clave como Maven y Spring Boot 3.2, garantizando un acceso rápido y fiable a los detalles del producto. Con funcionalidades para obtener información detallada y descripciones de productos a través de endpoints REST, empleando Java 17, Jackson para JSON y SLF4J para loggin. Asegura una fácil ejecución con instrucciones claras y concisas en el README para la instalación y prueba de la API.
 
 **Lenguajes**: Java  
 **Tecnologías**: Maven, Java  
-**Última actualización**: 2025-10-05  
 
 ---
 
 ### [ShapeCalculator](https://github.com/CandyGZ/ShapeCalculator)
 
-El proyecto **ShapeCalculator** es una aplicación en Python que calcula áreas, perímetros y diagonales de rectángulos y cuadrados, así como la cantidad de veces que una forma cabe dentro de otra. Con algoritmos eficientes y una estructura clara de archivos, este proyecto es ideal para profesionales y estudiantes que necesitan cálculos precisos de formas geométricas comunes. Su README detalla la estructura del proyecto e instrucciones para su instalación, destacando la importancia de Python 3.6 o superior y el uso de pruebas automatizadas para garantizar la fiabilidad de las funciones implementadas.
+El proyecto **ShapeCalculator** es una aplicación en Python que permite calcular áreas, perímetros y diagonales de rectángulos y cuadrados, así como determinar cuántas veces una forma cabe dentro de otra. Ideal para profesionales de la ingeniería y matemáticas, este programa ofrece cálculos precisos y eficientes. Con una estructura organizada en archivos como `main.py` y `shape_calculator.py`, junto con pruebas automatizadas en `test_module.py`, garantiza resultados confiables y exactos en el análisis de formas geométricas.
 
 **Lenguajes**: Python  
-**Última actualización**: 2025-10-05  
 ⭐ 1 estrellas  
 
 ---
 
 ### [CV_reviewer](https://github.com/CandyGZ/CV_reviewer)
 
-CV_reviewer" es una herramienta diseñada para analizar y mejorar la calidad de los CVs de forma automatizada. Utilizando algoritmos de procesamiento de lenguaje natural, identifica áreas de mejora en la redacción, formato y relevancia de la información. Con una interfaz intuitiva, brinda retroalimentación detallada para optimizar la presentación de los perfiles profesionales.
+CV_reviewer" es un proyecto diseñado para analizar y mejorar la calidad de los currículums de manera automatizada. Utilizando algoritmos de procesamiento de lenguaje natural, este sistema identifica fortalezas y áreas de mejora en los CVs, brindando retroalimentación detallada para optimizar la presentación y relevancia de la información. Las tecnologías clave incluyen NLP, Python y posiblemente integraciones con APIs de servicios de análisis de texto.
 
-Detalles técnicos adicionales del README: No especificado
-
-**Última actualización**: 2025-10-05  
 
 ---
 
 
-*CV generado automáticamente desde GitHub - 2025-11-19 22:43:37*
+*CV generado automáticamente desde GitHub*
