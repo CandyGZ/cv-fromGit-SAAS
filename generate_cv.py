@@ -6,6 +6,7 @@ Analiza repositorios de GitHub y genera un CV automático
 
 import os
 import sys
+import copy
 from datetime import datetime
 from collections import Counter
 from github import Github
@@ -622,18 +623,18 @@ def main():
         generator = GitHubCVGenerator(github_token, username)
         cv_data = generator.generate_cv_data()
 
-        # Guardar datos en JSON (opcional, para debugging)
+        # Generar CV en Markdown y HTML primero (usa datetime objects)
+        generator.generate_markdown_cv(cv_data)
+        generator.generate_html_cv(cv_data)
+
+        # Guardar datos en JSON después (convierte a strings)
         with open('cv_data.json', 'w', encoding='utf-8') as f:
             # Convertir datetime a string para JSON
-            cv_data_copy = cv_data.copy()
+            cv_data_copy = copy.deepcopy(cv_data)
             for repo in cv_data_copy['repositories']:
                 repo['created_at'] = repo['created_at'].isoformat()
                 repo['updated_at'] = repo['updated_at'].isoformat()
             json.dump(cv_data_copy, f, indent=2, ensure_ascii=False)
-
-        # Generar CV en Markdown y HTML
-        generator.generate_markdown_cv(cv_data)
-        generator.generate_html_cv(cv_data)
 
         print("\n✓ ¡CV generado exitosamente!")
 
