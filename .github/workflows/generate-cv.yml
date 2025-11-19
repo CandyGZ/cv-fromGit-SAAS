@@ -162,6 +162,20 @@ jobs:
         run: |
           echo "📝 Actualizando README del perfil..."
 
+          # Guardar la ruta absoluta del directorio de trabajo
+          WORK_DIR=$(pwd)
+          echo "📂 Directorio de trabajo: $WORK_DIR"
+
+          # Verificar que CV.md existe
+          if [ ! -f "$WORK_DIR/CV.md" ]; then
+            echo "❌ ERROR: No se encontró CV.md en $WORK_DIR"
+            echo "Contenido del directorio:"
+            ls -la "$WORK_DIR"
+            exit 1
+          fi
+
+          echo "✓ CV.md encontrado ($(wc -l < "$WORK_DIR/CV.md") líneas)"
+
           # Clonar repositorio de perfil
           git clone https://x-access-token:$GITHUB_TOKEN@github.com/${{ github.repository_owner }}/${{ github.repository_owner }}.git profile-repo
           cd profile-repo
@@ -207,11 +221,13 @@ jobs:
           MARKER_START="<!-- AUTO-GENERATED-CV-START -->"
           MARKER_END="<!-- AUTO-GENERATED-CV-END -->"
 
-          # Preparar el contenido del CV con marcadores
+          # Preparar el contenido del CV con marcadores usando ruta absoluta
           echo "$MARKER_START" > /tmp/cv_section.md
-          cat ../CV.md >> /tmp/cv_section.md
+          cat "$WORK_DIR/CV.md" >> /tmp/cv_section.md
           echo "" >> /tmp/cv_section.md
           echo "$MARKER_END" >> /tmp/cv_section.md
+
+          echo "✓ CV preparado ($(wc -l < /tmp/cv_section.md) líneas incluyendo marcadores)"
 
           # Si ya existen los marcadores, reemplazar el contenido entre ellos
           if grep -q "$MARKER_START" README.md; then
