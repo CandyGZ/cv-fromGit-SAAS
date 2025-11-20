@@ -1,285 +1,79 @@
-# 🚀 GitHub CV Generator
+# 🚀 GitHub CV Generator (SaaS Edition)
 
-Genera automáticamente un CV profesional basado en tus repositorios de GitHub. El sistema analiza todos tus repositorios públicos (excluyendo forks), extrae información relevante sobre lenguajes de programación, tecnologías utilizadas, y genera un CV atractivo en formatos Markdown y HTML.
+Genera automáticamente un CV profesional analizando tus repositorios de GitHub. Este servicio SaaS utiliza Inteligencia Artificial para crear descripciones atractivas de tus proyectos.
 
-## ✨ Características
+## 📖 Guía Rápida para Clientes
 
-- 📊 **Análisis automático** de todos tus repositorios públicos
-- 🚫 **Excluye forks** automáticamente
-- 💻 **Detección de lenguajes** y porcentajes de uso
-- 🔧 **Detección inteligente de tecnologías** (frameworks, herramientas, etc.)
-- 🤖 **Descripciones mejoradas con IA** (opcional, usando OpenAI GPT-3.5-turbo)
-- 📝 Generación de CV en **Markdown** y **HTML**
-- 🎨 **Diseño profesional** y responsive para el CV en HTML
-- ⚙️ **Ejecución manual** mediante GitHub Actions (evita consumo innecesario de tokens)
-- 🔄 **Actualización automática** con commits automáticos
+Para usar este generador en tu perfil de GitHub, solo necesitas agregar un archivo de workflow.
 
-## 🎯 Tecnologías Detectadas
+### 1. Requisitos Previos
 
-El sistema puede detectar automáticamente:
+Necesitas una **API Key** para usar este servicio.
+- Contacta a [Candy García Zárate](https://github.com/CandyGZ) para adquirir tu licencia.
 
-### Lenguajes de Programación
-- Python, JavaScript, TypeScript, Java, Go, Rust, PHP, Ruby, etc.
+### 2. Instalación en tu Repositorio
 
-### Frameworks y Librerías
-- **Frontend**: React, Vue.js, Angular, Next.js
-- **Backend**: Express.js, Django, Flask, FastAPI
-- **Data Science**: TensorFlow, PyTorch, Pandas, NumPy
-
-### Herramientas
-- Docker, Docker Compose
-- Kubernetes
-- GitHub Actions
-- Terraform, Ansible
-- npm, pip, Maven, Gradle, Cargo, Composer, Bundler
-
-## 🌐 Mostrar tu CV en GitHub
-
-Una vez generado el CV, tienes varias formas de mostrarlo:
-
-### Opción 1: GitHub Pages (Recomendado)
-
-Tu CV se publicará automáticamente como página web en: `https://candygz.github.io/CV-from-git/`
-
-**Activar GitHub Pages:**
-1. Ve a Settings → Pages
-2. En "Source", selecciona "Deploy from a branch"
-3. En "Branch", selecciona el branch donde ejecutaste el workflow (ej: `claude/github-cv-generator-...`)
-4. En "Folder", selecciona `/docs`
-5. Click "Save"
-6. Espera 1-2 minutos y tu CV estará disponible en la URL de arriba
-
-### Opción 2: README del Perfil
-
-Puedes copiar el contenido de `CV.md` al README de tu repositorio de perfil:
-
-1. Ve a tu repositorio de perfil: `https://github.com/CandyGZ/CandyGZ`
-2. Edita el README.md
-3. Copia y pega el contenido de tu `CV.md` generado
-4. Commit los cambios
-
-### Opción 3: Link desde tu Perfil
-
-En tu README de perfil, agrega un enlace:
-```markdown
-## 📄 Mi CV Completo
-
-🔗 [Ver mi CV actualizado automáticamente](https://candygz.github.io/CV-from-git/)
-```
-
-## 🚀 Uso
-
-### Configuración Inicial
-
-1. **Fork este repositorio** o crea uno nuevo con estos archivos
-
-2. **Habilitar GitHub Actions**:
-   - Ve a la pestaña "Actions" en tu repositorio
-   - Si es la primera vez, haz clic en "I understand my workflows, go ahead and enable them"
-
-3. **Configurar permisos** (importante):
-   - Ve a Settings → Actions → General
-   - En "Workflow permissions", selecciona "Read and write permissions"
-   - Marca "Allow GitHub Actions to create and approve pull requests"
-   - Guarda los cambios
-
-4. **Ejecutar manualmente** (primera vez):
-   - Ve a Actions → "Generate CV from GitHub"
-   - Haz clic en "Run workflow"
-   - Selecciona la rama y ejecuta
-
-### Ejecución Local
-
-Si deseas generar el CV localmente:
-
-```bash
-# Instalar dependencias
-pip install -r requirements.txt
-
-# Configurar token de GitHub
-export GITHUB_TOKEN="tu_token_de_github"
-
-# Opcionalmente, especificar un usuario diferente
-export GITHUB_USERNAME="usuario_de_github"
-
-# Ejecutar el generador
-python generate_cv.py
-```
-
-**Nota**: Para obtener un token de GitHub:
-1. Ve a Settings → Developer settings → Personal access tokens → Tokens (classic)
-2. Genera un nuevo token con los scopes: `repo`, `read:user`, `user:email`
-3. Copia el token (no podrás verlo de nuevo)
-
-### 🤖 Descripciones Mejoradas con IA (Opcional)
-
-El generador puede usar OpenAI para mejorar automáticamente las descripciones de tus proyectos, haciéndolas más profesionales y atractivas para tu CV.
-
-**Configuración de OpenAI:**
-
-1. **Obtén una API Key de OpenAI**:
-   - Ve a https://platform.openai.com/api-keys
-   - Crea una nueva API key
-   - Copia la key (empieza con `sk-...`)
-
-2. **Configura el secret en GitHub**:
-   - Ve a tu repositorio → Settings → Secrets and variables → Actions
-   - Click "New repository secret"
-   - Name: `OPENAI_API_KEY`
-   - Secret: Pega tu API key de OpenAI
-   - Click "Add secret"
-
-3. **Uso local** (opcional):
-   ```bash
-   export OPENAI_API_KEY="sk-tu_api_key_aqui"
-   python generate_cv.py
-   ```
-
-**¿Qué hace la IA?**
-- ✨ **Lee automáticamente los READMEs** de tus repositorios para obtener contexto detallado
-- ✨ Mejora descripciones existentes haciéndolas más profesionales y completas
-- ✨ Genera descripciones automáticas para repos sin descripción
-- ✨ Destaca el valor, propósito técnico y características principales de cada proyecto
-- ✨ Incluye detalles técnicos relevantes extraídos del README
-- ✨ Mantiene las descripciones completas pero concisas (2-3 frases)
-- ✨ Usa GPT-3.5-turbo para mantener costos bajos (~$0.002-0.003 por repositorio)
-
-**Sin OpenAI**: El generador funciona perfectamente sin la API key, usando las descripciones originales de GitHub.
-
-## 📅 Ejecución Manual
-
-El workflow de GitHub Actions está configurado para **ejecución manual únicamente** para evitar consumo innecesario de tokens de OpenAI.
-
-**Cómo ejecutar:**
-1. Ve a la pestaña **Actions** en tu repositorio
-2. Selecciona **"Generate CV from GitHub"** en el menú izquierdo
-3. Haz clic en **"Run workflow"** (botón a la derecha)
-4. Selecciona la rama y haz clic en **"Run workflow"**
-
-**Si deseas ejecución automática** (sin IA o si no te importa el costo), edita `.github/workflows/generate-cv.yml`:
+1.  En tu repositorio (puede ser tu repositorio de perfil `username/username` o cualquier otro), crea un archivo en: `.github/workflows/update-cv.yml`
+2.  Copia y pega el siguiente contenido:
 
 ```yaml
-on:
-  # Ejecución diaria a las 00:00 UTC
-  schedule:
-    - cron: '0 0 * * *'
+name: Update CV
 
-  # Ejecución manual
+on:
+  # Se ejecuta cada domingo a media noche
+  schedule:
+    - cron: '0 0 * * 0'
+  # Permite ejecutarlo manualmente desde la pestaña Actions
   workflow_dispatch:
 
-  # Al hacer push
-  push:
-    branches:
-      - main
+permissions:
+  contents: write
+
+jobs:
+  generate-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate CV
+        uses: CandyGZ/cv-fromGit-SAAS@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          api_url: "https://cv-from-git-saas.vercel.app" # O la URL que te proporcionen
+          api_key: ${{ secrets.CV_API_KEY }} # Tu clave comprada
+
+      - name: Commit and Push CV
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add cv.md
+          git commit -m "Update CV [skip ci]" || echo "No changes to commit"
+          git push
 ```
 
-## 📄 Archivos Generados
+### 3. Configurar Secretos
 
-El script genera tres archivos:
+Para mantener tu API Key segura:
 
-1. **CV.md**: Curriculum en formato Markdown
-   - Ideal para GitHub, fácil de leer en texto plano
-   - Compatible con cualquier visor de Markdown
+1.  Ve a tu repositorio en GitHub.
+2.  Clic en **Settings** > **Secrets and variables** > **Actions**.
+3.  Clic en **New repository secret**.
+4.  Nombre: `CV_API_KEY`
+5.  Valor: (Pega aquí la clave que compraste).
+6.  Clic en **Add secret**.
 
-2. **CV.html**: Curriculum en formato HTML
-   - Diseño profesional y atractivo
-   - Responsive (se adapta a móviles)
-   - Listo para imprimir o publicar
+¡Listo! Ahora tu CV se actualizará automáticamente cada semana o cuando lo ejecutes manualmente.
 
-3. **cv_data.json**: Datos en formato JSON
-   - Contiene toda la información estructurada
-   - Útil para procesamiento adicional o debugging
+## ⚙️ Inputs de la Action
 
-## 🎨 Personalización
+| Input | Descripción | Requerido |
+|-------|-------------|-----------|
+| `github_token` | Token de GitHub (usa `${{ secrets.GITHUB_TOKEN }}`) | Sí |
+| `api_url` | URL del servicio SaaS | Sí |
+| `api_key` | Tu licencia de uso | Sí |
+| `openai_api_key` | (Opcional) Tu propia key de OpenAI si deseas usar tu cuota | No |
 
-### Modificar el diseño del CV en HTML
+## 📄 Resultado
 
-Edita el método `generate_html_cv()` en `generate_cv.py` para personalizar:
-- Colores (cambia el gradient en el CSS)
-- Fuentes
-- Estructura de secciones
-- Información mostrada
-
-### Añadir más detecciones de tecnologías
-
-Edita el método `_detect_technologies()` en `generate_cv.py` para añadir:
-- Más archivos de configuración
-- Frameworks específicos
-- Herramientas personalizadas
-
-### Filtrar repositorios
-
-Puedes modificar `get_repositories()` para filtrar repositorios por:
-- Lenguaje principal
-- Estrellas mínimas
-- Fecha de actualización
-- Topics específicos
-
-## 📊 Ejemplo de Salida
-
-El CV generado incluye:
-
-- ✅ Información personal (nombre, ubicación, contacto)
-- ✅ Estadísticas de GitHub (repos, seguidores)
-- ✅ Lenguajes de programación con porcentajes
-- ✅ Tecnologías y herramientas utilizadas
-- ✅ Proyectos destacados con descripciones
-- ✅ Última fecha de actualización de cada proyecto
-
-## 🔧 Solución de Problemas
-
-### El workflow no se ejecuta automáticamente
-
-1. Verifica que GitHub Actions esté habilitado
-2. Asegúrate de tener permisos de escritura configurados
-3. Revisa la pestaña Actions para ver errores
-
-### Error: "Resource not accessible by integration"
-
-- Ve a Settings → Actions → General
-- Habilita "Read and write permissions"
-
-### El CV no se actualiza
-
-- Verifica que hay cambios en tus repositorios
-- Ejecuta manualmente el workflow para probar
-- Revisa los logs en Actions
-
-### Error al instalar dependencias
-
-```bash
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-## 📝 Licencia
-
-MIT License - Siéntete libre de usar, modificar y compartir.
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 💡 Ideas para Mejoras
-
-- [ ] Soporte para más formatos (PDF, LaTeX)
-- [ ] Análisis de contribuciones a proyectos
-- [ ] Gráficos y visualizaciones
-- [ ] Múltiples plantillas de diseño
-- [ ] Soporte para múltiples idiomas
-- [ ] Integración con LinkedIn
-- [ ] Análisis de commits y actividad
-
-## 📧 Contacto
-
-Si tienes preguntas o sugerencias, abre un issue en este repositorio.
-
----
-
-*Generado con ❤️ por GitHub CV Generator*
+La acción generará un archivo `cv.md` en la raíz de tu repositorio con tu CV profesional actualizado.
