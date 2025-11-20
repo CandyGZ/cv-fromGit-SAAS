@@ -1,5 +1,1 @@
-fastapi
-uvicorn
-PyGithub
-openai
 requests
