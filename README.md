@@ -1,4 +1,4 @@
-# 🚀 GitHub CV Generator (SaaS Edition)
+# 🚀 GitHub CV / Project list Generator (V1.5)
 
 Genera automáticamente un CV profesional analizando tus repositorios de GitHub. Este servicio SaaS utiliza Inteligencia Artificial para crear descripciones atractivas de tus proyectos.
 
