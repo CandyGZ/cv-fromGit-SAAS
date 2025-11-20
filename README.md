@@ -20,9 +20,6 @@ Necesitas una **API Key** para usar este servicio.
 name: Update CV
 
 on:
-  # Se ejecuta cada domingo a media noche
-  schedule:
-    - cron: '0 0 * * 0'
   # Permite ejecutarlo manualmente desde la pestaña Actions
   workflow_dispatch:
 
@@ -63,7 +60,7 @@ Para mantener tu API Key segura:
 5.  Valor: (Pega aquí la clave que compraste).
 6.  Clic en **Add secret**.
 
-¡Listo! Ahora tu CV se actualizará automáticamente cada semana o cuando lo ejecutes manualmente.
+¡Listo! Ahora puedes actualizar tu CV manualmente cuando lo necesites.
 
 ## ⚙️ Inputs de la Action
 
