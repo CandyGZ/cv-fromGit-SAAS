@@ -1,6 +1,6 @@
 name: 'GitHub CV Generator SaaS'
 description: 'Genera un CV profesional analizando tus repositorios de GitHub (Versión SaaS)'
-author: 'Tu Nombre'
+author: 'Candy García Zárate'
 branding:
   icon: 'file-text'
   color: 'blue'
@@ -28,7 +28,7 @@ runs:
         python-version: '3.10'
         
     - name: Install Dependencies
-      run: pip install requests
+      run: pip install -r ${{ github.action_path }}/requirements.txt
       shell: bash
 
     - name: Generate CV
