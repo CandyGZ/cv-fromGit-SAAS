@@ -1,2 +1,5 @@
-PyGithub==2.1.1
-openai>=1.0.0
+fastapi
+uvicorn
+PyGithub
+openai
+requests

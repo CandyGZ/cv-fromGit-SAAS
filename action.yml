@@ -1,0 +1,41 @@
+name: 'GitHub CV Generator SaaS'
+description: 'Genera un CV profesional analizando tus repositorios de GitHub (Versión SaaS)'
+author: 'Tu Nombre'
+branding:
+  icon: 'file-text'
+  color: 'blue'
+
+inputs:
+  github_token:
+    description: 'Token de GitHub (PAT)'
+    required: true
+  api_url:
+    description: 'URL de tu API desplegada en Vercel'
+    required: true
+  api_key:
+    description: 'Tu API Key comprada (para acceso al servicio)'
+    required: false
+  openai_api_key:
+    description: 'API Key de OpenAI (Opcional)'
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install Dependencies
+      run: pip install requests
+      shell: bash
+
+    - name: Generate CV
+      run: python ${{ github.action_path }}/client.py
+      shell: bash
+      env:
+        INPUT_GITHUB_TOKEN: ${{ inputs.github_token }}
+        INPUT_API_URL: ${{ inputs.api_url }}
+        INPUT_API_KEY: ${{ inputs.api_key }}
+        INPUT_OPENAI_API_KEY: ${{ inputs.openai_api_key }}
